@@ -1,4 +1,4 @@
-import { UsersIcon, ShoppingCartIcon, ClockIcon } from '@heroicons/react/outline'
+import { ShieldCheckIcon, ShieldExclamationIcon, ShoppingCartIcon } from '@heroicons/react/outline'
 import { useEffect } from 'react'
 import AnimScroll from "./animScroll"
 
@@ -7,21 +7,21 @@ function Benefit() {
     let data = [
         {
             id: 1,
-            icon: <UsersIcon className="w-16 bg-gradient rounded-lg p-4" />,
-            title: 'Can be used by more than One Person',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            icon: <ShieldExclamationIcon className="w-16 bg-gradient rounded-lg p-4" />,
+            title: 'Free Adoption of Prosfinity Self-Train AI',
+            description: "Adopt Prosfinity's self-training AI to automatically detect zero-day phishing attacks and ransomware at no extra cost"
         },
         {
             id: 2,
             icon: <ShoppingCartIcon className="w-16 bg-gradient rounded-lg p-4" />,
-            title: '50% Discount On Every Purchase',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            title: '50% Discount with SRAA (Security Risk Assessment and Audit)',
+            description: 'Get a 50% discount on our comprehensive Security Risk Assessment and Audit (SRAA) services'
         },
         {
             id: 3,
-            icon: <ClockIcon className="w-16 bg-gradient rounded-lg p-4" />,
-            title: '24 Hours Customer service',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            icon: <ShieldCheckIcon className="w-16 bg-gradient rounded-lg p-4" />,
+            title: 'Free 1-Month Trial of AIShieldNet',
+            description: 'Enjoy a free 1-month trial of AIShieldNet, the ultimate AI-powered security solution'
         }
     ]
 
@@ -36,7 +36,7 @@ function Benefit() {
         <div className="xl:w-container mx-auto my-24 md:my-40 text-white">
             <div className="title x-full md:w-7/12 mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-semibold leading-relaxed">The benefit you get</h2>
-                <p className="mt-2 w-3/4 mx-auto text-slate-400 text-base">Before you buy our Products you can see what benefits you will get From buying our Financial Software</p>
+                <p className="mt-2 w-3/4 mx-auto text-slate-400 text-base">Experience AI-powered solutions from one powerful platform</p>
             </div>
             <div className="card-list mt-16 text-center md:text-left flex flex-wrap justify-center gap-10">
                 {

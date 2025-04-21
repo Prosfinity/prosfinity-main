@@ -5,16 +5,14 @@ import Company from '../components/company'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Newsletter from '../components/newsletter'
-import Pricing from '../components/pricing'
-import Review from '../components/review'
 import Transaction from '../components/transaction'
 
 export default function Home() {
   return (
     <div className="font-Poppins">
       <Head>
-        <title>Fintech - Home</title>
-        <link rel="icon" href="/favicon.png" />
+        <title>Prosfinity – AI Driven Cybersecurity Partner</title>
+        <link rel="icon" href="/favicon-new.png" />
       </Head>
 
       <header className='w-full h-[700px] md:h-[1100px] xl:h-header bg-gradient'>
@@ -26,9 +24,9 @@ export default function Home() {
         <Company />
         <Benefit />
         <Transaction />
-        <Pricing />
-        <Review />
-        <Newsletter />
+        {/* <Pricing /> */}
+        {/* <Review /> */}
+        {/* <Newsletter /> */}
       </article>
 
       <footer>
