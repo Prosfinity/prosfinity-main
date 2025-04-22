@@ -8,7 +8,7 @@ function Company() {
   });
 
   return (
-    <div className="anim1 mt-60 sm:mt-64 md:mt-36 lg:mt-72 xl:mt-72 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto text-white">
+    <div className="anim1 mt-72 sm:mt-64 md:mt-36 lg:mt-72 xl:mt-72 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto text-white">
       <a
         href="https://www.microsoft.com/en-us/startups/blog/how-to-announce-your-startup-has-joined-microsoft-for-startups/"
         target="_blank"
@@ -18,7 +18,7 @@ function Company() {
           Prosfinity is now Part of Microsoft for Startups
         </h2>
       </a>
-      <div className="anim2 flex justify-between items-center mt-8 md:mt-16">
+      <div className="anim2 flex flex-wrap justify-between items-center mt-8 md:mt-16 gap-4">
         <img
           className="w-28 md:w-44 opacity-80"
           src="/microsoft.png"
