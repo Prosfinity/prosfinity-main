@@ -79,9 +79,9 @@ function Review() {
                 <p className="mt-3 w-3/4 mx-auto text-slate-400 text-base">These are things that clients who have used our features and works says</p>
             </div>
             <div id="card" className="mt-20 text-left flex gap-10 px-12 xl:px-0">
-                {dataReview.map((review, i) => {
+                {dataReview.map((review, index) => {
                     return (
-                        <div id={"review-" + i} className="bg-rose p-[2px] mt-5 rounded-2xl">
+                        <div key={index} className="bg-rose p-[2px] mt-5 rounded-2xl">
                             <div className="w-[375px] text-white bg-gray rounded-2xl px-6 pt-14 pb-6">
                                 <div className="w-20 h-20 absolute -mt-24 rounded-full overflow-hidden ">
                                     <img src={review.user} alt="user" />

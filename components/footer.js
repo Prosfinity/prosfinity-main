@@ -41,13 +41,13 @@ function Footer() {
                     </div>
                 </div>
                 <div className="hidden lg:flex justify-between">
-                    {dataFooter.map(footer => {
+                    {dataFooter.map((footer, index) => {
                         return (
-                            <div className="">
+                            <div key={index} className="">
                                 <h4 className="font-medium text-white text-base">{footer.title}</h4>
-                                {footer.content.map(content => {
+                                {footer.content.map((content, index) => {
                                     return (
-                                        <p className="mt-3">{content}</p>
+                                        <p key={index} className="mt-3">{content}</p>
                                     )
                                 })}
                             </div>

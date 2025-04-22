@@ -40,16 +40,16 @@ function Pricing() {
                 <p className="mt-5 w-3/4 mx-auto text-slate-400 text-base">Before you buy our Products you can see what benefits you will get From buying our Financial Software</p>
             </div>
             <div className="flex flex-wrap xl:flex-nowrap justify-center gap-10 mt-16">
-                {dataPrice.map((data,i) => {
+                {dataPrice.map((data,index) => {
                     return (
-                        <div id={"price-"+i} className="group hover:bg-midBlue text-white border hover:border-midBlue rounded-xl p-10 flex flex-col justify-between h-card">
+                        <div key={index} className="group hover:bg-midBlue text-white border hover:border-midBlue rounded-xl p-10 flex flex-col justify-between h-card">
                             <div className="">
                                 <h3 className="text-3xl font-medium">{data.title}</h3>
                                 <p className="text-3xl mt-8 font-medium">{data.price} <span className="text-base font-light">/Month</span></p>
                                 <p className="content2 mt-5 text-base">{data.description}</p>
-                                {data.include.map(inc => {
+                                {data.include.map((inc, index) => {
                                     return (
-                                        <div className='flex items-start gap-5 mt-7 text-base'>
+                                        <div key={index} className='flex items-start gap-5 mt-7 text-base'>
                                             <CheckIcon className='w-5 bg-white text-midBlue rounded-full p-1' />
                                             <p className="">{inc}</p>
                                         </div>

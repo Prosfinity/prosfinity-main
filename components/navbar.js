@@ -1,25 +1,29 @@
 import { MenuIcon } from "@heroicons/react/outline";
+import { useState } from "react";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="w-full 2xl:w-large px-6 lg:px-28 2xl:px-0 mx-auto flex justify-between items-center pt-6 lg:pt-10">
-      <div className="w-logo">
-        <a href="#">
-          <img src="/logo-dark.png" className="w-full" alt="logo fintech" />
-        </a>
-      </div>
-      <div className="list-none text-white hidden xl:flex items-center">
-        <li className="px-6">
-          <a className="hover:text-gray-200 transition-all" href="#">
-            Endpoint Phishing Protection
+    <div>
+      <div className="w-full 2xl:w-large px-6 lg:px-28 2xl:px-0 mx-auto flex justify-between items-center pt-6 lg:pt-10">
+        <div className="w-logo">
+          <a href="#">
+            <img src="/logo-dark.png" className="w-full" alt="logo fintech" />
           </a>
-        </li>
-        <li className="px-6">
-          <a className="hover:text-gray-200 transition-all" href="#">
-            Security Risk Assessment & Audit
-          </a>
-        </li>
-        {/* <li className="px-6">
+        </div>
+        <div className="list-none text-white hidden xl:flex items-center">
+          <li className="px-6">
+            <a className="hover:text-gray-200 transition-all" href="#">
+              Endpoint Phishing Protection
+            </a>
+          </li>
+          <li className="px-6">
+            <a className="hover:text-gray-200 transition-all" href="#">
+              Security Risk Assessment & Audit
+            </a>
+          </li>
+          {/* <li className="px-6">
           <a className="hover:text-gray-200 transition-all" href="#">
             Home
           </a>
@@ -44,16 +48,29 @@ function Navbar() {
             Contact
           </a>
         </li> */}
-      </div>
-      <div className="hidden xl:block">
-        {/* <button className="bg-btnDark text-white w-44 h-16 font-medium rounded-lg hover:shadow-xl transition duration-200">
+        </div>
+        <div className="hidden xl:block">
+          {/* <button className="bg-btnDark text-white w-44 h-16 font-medium rounded-lg hover:shadow-xl transition duration-200">
           Get started
         </button> */}
+        </div>
+        <div className="block xl:hidden">
+          <button className="pt-1" onClick={() => setIsOpen(!isOpen)}>
+            <MenuIcon className="w-8 text-white" />
+          </button>
+        </div>
       </div>
-      <div className="block xl:hidden">
-        <button className="pt-1">
-          <MenuIcon className="w-8 text-white" />
-        </button>
+      <div className={`list-none text-white flex flex-col xl:hidden items-end ${isOpen ? 'block' : 'hidden'}`}>
+        <li className="px-6">
+          <a className="hover:text-gray-200 transition-all" href="#">
+            Endpoint Phishing Protection
+          </a>
+        </li>
+        <li className="px-6">
+          <a className="hover:text-gray-200 transition-all" href="#">
+            Security Risk Assessment & Audit
+          </a>
+        </li>
       </div>
     </div>
   );
