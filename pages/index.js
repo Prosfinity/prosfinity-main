@@ -1,21 +1,20 @@
-import Head from 'next/head'
-import Banner from '../components/banner'
-import Benefit from '../components/benefit'
-import Company from '../components/company'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import Newsletter from '../components/newsletter'
-import Transaction from '../components/transaction'
+import Head from "next/head";
+import Banner from "../src/main/home/banner";
+import Benefit from "../src/main/home/benefit";
+import Company from "../src/main/home/company";
+import Footer from "../src/main/home/footer";
+import Navbar from "../src/main/home/navbar";
+import Transaction from "../src/main/home/transaction";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <div className="font-Poppins">
       <Head>
-        <title>Prosfinity – AI Driven Cybersecurity Partner</title>
-        <link rel="icon" href="/favicon-new.png" />
+        <title>Prosfinity &#8211; AI Driven Cybersecurity Partner</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <header className='w-full h-[700px] md:h-[1100px] xl:h-header bg-gradient'>
+      <header className="w-full h-[700px] md:h-[1000px] xl:h-[1200px] bg-gradient">
         <Navbar />
         <Banner />
       </header>
@@ -24,14 +23,15 @@ export default function Home() {
         <Company />
         <Benefit />
         <Transaction />
-        {/* <Pricing /> */}
-        {/* <Review /> */}
-        {/* <Newsletter /> */}
       </article>
 
       <footer>
         <Footer />
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
-  )
-}
+  );
+};
+
+export default HomePage;

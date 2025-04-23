@@ -6,7 +6,7 @@ import {
 import { useInViewport } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 
-function Benefit() {
+const Benefit = () => {
   const ref = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
@@ -79,7 +79,7 @@ function Benefit() {
               <p className="content  my-4 text-sm leading-loose text-slate-400 group-hover:text-white">
                 {content.description}
               </p>
-              <a className="font-medium underline" href="#">
+              <a className="font-medium underline" href={content.href}>
                 Read More
               </a>
             </div>
@@ -88,6 +88,6 @@ function Benefit() {
       </div>
     </div>
   );
-}
+};
 
 export default Benefit;

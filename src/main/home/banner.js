@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 
-function Banner() {
+const Banner = () => {
   const ref = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
@@ -15,7 +15,7 @@ function Banner() {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white text-center mt-16 xl:mt-28"
+      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white text-center mt-16 xl:mt-28 pt-28"
     >
       <div className="w-full lg:w-4/6 mx-auto">
         <h1
@@ -59,11 +59,11 @@ function Banner() {
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
         } mt-10 absolute left-0 right-0 md:relative md:mt-20 shadow-2xl rounded-2xl`}
-        src="/dashboard-new.jpeg"
+        src="/images/dashboard.jpeg"
         alt="software dashboard"
       />
     </div>
   );
-}
+};
 
 export default Banner;

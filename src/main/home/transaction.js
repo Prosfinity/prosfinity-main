@@ -2,7 +2,7 @@ import { CheckIcon } from "@heroicons/react/solid";
 import { useInViewport } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 
-function Transaction() {
+const Transaction = () => {
   const ref = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
@@ -35,7 +35,10 @@ function Transaction() {
   ];
 
   return (
-    <div ref={ref} className="w-full xl:w-container px-0 md:px-32 lg:px-12 xl:px-0 mx-auto overflow-hidden text-white flex flex-wrap lg:flex-nowrap justify-center xl:justify-between items-center gap-24 mb-36">
+    <div
+      ref={ref}
+      className="w-full xl:w-container px-0 md:px-32 lg:px-12 xl:px-0 mx-auto overflow-hidden text-white flex flex-wrap lg:flex-nowrap justify-center xl:justify-between items-center gap-24 mb-36"
+    >
       <div className="w-full lg:w-11/12">
         <h2
           className={`${
@@ -77,7 +80,7 @@ function Transaction() {
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } w-min rounded-xl`}
-            src="/screenshot1.png"
+            src="/images/dash1.png"
           />
           <img
             className={`${
@@ -85,7 +88,7 @@ function Transaction() {
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } play-1 w-min rounded-xl`}
-            src="/screenshot2.png"
+            src="/images/dash2.png"
           />
           <img
             className={`${
@@ -93,16 +96,17 @@ function Transaction() {
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } play-2 w-min rounded-xl`}
-            src="/screenshot3.png"
+            src="/images/dash3.png"
           />
         </div>
         <div className="flex flex-col items-start gap-7 z-10">
-          <img className={`${
+          <img
+            className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } w-min rounded-xl`}
-            src="/screenshot4.png"
+            src="/images/dash4.png"
           />
           <img
             className={`${
@@ -110,7 +114,7 @@ function Transaction() {
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } w-min rounded-xl`}
-            src="/screenshot5.png"
+            src="/images/dash5.png"
           />
           <img
             className={`${
@@ -118,7 +122,7 @@ function Transaction() {
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } play-3 w-min rounded-xl`}
-            src="/screenshot6.png"
+            src="/images/dash6.png"
           />
         </div>
         <div
@@ -131,6 +135,6 @@ function Transaction() {
       </div>
     </div>
   );
-}
+};
 
 export default Transaction;

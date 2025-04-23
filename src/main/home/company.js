@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 
-function Company() {
+const Company = () => {
   const ref = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
@@ -35,14 +35,14 @@ function Company() {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } flex flex-wrap justify-between items-center mt-8 md:mt-16 gap-4`}
+          } flex flex-wrap justify-center items-center mt-8 md:mt-16 gap-4`}
         >
           <img
             className="w-28 md:w-44 opacity-80"
-            src="/microsoft.png"
-            alt="heineken logo"
+            src="/images/microsoft.png"
+            alt="microsoft logo"
           />
-          <img
+          {/* <img
             className="w-20 md:w-32 opacity-80"
             src="/google.png"
             alt="google logo"
@@ -56,11 +56,11 @@ function Company() {
             className="w-24 md:w-36 opacity-80"
             src="/azure.png"
             alt="azure logo"
-          />
+          /> */}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Company;

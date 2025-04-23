@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/main/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -9,7 +9,6 @@ module.exports = {
         header: '1300px',
         card: '670px',
         newsletter: '400px',
-        
       },
       width: {
         logo: '150px',
