@@ -4,10 +4,10 @@ import SolutionItem from "./solution-item";
 
 const Solution2 = () => {
   return (
-    <div className="mx-auto mt-20 min-w-[1000px]">
-      <div className="w-7/12 flex justify-between items-center mx-auto gap-10">
-        <div className="w-6/12 flex gap-10">
-          <div className="w-6/12 flex flex-col gap-10">
+    <div className="mx-auto mt-20 px-5 xl:px-0">
+      <div className="w-full xl:w-7/12 flex flex-wrap justify-between items-center mx-auto gap-10">
+        <div className="w-full xl:w-6/12 flex gap-10">
+          <div className="w-full xl:w-6/12 flex flex-col gap-10">
             <SolutionItem
               icon={<BellIcon size={30} className="text-sky-500" />}
               title="Warning alert page"
@@ -19,7 +19,7 @@ const Solution2 = () => {
               description="When the stakes are highest, our Alert Mode delivers the tightest defense against phishing."
             />
           </div>
-          <div className="w-6/12 flex flex-col items-center justify-center">
+          <div className="w-full xl:w-6/12 flex flex-col items-center justify-center">
             <SolutionItem
               icon={<GaugeIcon size={30} className="text-sky-500" />}
               title="Intensive mode for deeper analysis"
@@ -27,14 +27,14 @@ const Solution2 = () => {
             />
           </div>
         </div>
-        <div className="w-6/12 mx-auto">
-          <p className="text-4xl md:text-2xl font-bold leading-tight md:leading-tight">
+        <div className="w-full xl:w-6/12 mx-auto">
+          <p className="text-2xl md:text-2xl font-bold leading-tight md:leading-tight">
             Solutions
           </p>
-          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 leading-tight md:leading-tight mt-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight md:leading-tight mt-5">
             Customizable Defense Modes
           </h2>
-          <p className="text-4xl md:text-lg leading-tight md:leading-normal mt-5">
+          <p className="text-lg md:text-lg leading-tight md:leading-normal mt-5">
             AI ShieldNet gives you the power to fine-tune your phishing defenses
             to match your unique needs. Our flexible settings let you choose the
             level of security that’s right for your business. Whether you need a
@@ -43,7 +43,7 @@ const Solution2 = () => {
             threat, we’ve got you covered.
           </p>
           <div className="mt-5">
-            <button className="bg-btnDark text-white w-80 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
+            <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base md:text-2xl px-4 py-2 md:px-8 md:py-4">
               Demo
             </button>
           </div>

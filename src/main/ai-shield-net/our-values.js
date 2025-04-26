@@ -15,27 +15,27 @@ const OurValues = () => {
   }, [inViewport]);
 
   return (
-    <div className="flex justify-center items-center mt-20">
-      <div className="bg-btnDark rounded-2xl px-20 pt-16 pb-20">
-        <h1 className="text-white text-4xl md:text-[67px] font-bold leading-tight md:leading-tight uppercase text-center">
+    <div className="flex justify-center items-center mt-10 xl:mt-20">
+      <div className="bg-btnDark rounded-2xl px-5 xl:px-20 pt-16 pb-20">
+        <h1 className="text-white text-3xl md:text-[67px] font-bold leading-tight md:leading-tight uppercase text-center">
           Our Values
         </h1>
         <div
           ref={ref}
-          className="flex justify-between items-center mt-5 gap-16 min-w-[1000px]"
+          className="flex flex-wrap justify-center items-center mt-10 xl:mt-5 gap-16 w-full xl:w-[1000px]"
         >
           <span
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__bounceIn animate__fast"
                 : ""
-            }`}
+            } w-4/12 xl:w-5/12`}
           >
-            <p className="text-white text-[75px] font-thin text-center">
+            <p className="text-white text-3xl lg:text-[65px] xl:text-[75px] font-thin text-center">
               <CountUp end={305} />
               K+
             </p>
-            <p className="text-white text-lg text-center">
+            <p className="text-[15px] xl:text-base text-white text-center">
               Phishing Sites Detected
             </p>
           </span>
@@ -44,38 +44,38 @@ const OurValues = () => {
               loaded || inViewport
                 ? "animate__animated animate__bounceIn animate__fast"
                 : ""
-            }`}
+            } w-4/12 xl:w-5/12`}
           >
-            <p className="text-white text-[75px] font-thin text-center">
+            <p className="text-white text-3xl xl:text-[75px] font-thin text-center">
               <CountUp end={200} />
               K+
             </p>
-            <p className="text-white text-lg text-center">Zero Day Phishing</p>
+            <p className="text-[15px] xl:text-base text-white text-center">Zero Day Phishing</p>
           </span>
           <span
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__bounceIn animate__fast"
                 : ""
-            }`}
+            } w-4/12 xl:w-5/12`}
           >
-            <p className="text-white text-[75px] font-thin text-center">
+            <p className="text-white text-3xl xl:text-[75px] font-thin text-center">
               <CountUp end={30} />K
             </p>
-            <p className="text-white text-lg text-center">Global Users</p>
+            <p className="text-[15px] xl:text-base text-white text-center">Global Users</p>
           </span>
           <span
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__bounceIn animate__fast"
                 : ""
-            }`}
+            } w-4/12 xl:w-5/12`}
           >
-            <p className="text-white text-[75px] font-thin text-center">
+            <p className="text-white text-3xl xl:text-[75px] font-thin text-center">
               $<CountUp end={50} />
               M+
             </p>
-            <p className="text-white text-lg text-center">Safeguarded</p>
+            <p className="text-[15px] xl:text-base text-white text-center">Safeguarded</p>
           </span>
         </div>
       </div>

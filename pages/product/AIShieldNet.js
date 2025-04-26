@@ -27,9 +27,6 @@ const AIShieldNetPage = () => {
       </header>
 
       <article>
-        <h3 className="mt-10 text-4xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
-          Combine AI x Anti-Phishing x EDR x Anti-Virus
-        </h3>
         <Combine />
         <Solution1 />
         <Solution2 />
