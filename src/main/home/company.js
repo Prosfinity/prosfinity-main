@@ -19,7 +19,7 @@ const Company = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } mt-72 sm:mt-64 md:mt-36 lg:mt-72 xl:mt-72 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto text-white`}
+        } mt-52 sm:mt-72 md:mt-52 lg:mt-72 xl:mt-52 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto text-white`}
       >
         <a
           href="https://www.microsoft.com/en-us/startups/blog/how-to-announce-your-startup-has-joined-microsoft-for-startups/"

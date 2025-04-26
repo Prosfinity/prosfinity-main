@@ -1,13 +1,17 @@
 import Head from "next/head";
 import React from "react";
-import Navbar from "../../src/main/ai-shield-net/navbar";
 import Banner from "../../src/main/ai-shield-net/banner";
-import OurValues from "../../src/main/ai-shield-net/our-values";
 import Combine from "../../src/main/ai-shield-net/combine";
+import Navbar from "../../src/main/ai-shield-net/navbar";
+import OurValues from "../../src/main/ai-shield-net/our-values";
+import Solution1 from "../../src/main/ai-shield-net/solutions/solution1";
+import Solution2 from "../../src/main/ai-shield-net/solutions/solution2";
+import TopFooter from "../../src/main/ai-shield-net/top-footer";
+import Footer from "../../src/main/home/footer";
 
 const AIShieldNetPage = () => {
   return (
-    <div className="font-Poppins">
+    <div className="font-Poppins bg-white">
       <Head>
         <title>
           AI ShieldNet &#8211; Unified Phishing Defense for the Modern
@@ -22,12 +26,19 @@ const AIShieldNetPage = () => {
         <OurValues />
       </header>
 
-      <article className="pb-60">
+      <article>
         <h3 className="mt-10 text-4xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
           Combine AI x Anti-Phishing x EDR x Anti-Virus
         </h3>
         <Combine />
+        <Solution1 />
+        <Solution2 />
       </article>
+
+      <footer>
+        <TopFooter />
+        <Footer />
+      </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
