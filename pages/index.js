@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="font-Poppins">
       <Head>
         <title>Prosfinity &#8211; AI Driven Cybersecurity Partner</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/images/favicon.png" />
       </Head>
 
       <header className="w-full h-[700px] md:h-[1000px] xl:h-[1200px] bg-gradient">

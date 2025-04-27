@@ -56,7 +56,7 @@ const Solution2 = () => {
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } text-3xl md:text-4xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}>
+            } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}>
             Customizable Defense Modes
           </h2>
           <p className={`${

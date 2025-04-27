@@ -20,7 +20,7 @@ const Footer = () => {
     <div className="bg-btnDark w-full py-14">
       <div className="w-full xl:w-container mx-auto px-8 text-gray-400 lg:grid grid-cols-2 text-sm">
         <div className="mr-0 lg:mr-40">
-          <img className="w-logo" src="/logo-dark.png" alt="logo" />
+          <img className="w-logo" src="/images/logo-dark.png" alt="logo" />
           <p className="my-8 leading-relaxed">
             AIShieldNet: Protect your digital assets with advanced AI detection.
           </p>

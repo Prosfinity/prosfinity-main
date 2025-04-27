@@ -32,7 +32,7 @@ const Solution1 = () => {
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } text-3xl md:text-4xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}
+            } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}
           >
             Protect Your Business, No Matter the Size
           </h2>

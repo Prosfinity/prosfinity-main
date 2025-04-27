@@ -9,7 +9,7 @@ const Navbar = () => {
             href="/"
             className="absolute left-0 -top-5 flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="/logo-light.png" className="h-20" alt="Flowbite Logo" />
+            <img src="/images/logo-light.png" className="h-20" alt="Flowbite Logo" />
           </a>
         </div>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:hidden">
