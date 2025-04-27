@@ -33,9 +33,9 @@ const WhyUsSolution6 = () => {
                 : ""
             } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            With AI ShieldNet, you get constant updates and improvements without
-            ever needing to worry about manual updates or patching, keeping your
-            system secure 24/7.
+            With AI ShieldNet, you get <b>constant updates and improvements</b>{" "}
+            without ever needing to worry about manual updates or patching,
+            keeping your system secure 24/7.
           </p>
         </div>
         <div className="w-full lg:w-6/12 mx-auto">
@@ -56,11 +56,11 @@ const WhyUsSolution6 = () => {
             } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
             AI ShieldNet doesn’t just rely on static signatures or definitions.
-            By running the AI engine in the cloud, we can leverage real-time
-            threat intelligence and continuously update our protection
-            algorithms. This cloud-based monitoring ensures that your endpoints
-            are always protected, even against the newest, most sophisticated
-            attacks.
+            By running the AI engine in the cloud, we can leverage{" "}
+            <b>real-time threat intelligence</b> and continuously update our
+            protection algorithms. This cloud-based monitoring ensures that your
+            endpoints are always protected, even against the newest, most
+            sophisticated attacks.
           </p>
         </div>
       </div>

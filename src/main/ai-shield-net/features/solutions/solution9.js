@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
 import React, { useEffect, useRef, useState } from "react";
 
-const WhyUsSolution5 = () => {
+const FeaturesSolution9 = () => {
   const ref = useRef(null);
 
   const [loaded, setLoaded] = useState(false);
@@ -16,7 +16,16 @@ const WhyUsSolution5 = () => {
   return (
     <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
-        <div className="w-full lg:w-6/12 mx-auto">
+        <div className="w-full lg:w-4/12 mx-auto">
+          <p
+            className={`${
+              loaded || inViewport
+                ? `animate__animated animate__slideInUp animate__fast`
+                : ""
+            } text-xl md:text-2xl font-semibold leading-tight md:leading-normal mt-5`}
+          >
+            Anti-Virus Detection & Response
+          </p>
           <h2
             className={`${
               loaded || inViewport
@@ -24,7 +33,7 @@ const WhyUsSolution5 = () => {
                 : ""
             } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}
           >
-            Scalable Security That Grows With Your Needs
+            Anti-Virus File Classification
           </h2>
           <p
             className={`${
@@ -33,13 +42,10 @@ const WhyUsSolution5 = () => {
                 : ""
             } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            AI ShieldNet is designed to scale with your business. Whether you’re
-            protecting just a few endpoints or an entire enterprise network, our
-            solution adapts to your needs. It’s perfect for startups, small
-            businesses, and large corporations alike.
+            <b>Benign Files</b> are confirmed safe, while <b>Malware Files</b> pose security risks and require action based on threat analysis.
           </p>
         </div>
-        <div className="w-full lg:w-6/12 mx-auto">
+        <div className="w-full lg:w-8/12 mx-auto">
           <div
             className={`${
               loaded || inViewport
@@ -47,24 +53,15 @@ const WhyUsSolution5 = () => {
                 : ""
             } shadow-xl rounded-lg`}
           >
-            <img src="/images/why-us/solutions/solution5.jpg" alt="solution5" />
+            <img
+              src="/images/features/solutions/solution9.png"
+              alt="solution9"
+            />
           </div>
-          <p
-            className={`${
-              loaded || inViewport
-                ? `animate__animated animate__slideInUp animate__fast`
-                : ""
-            } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
-          >
-            As your organization grows, AI ShieldNet ensures that you can
-            continue to rely on a <b>secure, scalable solution</b> that grows with you,
-            offering seamless protection without the need for major
-            infrastructure changes.
-          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default WhyUsSolution5;
+export default FeaturesSolution9;

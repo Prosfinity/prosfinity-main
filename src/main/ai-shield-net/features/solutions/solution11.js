@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
 import React, { useEffect, useRef, useState } from "react";
 
-const WhyUsSolution4 = () => {
+const FeaturesSolution11 = () => {
   const ref = useRef(null);
 
   const [loaded, setLoaded] = useState(false);
@@ -16,7 +16,7 @@ const WhyUsSolution4 = () => {
   return (
     <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
-        <div className="w-full lg:w-6/12 mx-auto">
+        <div className="w-full lg:w-8/12 mx-auto">
           <div
             className={`${
               loaded || inViewport
@@ -24,22 +24,13 @@ const WhyUsSolution4 = () => {
                 : ""
             } shadow-xl rounded-lg`}
           >
-            <img src="/images/why-us/solutions/solution4.jpg" alt="solution4" />
+            <img
+              src="/images/features/solutions/solution11.png"
+              alt="solution11"
+            />
           </div>
-          <p
-            className={`${
-              loaded || inViewport
-                ? `animate__animated animate__slideInUp animate__fast`
-                : ""
-            } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
-          >
-            Not only does AI ShieldNet help you save on existing costs, but it
-            also future-proofs your network by providing access to innovative,
-            <b>AI-driven features</b> that will continue to evolve as new threats
-            emerge.
-          </p>
         </div>
-        <div className="w-full lg:w-6/12 mx-auto">
+        <div className="w-full lg:w-4/12 mx-auto">
           <h2
             className={`${
               loaded || inViewport
@@ -47,7 +38,7 @@ const WhyUsSolution4 = () => {
                 : ""
             } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}
           >
-            Cost-Effective Protection with Future-Ready Features
+            User Management Overview
           </h2>
           <p
             className={`${
@@ -56,12 +47,9 @@ const WhyUsSolution4 = () => {
                 : ""
             } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            As a startup, we understand the importance of cost-efficiency. By
-            consolidating multiple security functions into one AI-powered
-            solution, AI ShieldNet <b>reduces your overall cybersecurity expenses</b>.
-            But that’s not all – our product is built for the future. We’re
-            constantly evolving and plan to add more cutting-edge <b>AI Features</b> to
-            keep you ahead of evolving threats.
+            The User Management section lets admins view, create, and update
+            user accounts, including their roles and statuses. It also offers
+            options to manage accounts through a dropdown menu.
           </p>
         </div>
       </div>
@@ -69,4 +57,4 @@ const WhyUsSolution4 = () => {
   );
 };
 
-export default WhyUsSolution4;
+export default FeaturesSolution11;

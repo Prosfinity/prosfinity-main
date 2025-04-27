@@ -33,7 +33,15 @@ const WhyUsSolution3 = () => {
                 : ""
             } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            One of the biggest challenges with traditional endpoint protection is that it often consumes significant system resources – slowing down your computer and affecting productivity. AI ShieldNet operates in a completely different way. The AI engine runs in the cloud, ensuring that your PC resources are never affected by the security operations. The agent itself is lightweight and efficient, meaning it won’t slow down your work while still providing comprehensive protection.
+            One of the biggest challenges with traditional endpoint protection
+            is that it often consumes <b>significant system resources</b> –
+            slowing down your computer and affecting productivity. AI ShieldNet
+            operates in a completely different way. The{" "}
+            <b>AI engine runs in the cloud</b>, ensuring that{" "}
+            <b>your PC resources are never affected</b> by the security
+            operations. The agent itself is lightweight and efficient, meaning
+            it won’t slow down your work while still providing comprehensive
+            protection.
           </p>
         </div>
         <div className="w-full lg:w-6/12 mx-auto">
@@ -46,15 +54,17 @@ const WhyUsSolution3 = () => {
           >
             <img src="/images/why-us/solutions/solution3.jpg" alt="solution3" />
           </div>
-            <p
-              className={`${
-                loaded || inViewport
-                  ? `animate__animated animate__slideInUp animate__fast`
-                  : ""
-              } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
-            >
-              AI ShieldNet ensures that your endpoints remain fully protected without compromising system performance, allowing your devices to run smoothly and efficiently.
-            </p>
+          <p
+            className={`${
+              loaded || inViewport
+                ? `animate__animated animate__slideInUp animate__fast`
+                : ""
+            } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
+          >
+            AI ShieldNet ensures that your endpoints remain fully protected
+            <b>without compromising system performance</b>, allowing your
+            devices to run smoothly and efficiently.
+          </p>
         </div>
       </div>
     </div>

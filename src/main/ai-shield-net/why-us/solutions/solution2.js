@@ -33,9 +33,9 @@ const WhyUsSolution2 = () => {
                 : ""
             } text-center text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            This all-in-one solution not only simplifies your cybersecurity but
-            also reduces operational costs by eliminating the need for multiple
-            subscriptions and software management tools.
+            This <b>all-in-one solution</b> not only simplifies your
+            cybersecurity but also reduces operational costs by eliminating the
+            need for multiple subscriptions and software management tools.
           </p>
         </div>
         <div className="w-full lg:w-6/12 mx-auto">
@@ -55,13 +55,13 @@ const WhyUsSolution2 = () => {
                 : ""
             } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
           >
-            AI ShieldNet integrates multiple layers of protection into a single,
-            streamlined solution. You no longer need separate antivirus
+            AI ShieldNet integrates <a>multiple layers of protection</a> into a
+            single, streamlined solution. You no longer need separate antivirus
             software, AI analysis tools, or anti-phishing measures. It combines
-            AI Anti-Virus capabilities, AI-powered analysis, and AI
-            Anti-Phishing protection, all in one agent. This consolidation helps
-            reduce the complexity of managing multiple tools, saving you both
-            time and money.
+            <b>AI Anti-Virus</b> capabilities, <b>AI-powered analysis</b>, and{" "}
+            <b>AI Anti-Phishing</b> protection, all in one agent. This
+            consolidation helps reduce the complexity of managing multiple
+            tools, saving you both time and money.
           </p>
         </div>
       </div>
