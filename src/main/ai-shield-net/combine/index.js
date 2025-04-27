@@ -13,12 +13,12 @@ import CombineItem from "./combine-item";
 
 const Combine = () => {
   return (
-    <div className="mt-[450px] xl:mt-10 px-10">
+    <div className="mt-[450px] sm:mt-10 xl:mt-10 px-10">
       <h3 className="text-3xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
         Combine AI x Anti-Phishing x EDR x Anti-Virus
       </h3>
       <div className="flex flex-wrap justify-center gap-5 mt-16">
-        <div className="w-full xl:w-4/12 flex flex-col gap-5">
+        <div className="w-full md:w-5/12 xl:w-4/12 flex flex-col gap-5">
           <CombineItem
             icon={<BrainIcon color="white" />}
             title="AI-Powered Advanced Protection"
@@ -44,7 +44,7 @@ const Combine = () => {
             position="left"
           />
         </div>
-        <div className="w-full xl:w-4/12 flex flex-col gap-5 mt-0 xl:mt-20">
+        <div className="w-full md:w-5/12 xl:w-4/12 flex flex-col gap-5 mt-0 xl:mt-20">
           <CombineItem
             icon={<BrainCircuitIcon color="white" />}
             title="AI-Zero Day Phishing Detection and Response"

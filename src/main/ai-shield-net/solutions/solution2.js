@@ -17,8 +17,8 @@ const Solution2 = () => {
   
   return (
     <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0">
-      <div className="w-full xl:w-7/12 flex flex-wrap justify-between items-center mx-auto gap-10">
-        <div className="w-full xl:w-6/12 flex gap-10">
+      <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto gap-10">
+        <div className="w-full lg:w-6/12 flex gap-10">
           <div className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
@@ -44,7 +44,7 @@ const Solution2 = () => {
             />
           </div>
         </div>
-        <div className="w-full xl:w-6/12 mx-auto">
+        <div className="w-full lg:w-6/12 mx-auto">
           <p className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
@@ -76,7 +76,7 @@ const Solution2 = () => {
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base md:text-2xl px-4 py-2 md:px-8 md:py-4`}>
+            } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}>
               Demo
             </button>
           </div>
