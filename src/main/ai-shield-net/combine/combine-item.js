@@ -26,8 +26,8 @@ const CombineItem = ({ icon, title, description, position }) => {
         <div className="bg-yellow-500 rounded-full p-4">{icon}</div>
       </div>
       <div className="flex flex-col gap-2">
-        <p className="text-lg font-bold">{title}</p>
-        <p className="text-base text-gray-500">{description}</p>
+        <p className="text-base font-bold">{title}</p>
+        <p className="text-sm text-gray-500">{description}</p>
       </div>
     </div>
   );

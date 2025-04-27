@@ -1,25 +1,32 @@
-import React, { useState } from "react";
-import ReactCardFlip from "react-card-flip";
+import { useInViewport } from "ahooks";
+import { ArrowBigRight } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
 
-const SolutionItem = ({ icon, title, description }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+const SolutionItem = ({ content }) => {
+  const ref = useRef(null);
+
+  const [loaded, setLoaded] = useState(false);
+  const [inViewport] = useInViewport(ref);
+
+  useEffect(() => {
+    if (!loaded && inViewport) {
+      setLoaded(true);
+    }
+  }, [inViewport]);
 
   return (
     <div
-      className="bg-white shadow-xl rounded-lg"
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
+      ref={ref}
+      className={`${
+        loaded || inViewport
+          ? `animate__animated animate__bounceInLeft animate__fast`
+          : ""
+      } flex items-center gap-2`}
     >
-      <ReactCardFlip isFlipped={isFlipped}>
-        <div className="min-h-[200px] flex flex-col justify-center p-5 gap-2 rounded-lg">
-          {icon}
-          <p className="text-lg xl:text-2xl text-gray-600 font-semibold">{title}</p>
-        </div>
-
-        <div className="text-sm xl:text-base bg-sky-500 text-white min-h-[200px] flex flex-col justify-center p-5 gap-2 rounded-lg">
-          {description}
-        </div>
-      </ReactCardFlip>
+      <ArrowBigRight />
+      <p className="text-sm xl:text-base text-gray-600 hover:text-gray-900">
+        {content}
+      </p>
     </div>
   );
 };
