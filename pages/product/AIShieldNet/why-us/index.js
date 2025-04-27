@@ -24,7 +24,7 @@ const AIShieldNetWhyUsPage = () => {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <header className="w-full h-[300px] md:h-[400px] bg-gradient">
+      <header className="w-full h-[400px] bg-gradient">
         <Navbar />
         <WhyUsBanner />
       </header>
