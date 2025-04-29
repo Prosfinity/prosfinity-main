@@ -1,12 +1,14 @@
 import Head from "next/head";
 import React from "react";
+import ComparisonAdvantages from "../../../../src/main/ai-shield-net/comparison/advantages";
 import ComparisonBanner from "../../../../src/main/ai-shield-net/comparison/banner";
+import ComparisonCompare from "../../../../src/main/ai-shield-net/comparison/compare";
+import ComparisonQAndA from "../../../../src/main/ai-shield-net/comparison/q&a";
+import ComparisonWhyChoose from "../../../../src/main/ai-shield-net/comparison/why-choose";
 import ComparisonWhyUs from "../../../../src/main/ai-shield-net/comparison/why-us";
 import Navbar from "../../../../src/main/ai-shield-net/navbar";
 import WhyUsTopFooter from "../../../../src/main/ai-shield-net/why-us/top-footer";
 import Footer from "../../../../src/main/home/footer";
-import ComparisonAdvantages from "../../../../src/main/ai-shield-net/comparison/advantages";
-import ComparisonCompare from "../../../../src/main/ai-shield-net/comparison/compare";
 
 const AIShieldNetComparisonPage = () => {
   return (
@@ -25,6 +27,8 @@ const AIShieldNetComparisonPage = () => {
         <ComparisonWhyUs />
         <ComparisonCompare />
         <ComparisonAdvantages />
+        <ComparisonWhyChoose />
+        <ComparisonQAndA />
       </article>
 
       <footer>

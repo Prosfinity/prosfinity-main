@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 xl:pb-0">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="grow h-10 relative">
           <a
             href="/"
@@ -62,7 +62,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="max-w-screen-xl flex-wrap items-center justify-between mx-auto p-4 hidden xl:flex">
+      <div className="max-w-screen-xl flex-wrap items-center justify-between mx-auto p-4 hidden xl:flex border-t border-gray-200">
         <div></div>
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
