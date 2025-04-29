@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 
-const ComparisonBanner = () => {
+const FreeTrialBanner = () => {
   const ref = useRef(null);
 
   const [loaded, setLoaded] = useState(false);
@@ -26,8 +26,7 @@ const ComparisonBanner = () => {
               : ""
           } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
         >
-          AIShieldNet: The Future of Cybersecurity with AI-Powered Endpoint
-          Phishing Protection
+          Experience AI ShieldNet – Endpoint Phishing Protection Powered by AI
         </p>
         <p
           className={`${
@@ -36,14 +35,11 @@ const ComparisonBanner = () => {
               : ""
           } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10`}
         >
-          Protect your business from evolving phishing threats at the endpoint
-          with AI-driven detection and real-time prevention. Safeguard your team
-          from deceptive attacks that bypass traditional defenses — all with the
-          power of AI.
+          Start your 1 month free trial and protect your network’s endpoints from emerging cyber threats with our AI-powered zero-day protection
         </p>
       </div>
     </div>
   );
 };
 
-export default ComparisonBanner;
+export default FreeTrialBanner;
