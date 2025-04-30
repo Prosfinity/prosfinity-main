@@ -12,7 +12,15 @@ const Footer = () => {
     },
     {
       title: "Support",
-      content: ["Contact Us", "FAQ", "Terms of Service", "Privacy Policy"],
+      content: [
+        "Contact Us",
+        "FAQ",
+        "Terms of Service",
+        {
+          title: "Privacy Policy",
+          href: "/privacy",
+        },
+      ],
     },
   ];
 
@@ -59,6 +67,13 @@ const Footer = () => {
                   {footer.title}
                 </h4>
                 {footer.content.map((content, index) => {
+                  if (typeof content === "object") {
+                    return (
+                      <a href={content.href} key={index}>
+                        <p className="mt-3">{content.title}</p>
+                      </a>
+                    );
+                  }
                   return (
                     <p key={index} className="mt-3">
                       {content}
