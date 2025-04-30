@@ -4,6 +4,8 @@ import DownloadAndPriceBanner from "../../../../src/main/ai-shield-net/download-
 import Navbar from "../../../../src/main/ai-shield-net/navbar";
 import WhyUsTopFooter from "../../../../src/main/ai-shield-net/why-us/top-footer";
 import Footer from "../../../../src/main/home/footer";
+import DownloadAndPriceDownload from "../../../../src/main/ai-shield-net/download-and-price/download";
+import DownloadAndPricePricing from "../../../../src/main/ai-shield-net/download-and-price/pricing";
 
 const AIShieldNetDownloadAndPricePage = () => {
   return (
@@ -21,7 +23,10 @@ const AIShieldNetDownloadAndPricePage = () => {
         <DownloadAndPriceBanner />
       </header>
 
-      <article></article>
+      <article>
+        <DownloadAndPriceDownload />
+        <DownloadAndPricePricing />
+      </article>
 
       <footer>
         <WhyUsTopFooter />

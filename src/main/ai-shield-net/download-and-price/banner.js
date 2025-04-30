@@ -8,7 +8,7 @@ const DownloadAndPriceBanner = () => {
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
 
-  const [stepAnimation, setStepAnimation] = useState(1);
+  const [includeApp, setIncludeApp] = useState(true);
 
   useEffect(() => {
     if (!loaded && inViewport) {
@@ -16,20 +16,12 @@ const DownloadAndPriceBanner = () => {
     }
   }, [inViewport]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStepAnimation((prev) => (prev > 3 ? 1 : prev + 1));
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [stepAnimation]);
-
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white mt-16 xl:mt-28 pt-10"
+      className="w-full xl:w-container flex flex-col lg:flex-row px-8 lg:px-20 xl:px-0 mx-auto text-white mt-16 xl:mt-28 pt-10 gap-5"
     >
-      <div className="w-full lg:w-4/6">
+      <div className="w-full lg:w-6/12">
         <p
           className={`${
             loaded || inViewport
@@ -52,7 +44,6 @@ const DownloadAndPriceBanner = () => {
               Our dual AI engine delivers unparalleled phishing detection rates
             </p>
           </div>
-
           <div
             className={`${
               loaded || inViewport
@@ -89,6 +80,33 @@ const DownloadAndPriceBanner = () => {
               Cloud-based solution for minimal system impact and easy management
             </p>
           </div>
+        </div>
+      </div>
+      <div className="w-full lg:w-5/12">
+        <label className="inline-flex items-center cursor-pointer gap-3">
+          <input
+            type="checkbox"
+            checked={includeApp}
+            onChange={() => setIncludeApp(!includeApp)}
+            className="sr-only peer"
+          />
+          <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-sky-300 dark:peer-focus:ring-sky-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-sky-600 dark:peer-checked:bg-sky-600"></div>
+          <span className="text-white ms-3 text-sm font-medium dark:text-gray-300">
+            {includeApp ? "With" : "Without"} AI ShieldNet
+          </span>
+        </label>
+        <div className="bg-white rounded-xl flex flex-col items-center justify-center py-5 pb-10 px-10 mt-5">
+          <img
+            src={includeApp ? "/images/download-and-price/with-aishieldnet.png" : "/images/download-and-price/without-aishieldnet.png"}
+            style={{ width: 170 }}
+          />
+          <p className="text-black text-base md:text-lg font-semibold leading-normal md:leading-relaxed">
+            {includeApp ? "Enjoy Peace of Mind" : "Leaving Your Business Vulnerable"}
+          </p>
+          <p className="text-gray-500 text-sm md:text-base leading-normal md:leading-relaxed mt-4">
+            {includeApp ? "Free from devastating Phishing Attacks, Data Breaches, and Financial Losses" : "Expose Your Business to Cyber Threats like Data Breaches, Financial Losses, and Reputational Damage"}
+            Losses
+          </p>
         </div>
       </div>
     </div>
