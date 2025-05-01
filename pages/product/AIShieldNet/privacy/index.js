@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import Navbar from "../../src/main/home/navbar";
-import Footer from "../../src/main/home/footer";
+import Navbar from "../../../../src/main/ai-shield-net/navbar";
+import Footer from "../../../../src/main/home/footer";
 
 const PrivacyPage = () => {
   return (

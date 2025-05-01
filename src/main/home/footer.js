@@ -4,7 +4,15 @@ const Footer = () => {
   let dataFooter = [
     {
       title: "Company",
-      content: ["About Us", "Contact Us", "Prosfinity VPN", "AiShieldNet"],
+      content: [
+        "About Us",
+        {
+          title: "Contact Us",
+          href: "/contact",
+        },
+        "Prosfinity VPN",
+        "AiShieldNet",
+      ],
     },
     {
       title: "AIShieldNet",
@@ -13,7 +21,10 @@ const Footer = () => {
     {
       title: "Support",
       content: [
-        "Contact Us",
+        {
+          title: "Contact Us",
+          href: "/contact",
+        },
         "FAQ",
         "Terms of Service",
         {

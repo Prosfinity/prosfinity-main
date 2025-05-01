@@ -1,7 +1,8 @@
 import Head from "next/head";
 import React from "react";
-import Navbar from "../../../src/main/ai-shield-net/navbar";
-import Footer from "../../../src/main/home/footer";
+import Navbar from "../../../../src/main/ai-shield-net/navbar";
+import Footer from "../../../../src/main/home/footer";
+import Banner from "../../../../src/main/contact/banner";
 
 const ContactPage = () => {
   return (
@@ -14,12 +15,12 @@ const ContactPage = () => {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <header className="w-full h-[700px] md:h-[1000px] xl:h-[1200px] bg-gradient">
+      <header className="w-full h-[500px] bg-gradient">
         <Navbar />
+        <Banner />
       </header>
 
-      <article>
-      </article>
+      <article></article>
 
       <footer>
         <Footer />
