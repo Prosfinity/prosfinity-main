@@ -9,7 +9,11 @@ const Navbar = () => {
             href="/"
             className="absolute left-0 -top-5 flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="/images/logo-light.png" className="h-20" alt="Flowbite Logo" />
+            <img
+              src="/images/logo-light.png"
+              className="h-20"
+              alt="Prosfinity Logo"
+            />
           </a>
         </div>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:hidden">
@@ -45,7 +49,7 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href="/product/AIShieldNet"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Endpoint Phishing Protection
@@ -53,7 +57,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/product/SRAA"
                 className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Security Risk Assessment & Audit
@@ -118,6 +122,13 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <div className="ml-10">
+            <a href="/contact">
+              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+                Get Quote
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </nav>

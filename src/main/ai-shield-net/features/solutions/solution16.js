@@ -14,7 +14,7 @@ const FeaturesSolution16 = () => {
   }, [inViewport]);
 
   return (
-    <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0">
+    <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0 border-b border-gray-200 py-10">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
         <div className="w-full lg:w-4/12 mx-auto">
           <p

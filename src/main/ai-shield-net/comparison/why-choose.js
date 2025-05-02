@@ -23,7 +23,7 @@ const ComparisonWhyChoose = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
+        } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed text-center`}
       >
         Why Choose AIShieldNet ZDR?
       </p>
@@ -32,7 +32,7 @@ const ComparisonWhyChoose = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10`}
+        } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center`}
       >
         <b>The Future of Cybersecurity is AI-Driven</b>
         <br />
@@ -46,7 +46,7 @@ const ComparisonWhyChoose = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed mt-10`}
+        } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed mt-10 text-center`}
       >
         Ready to Stay One Step Ahead of Cyber Threats?
       </p>
@@ -55,7 +55,7 @@ const ComparisonWhyChoose = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10`}
+        } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center`}
       >
         Protect your business with AIShieldNet ZDR – AI-driven, real-time
         defense that stops cyberattacks before they can harm you.

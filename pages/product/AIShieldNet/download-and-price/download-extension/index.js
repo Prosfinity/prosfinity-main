@@ -26,7 +26,17 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
             <p className="text-base md:text-lg font-light leading-6 lg:leading-10">
               Choose Your Installation Package
             </p>
-            <div className="relative overflow-x-auto mt-10">
+            <div className="flex gap-4 mt-5">
+              <div className="flex items-center gap-2">
+                <img src="/images/download-and-price/chrome.png" alt="chrome" className="w-5 h-5" />
+                <p>Chrome</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <img src="/images/download-and-price/firefox.png" alt="firefox" className="w-5 h-5" />
+                <p>Firefox</p>
+              </div>
+            </div>
+            <div className="relative overflow-x-auto mt-5">
               <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
@@ -54,10 +64,17 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                     >
                       Version 0.0.19
                     </th>
-                    <td className="px-6 py-4">
-                      <a href="https://ai.prosfinity.com/AIShieldNet_Windows/AIShieldNet-Agent-Windows-1.0.0.8.2.exe">
-                        <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-sm md:text-sm px-4 py-2 md:px-8 md:py-2">
-                          Download Now
+                    <td className="px-6 py-4 flex gap-4">
+                      <a href="https://chromewebstore.google.com/detail/ai-phishnet/bgpnaianfdfllfbagjenbocnodkfpnfa">
+                        <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-sm md:text-sm px-4 py-2 md:px-8 md:py-2 flex items-center gap-2">
+                          <img src="/images/download-and-price/chrome-light.png" alt="chrome" className="w-5 h-5" />
+                          Download For Chrome
+                        </button>
+                      </a>
+                      <a href="https://addons.mozilla.org/zh-TW/firefox/addon/ai-phishnet">  
+                        <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-sm md:text-sm px-4 py-2 md:px-8 md:py-2 flex items-center gap-2">
+                          <img src="/images/download-and-price/firefox-light.png" alt="firefox" className="w-5 h-5" />
+                          Download For Firefox
                         </button>
                       </a>
                     </td>

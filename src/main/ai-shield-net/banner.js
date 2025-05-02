@@ -56,22 +56,22 @@ const Banner = () => {
           }`}
         >
           {stepAnimation === 1 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Malware
             </span>
           )}
           {stepAnimation === 2 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Ransomware
             </span>
           )}
           {stepAnimation === 3 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Phishing
             </span>
           )}
           {stepAnimation === 4 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Virus
             </span>
           )}

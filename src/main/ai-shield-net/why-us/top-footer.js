@@ -6,7 +6,7 @@ const WhyUsTopFooter = () => {
           Ready to Experience the Future of Cybersecurity?
         </h2>
         <p className="text-white text-lg md:text-lg leading-tight md:leading-normal mt-5">
-          Have questions? We’re <a href="mailto:support@prosfinity.com" className="text-yellow-500 font-bold">here</a> to help.
+          Have questions? We’re <a href="/product/AIShieldNet/phishing-defense-review" className="text-yellow-500 font-bold">here</a> to help.
         </p>
       </div>
     </div>

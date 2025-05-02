@@ -29,7 +29,7 @@ const Footer = () => {
         "Terms of Service",
         {
           title: "Privacy Policy",
-          href: "/privacy",
+          href: "/product/AIShieldNet/privacy",
         },
       ],
     },

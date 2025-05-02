@@ -27,7 +27,7 @@ const DownloadAndPriceBanner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
+          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
           Experience the Power of AI ShieldNet
         </p>

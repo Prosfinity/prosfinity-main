@@ -24,7 +24,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
+          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
           Schedule a Consultation
         </p>
@@ -33,7 +33,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } mt-3 text-base md:text-lg font-light leading-3 lg:leading-5`}
+          } mt-3 text-base md:text-lg font-light leading-3 lg:leading-6`}
         >
           Talk to our cybersecurity experts and get a personalized assessment of
           your organization’s needs. Fill out the form below to schedule a
@@ -45,7 +45,7 @@ const Banner = () => {
           <div className="mb-5">
             <label
               for="name"
-              className="block mb-2 text-sm font-medium text-white dark:text-white"
+              className="block mb-2 text-base font-medium text-white dark:text-white"
             >
               Name
             </label>
@@ -60,7 +60,7 @@ const Banner = () => {
           <div className="mb-5">
             <label
               for="email"
-              className="block mb-2 text-sm font-medium text-white dark:text-white"
+              className="block mb-2 text-base font-medium text-white dark:text-white"
             >
               Email
             </label>
@@ -75,7 +75,7 @@ const Banner = () => {
           <div className="mb-5">
             <label
               for="message"
-              className="block mb-2 text-sm font-medium text-white dark:text-white"
+              className="block mb-2 text-base font-medium text-white dark:text-white"
             >
               Message
             </label>

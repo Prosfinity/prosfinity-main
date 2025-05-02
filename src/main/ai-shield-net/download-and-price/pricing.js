@@ -106,10 +106,21 @@ const DownloadAndPricePricing = () => {
               </div>
             </div>
             <div className="flex flex-col gap-2 mt-5 text-gray-800">
-                <p className="text-lg md:text-xl text-center leading-tight md:leading-normal line-through font-semibold">$30 HKD</p>
-                <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">$9.99 HKD</p>
-                <p className="text-base md:text-lg text-center leading-tight md:leading-normal">/Month Per EndPoint</p>
+              <p className="text-lg md:text-xl text-center leading-tight md:leading-normal line-through font-semibold">
+                $30 HKD
+              </p>
+              <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">
+                $9.99 HKD
+              </p>
+              <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
+                /Month Per EndPoint
+              </p>
             </div>
+            <a href="/contact">
+              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+                Contact Us
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-4/12 mx-auto">
@@ -139,9 +150,18 @@ const DownloadAndPricePricing = () => {
               </div>
             </div>
             <div className="flex flex-col gap-2 mt-5 text-gray-800">
-                <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">$0 HKD</p>
-                <p className="text-base md:text-lg text-center leading-tight md:leading-normal">/Month</p>
+              <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">
+                $0 HKD
+              </p>
+              <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
+                /Month
+              </p>
             </div>
+            <a href="/product/AIShieldNet/download-and-price/download-extension">
+              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+                Free Download
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-4/12 mx-auto">
@@ -178,11 +198,11 @@ const DownloadAndPricePricing = () => {
                 </p>
               </div>
             </div>
-              <button
-                className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2"
-              >
+            <a href="/contact">
+              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Contact Us
               </button>
+            </a>
           </div>
         </div>
       </div>

@@ -139,7 +139,7 @@ const DownloadAndPriceDownload = () => {
             Integrate advanced AI-powered file and phishing detection capabilities into your existing applications for enterprise-grade security
           </p>
           <div className="mt-5">
-            <a href="/product/AIShieldNet/download-and-price/agent-download">
+            <a href="/contact">
               <button
                 className={`${
                   loaded || inViewport

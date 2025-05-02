@@ -34,7 +34,7 @@ const FeaturesBanner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
+          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
           How can AI ShieldNet change your work?
         </p>

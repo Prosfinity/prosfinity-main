@@ -48,6 +48,13 @@ const FreeTrialWhatIs = () => {
         AI. It delivers automated threat detection and response, ensuring your
         devices are always one step ahead of cyberattacks.
       </p>
+      <div className="flex justify-center mt-5">
+        <a href="/product/AIShieldNet/phishing-defense-review">
+          <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+            See Phishing Defense Review
+          </button>
+        </a>
+      </div>
       <div className="flex justify-center mt-10">
         <div
           className={`${
@@ -80,6 +87,13 @@ const FreeTrialWhatIs = () => {
         from emerging threats. Start your <b>1 month free trial</b> after the
         demo.
       </p>
+      <div className="flex justify-center mt-5">
+        <a href="/product/AIShieldNet/phishing-defense-review">
+          <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+            See Phishing Defense Review
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
