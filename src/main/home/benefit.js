@@ -40,6 +40,7 @@ const Benefit = () => {
       id: 3,
       icon: <ShieldCheckIcon className="w-16 bg-gradient rounded-lg p-4" />,
       title: "Free 1-Month Trial of AIShieldNet",
+      href: "/product/AIShieldNet/free-trial",
       description:
         "Enjoy a free 1-month trial of AIShieldNet, the ultimate AI-powered security solution",
     },

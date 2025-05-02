@@ -41,7 +41,11 @@ const Banner = () => {
         </p>
       </div>
       <div className="w-full lg:w-4/6">
-        <form className="max-w-sm mx-auto">
+        <form
+          action="https://formspree.io/f/mnnpnbrk"
+          method="POST"
+          className="max-w-sm mx-auto"
+        >
           <div className="mb-5">
             <label
               for="name"
@@ -52,6 +56,7 @@ const Banner = () => {
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Enter your name"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
@@ -67,6 +72,7 @@ const Banner = () => {
             <input
               type="email"
               id="email"
+              name="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter your email"
               required
@@ -81,6 +87,7 @@ const Banner = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="4"
               class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Write your message here..."

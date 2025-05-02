@@ -45,12 +45,16 @@ const Banner = () => {
               : ""
           } mt-7 space-y-4`}
         >
-          <button className="bg-btnDark text-white w-64 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
-            Phishing Defense Review
-          </button>
-          <button className="bg-btnLight text-blue w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
-            Watch a video
-          </button>
+          <a href="/contact">
+            <button className="bg-btnDark text-white w-64 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
+              Phishing Defense Review
+            </button>
+          </a>
+          <a href="https://www.youtube.com/watch?v=jDOWVF6bpxw">
+            <button className="bg-btnLight text-blue w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
+              Watch a video
+            </button>
+          </a>
         </div>
       </div>
       <img
