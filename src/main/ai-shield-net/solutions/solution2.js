@@ -2,6 +2,7 @@ import { BellIcon, GaugeIcon, TriangleAlertIcon } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import SolutionItemFlip from "./solution-item-flip";
 import { useInViewport } from "ahooks";
+import Link from "next/link";
 
 const Solution2 = () => {
   const ref = useRef(null);
@@ -14,12 +15,13 @@ const Solution2 = () => {
       setLoaded(true);
     }
   }, [inViewport, loaded]);
-  
+
   return (
     <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-center mx-auto gap-10">
         <div className="w-full lg:w-6/12 flex gap-10">
-          <div className={`${
+          <div
+            className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
@@ -45,25 +47,31 @@ const Solution2 = () => {
           </div>
         </div>
         <div className="w-full lg:w-6/12 mx-auto">
-          <p className={`${
+          <p
+            className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } text-2xl md:text-2xl font-bold leading-tight md:leading-tight`}>
+            } text-2xl md:text-2xl font-bold leading-tight md:leading-tight`}
+          >
             Solutions
           </p>
-          <h2 className={`${
+          <h2
+            className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}>
+            } text-3xl md:text-3xl font-bold text-gray-800 leading-tight md:leading-tight mt-5`}
+          >
             Customizable Defense Modes
           </h2>
-          <p className={`${
+          <p
+            className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""
-            } text-lg md:text-lg leading-tight md:leading-normal mt-5`}>
+            } text-lg md:text-lg leading-tight md:leading-normal mt-5`}
+          >
             AI ShieldNet gives you the power to fine-tune your phishing defenses
             to match your unique needs. Our flexible settings let you choose the
             level of security that’s right for your business. Whether you need a
@@ -72,13 +80,17 @@ const Solution2 = () => {
             threat, we’ve got you covered.
           </p>
           <div className="mt-5">
-            <button className={`${
-              loaded || inViewport
-                ? `animate__animated animate__slideInUp animate__fast`
-                : ""
-            } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}>
-              Demo
-            </button>
+            <Link href="/product/AIShieldNet/phishing-defense-review">
+              <button
+                className={`${
+                  loaded || inViewport
+                    ? `animate__animated animate__slideInUp animate__fast`
+                    : ""
+                } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}
+              >
+                Demo
+              </button>
+            </Link>
           </div>
         </div>
       </div>

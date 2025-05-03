@@ -47,7 +47,7 @@ const Banner = () => {
               : ""
           } mt-7 space-y-4`}
         >
-          <Link href="/contact">
+          <Link href="/product/AIShieldNet/phishing-defense-review">
             <button className="bg-btnDark text-white w-64 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
               Phishing Defense Review
             </button>

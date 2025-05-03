@@ -138,13 +138,13 @@ const Navbar = () => {
             <div
               id="drawer-right-example"
               className="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800 shadow-xl"
-              tabindex="-1"
+              tabIndex="-1"
               aria-labelledby="drawer-right-label"
             >
               <div className="flex justify-between">
                 <h5
                   id="drawer-right-label"
-                  className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400 ml-auto"
+                  className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
                 >
                   Book a Call
                 </h5>
@@ -152,7 +152,7 @@ const Navbar = () => {
                   type="button"
                   data-drawer-hide="drawer-right-example"
                   aria-controls="drawer-right-example"
-                  class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
+                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
                 >
                   <svg
                     className="w-3 h-3"
@@ -163,9 +163,9 @@ const Navbar = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                     />
                   </svg>
@@ -180,7 +180,7 @@ const Navbar = () => {
                 >
                   <div className="mb-5">
                     <label
-                      for="name"
+                      htmlFor="name"
                       className="block mb-2 text-sm font-medium text-black dark:text-white"
                     >
                       Name
@@ -196,7 +196,7 @@ const Navbar = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block mb-2 text-sm font-medium text-black dark:text-white"
                     >
                       Email
@@ -212,7 +212,7 @@ const Navbar = () => {
                   </div>
                   <div className="mb-5">
                     <label
-                      for="subject"
+                      htmlFor="subject"
                       className="block mb-2 text-sm font-medium text-black dark:text-white"
                     >
                       Choose your subject
@@ -220,9 +220,9 @@ const Navbar = () => {
                     <select
                       id="subject"
                       name="subject"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     >
-                      <option value="General Inquiry" selected>
+                      <option value="General Inquiry" defaultValue>
                         General Inquiry
                       </option>
                       <option value="Free Consultation">

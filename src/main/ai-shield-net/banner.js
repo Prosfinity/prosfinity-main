@@ -1,4 +1,5 @@
 import { useInViewport } from "ahooks";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Banner = () => {
@@ -49,7 +50,8 @@ const Banner = () => {
           <br />
           Day
         </h1>
-        <div className={`${
+        <div
+          className={`${
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
@@ -105,9 +107,11 @@ const Banner = () => {
               : ""
           } mt-7 space-y-4`}
         >
-          <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base md:text-lg px-4 py-2 md:px-8 md:py-4">
-            Schedule Phishing Defense Review
-          </button>
+          <Link href="/product/AIShieldNet/phishing-defense-review">
+            <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base md:text-lg px-4 py-2 md:px-8 md:py-4">
+              Schedule Phishing Defense Review
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -129,10 +129,10 @@ const PhishingDefenseReviewMain = () => {
           height="600"
           src="https://www.youtube.com/embed/jDOWVF6bpxw?si=x94cOKZ3tqErLAFc"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
         ></iframe>
       </div>
       <h2
@@ -249,7 +249,7 @@ const PhishingDefenseReviewMain = () => {
           >
             <div className="mb-5">
               <label
-                for="email"
+                htmlFor="email"
                 className="block mb-2 text-base font-medium text-black dark:text-white"
               >
                 Email
@@ -265,7 +265,7 @@ const PhishingDefenseReviewMain = () => {
             </div>
             <div className="mb-5">
               <label
-                for="phone"
+                htmlFor="phone"
                 className="block mb-2 text-base font-medium text-black dark:text-white"
               >
                 Phone Number (with country code)
@@ -281,7 +281,7 @@ const PhishingDefenseReviewMain = () => {
             </div>
             <div className="mb-5">
               <label
-                for="message"
+                htmlFor="message"
                 name="message"
                 className="block mb-2 text-base font-medium text-black dark:text-white"
               >
@@ -290,7 +290,7 @@ const PhishingDefenseReviewMain = () => {
               <textarea
                 id="message"
                 rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Write your message here..."
                 required
               ></textarea>

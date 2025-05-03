@@ -2,7 +2,7 @@
 import { useInViewport } from "ahooks";
 import React, { useEffect, useRef, useState } from "react";
 import SolutionItem from "./solution-item";
-
+import Link from "next/link";
 const Solution1 = () => {
   const ref = useRef(null);
 
@@ -57,18 +57,22 @@ const Solution1 = () => {
             <SolutionItem content="Enterprise-Grade Protection with Company Login" />
           </div>
           <div className="mt-5">
-            <button className={`${
-              loaded || inViewport
-                ? `animate__animated animate__slideInUp animate__fast`
-                : ""
-            } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}
-            >
-              Protect Your Business Now
-            </button>
+            <Link href="/product/AIShieldNet/phishing-defense-review">
+              <button
+                className={`${
+                  loaded || inViewport
+                    ? `animate__animated animate__slideInUp animate__fast`
+                    : ""
+                } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}
+              >
+                Protect Your Business Now
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-full lg:w-6/12 mx-auto">
-          <div className={`${
+          <div
+            className={`${
               loaded || inViewport
                 ? `animate__animated animate__slideInUp animate__fast`
                 : ""

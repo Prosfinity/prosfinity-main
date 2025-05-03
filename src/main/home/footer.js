@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* eslint-disable @next/next/no-img-element */
 const Footer = () => {
   let dataFooter = [
@@ -79,9 +81,9 @@ const Footer = () => {
                 {footer.content.map((content, index) => {
                   if (typeof content === "object") {
                     return (
-                      <a href={content.href} key={index}>
+                      <Link href={content.href} key={index}>
                         <p className="mt-3">{content.title}</p>
-                      </a>
+                      </Link>
                     );
                   }
                   return (

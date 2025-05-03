@@ -37,7 +37,7 @@ const ComparisonQAndA = () => {
         <h2 id="accordion-flush-heading-1">
           <button
             type="button"
-            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+            className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
             data-accordion-target="#accordion-flush-body-1"
             aria-expanded="true"
             aria-controls="accordion-flush-body-1"
@@ -47,7 +47,7 @@ const ComparisonQAndA = () => {
             </span>
             <svg
               data-accordion-icon
-              class="w-3 h-3 rotate-180 shrink-0"
+              className="w-3 h-3 rotate-180 shrink-0"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -65,11 +65,11 @@ const ComparisonQAndA = () => {
         </h2>
         <div
           id="accordion-flush-body-1"
-          class="hidden"
+          className="hidden"
           aria-labelledby="accordion-flush-heading-1"
         >
-          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
               AIShieldNet ZDR utilizes advanced machine learning algorithms to
               analyze files and network activities in real-time. By offloading
               processing and scanning to the cloud, it can detect and neutralize
@@ -82,7 +82,7 @@ const ComparisonQAndA = () => {
         <h2 id="accordion-flush-heading-2">
           <button
             type="button"
-            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+            className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
             data-accordion-target="#accordion-flush-body-2"
             aria-expanded="false"
             aria-controls="accordion-flush-body-2"
@@ -92,7 +92,7 @@ const ComparisonQAndA = () => {
             </span>
             <svg
               data-accordion-icon
-              class="w-3 h-3 rotate-180 shrink-0"
+              className="w-3 h-3 rotate-180 shrink-0"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -100,9 +100,9 @@ const ComparisonQAndA = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5 5 1 1 5"
               />
             </svg>
@@ -110,11 +110,11 @@ const ComparisonQAndA = () => {
         </h2>
         <div
           id="accordion-flush-body-2"
-          class="hidden"
+          className="hidden"
           aria-labelledby="accordion-flush-heading-2"
         >
-          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
               Yes, AIShieldNet ZDR is designed for seamless integration. It
               employs a lightweight, intelligent endpoint agent that
               continuously monitors for zero-day threats without imposing
@@ -127,7 +127,7 @@ const ComparisonQAndA = () => {
         <h2 id="accordion-flush-heading-3">
           <button
             type="button"
-            class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+            className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
             data-accordion-target="#accordion-flush-body-3"
             aria-expanded="false"
             aria-controls="accordion-flush-body-3"
@@ -135,7 +135,7 @@ const ComparisonQAndA = () => {
             <span>What is the pricing for AIShieldNet ZDR?</span>
             <svg
               data-accordion-icon
-              class="w-3 h-3 rotate-180 shrink-0"
+              className="w-3 h-3 rotate-180 shrink-0"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -143,9 +143,9 @@ const ComparisonQAndA = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5 5 1 1 5"
               />
             </svg>
@@ -153,11 +153,11 @@ const ComparisonQAndA = () => {
         </h2>
         <div
           id="accordion-flush-body-3"
-          class="hidden"
+          className="hidden"
           aria-labelledby="accordion-flush-heading-3"
         >
-          <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p class="mb-2 text-gray-500 dark:text-gray-400">
+          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+            <p className="mb-2 text-gray-500 dark:text-gray-400">
               For detailed pricing information, it’s recommended to contact
               AIShieldNet directly. You can request a quote or schedule a demo
               through their official website to receive a customized pricing
