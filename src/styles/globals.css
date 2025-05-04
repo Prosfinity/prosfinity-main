@@ -6,7 +6,6 @@ html {
   background-color: #040D21;
 }
 
-@config "../../tailwind-pages.config.js";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

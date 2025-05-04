@@ -36,7 +36,7 @@ const FeaturesBanner = () => {
               : ""
           } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
-          How can AI ShieldNet change your work?
+          How can AI ShieldNet Protect Your Firm?
         </p>
         <p
           className={`${

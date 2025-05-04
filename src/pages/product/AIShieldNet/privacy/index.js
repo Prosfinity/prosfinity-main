@@ -128,8 +128,6 @@ const PrivacyPage = () => {
       <footer className="mt-16 xl:mt-28">
         <Footer />
       </footer>
-
-      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </div>
   );
 };
