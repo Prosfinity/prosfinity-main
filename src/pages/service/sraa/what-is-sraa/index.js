@@ -1,0 +1,48 @@
+/* eslint-disable @next/next/no-sync-scripts */
+import Head from "next/head";
+import Image from "next/image";
+import Footer from "../../../../main/home/footer";
+import AboutSectionSeven from "../../../../main/sraa/about/about-section-seven";
+import Breadcrumb from "../../../../main/sraa/breadcrumb";
+import Navbar from "../../../../main/sraa/navbar";
+
+const SRAAWhatIsPage = () => {
+  return (
+    <div className="font-Poppins bg-white">
+      <Head>
+        <title>What is SRAA | Security Risk Assessment And Audit</title>
+        <link rel="icon" href="/images/favicon.png" />
+      </Head>
+
+      <header className="w-full bg-gradient">
+        <Navbar />
+      </header>
+
+      <article className="mt-16 container mx-auto">
+        <Breadcrumb
+          pageName="What is SRAA"
+          description="Protect your business with our expert Security Risk Assessment and Audit Services! Identify vulnerabilities, mitigate risks, and strengthen your defenses with our comprehensive solutions. Plus, as a special bonus, receive FREE Zero-Day Endpoint Protection and Response to safeguard your systems against the latest threats. Stay secure, stay ahead—partner with us today!"
+        />
+        <AboutSectionSeven />
+      </article>
+
+      <footer>
+        <Footer />
+        <div className="fixed bottom-8 right-8 z-[99]">
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/85298319379">
+            <Image
+              alt="Chat on WhatsApp"
+              src="/images/contact/WhatsAppButtonGreenMedium.svg"
+              width={189}
+              height={40}
+            />
+          </a>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    </div>
+  );
+};
+
+export default SRAAWhatIsPage;
