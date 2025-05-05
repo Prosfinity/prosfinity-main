@@ -9,7 +9,6 @@ export default function Document() {
         <Main />
         <Analytics />
         <NextScript />
-        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
         {/* Google tag (gtag.js) */}
         <script
           async

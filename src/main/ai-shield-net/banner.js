@@ -35,7 +35,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed`}
+          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
           AI Endpoint Phishing Protection
         </p>
@@ -44,7 +44,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase`}
+          } mt-5 text-4xl md:text-5xl font-bold leading-tight md:leading-tight uppercase`}
         >
           Prevent Zero
           <br />
@@ -58,22 +58,22 @@ const Banner = () => {
           }`}
         >
           {stepAnimation === 1 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-4xl md:text-5xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Malware
             </span>
           )}
           {stepAnimation === 2 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-4xl md:text-5xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Ransomware
             </span>
           )}
           {stepAnimation === 3 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-4xl md:text-5xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Phishing
             </span>
           )}
           {stepAnimation === 4 && (
-            <span className="animate__animated animate__flipInX animate__fast mt-5 text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
+            <span className="animate__animated animate__flipInX animate__fast mt-5 text-4xl md:text-5xl font-bold leading-tight md:leading-tight uppercase text-yellow-400">
               Virus
             </span>
           )}
@@ -83,7 +83,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } mt-5 text-2xl md:text-3xl font-semibold leading-normal md:leading-10`}
+          } mt-5 text-3xl md:text-4xl font-semibold leading-normal md:leading-10`}
         >
           AI-Powered Zero-Day Phishing
           <br />

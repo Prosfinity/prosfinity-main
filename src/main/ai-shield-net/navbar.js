@@ -1,8 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import { Drawer, DrawerHeader, DrawerItems } from "flowbite-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -127,125 +130,89 @@ const Navbar = () => {
           <div className="ml-10">
             <button
               type="button"
-              data-drawer-target="drawer-right-example"
-              data-drawer-show="drawer-right-example"
-              data-drawer-placement="right"
-              aria-controls="drawer-right-example"
               className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2"
+              onClick={() => setIsOpen(true)}
             >
               Get Quote
             </button>
-            <div
-              id="drawer-right-example"
-              className="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform translate-x-full bg-white w-80 dark:bg-gray-800 shadow-xl"
-              tabIndex="-1"
-              aria-labelledby="drawer-right-label"
-            >
-              <div className="flex justify-between">
-                <h5
-                  id="drawer-right-label"
-                  className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"
-                >
-                  Book a Call
-                </h5>
-                <button
-                  type="button"
-                  data-drawer-hide="drawer-right-example"
-                  aria-controls="drawer-right-example"
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  <svg
-                    className="w-3 h-3"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 14"
+            <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="right">
+              <DrawerHeader title="Book a Call" />
+              <DrawerItems>
+                <div className="mx-5">
+                  <form
+                    action="https://formspree.io/f/mnnpnbrk"
+                    method="POST"
+                    className="max-w-sm mx-auto"
                   >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                    />
-                  </svg>
-                  <span className="sr-only">Close menu</span>
-                </button>
-              </div>
-              <div className="mx-5">
-                <form
-                  action="https://formspree.io/f/mnnpnbrk"
-                  method="POST"
-                  className="max-w-sm mx-auto"
-                >
-                  <div className="mb-5">
-                    <label
-                      htmlFor="name"
-                      className="block mb-2 text-sm font-medium text-black dark:text-white"
+                    <div className="mb-5">
+                      <label
+                        htmlFor="name"
+                        className="block mb-2 text-sm font-medium text-black dark:text-white"
+                      >
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required
+                      />
+                    </div>
+                    <div className="mb-5">
+                      <label
+                        htmlFor="email"
+                        className="block mb-2 text-sm font-medium text-black dark:text-white"
+                      >
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div className="mb-5">
+                      <label
+                        htmlFor="subject"
+                        className="block mb-2 text-sm font-medium text-black dark:text-white"
+                      >
+                        Choose your subject
+                      </label>
+                      <select
+                        id="subject"
+                        name="subject"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      >
+                        <option value="General Inquiry" defaultValue>
+                          General Inquiry
+                        </option>
+                        <option value="Free Consultation">
+                          Free Consultation
+                        </option>
+                        <option value="Feedback/Suggestions">
+                          Feedback/Suggestions
+                        </option>
+                        <option value="Partnership/Reseller Opportunities">
+                          Partnership/Reseller Opportunities
+                        </option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <button
+                      type="submit"
+                      className="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Enter your name"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      required
-                    />
-                  </div>
-                  <div className="mb-5">
-                    <label
-                      htmlFor="email"
-                      className="block mb-2 text-sm font-medium text-black dark:text-white"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
-                  <div className="mb-5">
-                    <label
-                      htmlFor="subject"
-                      className="block mb-2 text-sm font-medium text-black dark:text-white"
-                    >
-                      Choose your subject
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    >
-                      <option value="General Inquiry" defaultValue>
-                        General Inquiry
-                      </option>
-                      <option value="Free Consultation">
-                        Free Consultation
-                      </option>
-                      <option value="Feedback/Suggestions">
-                        Feedback/Suggestions
-                      </option>
-                      <option value="Partnership/Reseller Opportunities">
-                        Partnership/Reseller Opportunities
-                      </option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <button
-                    type="submit"
-                    className="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Submit
-                  </button>
-                </form>
-              </div>
-            </div>
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </DrawerItems>
+            </Drawer>
           </div>
         </div>
       </div>
