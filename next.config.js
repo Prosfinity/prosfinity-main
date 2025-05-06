@@ -12,6 +12,16 @@ const nextConfig = {
       },
     ],
   },
+
+  // Rewrites all /api/* calls to vpn.prosfinity.com
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://vpn.prosfinity.com/api/:path*',
+      },
+    ];
+  },
 };
 
 module.exports = withFlowbiteReact(nextConfig);
