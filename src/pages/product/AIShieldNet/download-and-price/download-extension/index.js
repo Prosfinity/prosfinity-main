@@ -47,8 +47,8 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
               </div>
             </div>
             <div className="relative mt-5 overflow-x-auto">
-              <table className="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right">
-                <thead className="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+              <table className="w-full text-left text-sm text-gray-500  rtl:text-right">
+                <thead className="bg-gray-50 text-xs uppercase text-gray-700  ">
                   <tr>
                     <th scope="col" className="px-6 py-3">
                       Name
@@ -65,14 +65,14 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
+                  <tr className="border-b border-gray-200 bg-white  ">
                     <td className="px-6 py-4 text-gray-900">
                       Browser Extension
                     </td>
                     <td className="px-6 py-4 text-gray-900">Add-On</td>
                     <th
                       scope="row"
-                      className="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+                      className="whitespace-nowrap px-6 py-4 font-medium text-gray-900 "
                     >
                       Version 0.0.19
                     </th>

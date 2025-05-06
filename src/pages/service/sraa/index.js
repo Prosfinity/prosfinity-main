@@ -32,7 +32,7 @@ const SRAAPage = () => {
               backgroundImage: "url(/images/background/1.svg)",
               height: "100vh",
             }}
-            className="w-full bg-center bg-no-repeat hidden dark:block"
+            className="w-full bg-center bg-no-repeat hidden "
           />
           <div
             style={{
@@ -41,7 +41,7 @@ const SRAAPage = () => {
               backgroundImage: "url(/images/background/2.svg)",
               height: "100vh",
             }}
-            className="w-full bg-center bg-no-repeat block dark:hidden"
+            className="w-full bg-center bg-no-repeat block "
           />
         </div>
         <Hero />

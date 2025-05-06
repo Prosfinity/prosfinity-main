@@ -2,8 +2,8 @@ const AboutSectionSix = () => {
   return (
     <section id="about-six" className="pt-16 pb-36 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Our Commitment
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">

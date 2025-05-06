@@ -19,8 +19,8 @@ const AboutSectionSeven = () => {
   return (
     <section id="about-seven" className="pt-16 md:pt-20 lg:pt-28">
       <div className="container">
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Key Differences Between Assessment and Audit
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -46,8 +46,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Steps in Conducting Risk Assessments
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -72,8 +72,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Ongoing Risk Management Process
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -111,8 +111,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Security Audit Process
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -151,8 +151,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Common Vulnerabilities Identified in Audits
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -191,8 +191,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Purpose and Objectives Comparison
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -207,7 +207,7 @@ const AboutSectionSeven = () => {
             </div>
 
             <div className="w-full px-4">
-              <h3 className="mb-4 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-4 text-xl font-semibold text-black ">
                 Security Risk Assessments
               </h3>
               <div className="mb-6">
@@ -219,7 +219,7 @@ const AboutSectionSeven = () => {
             </div>
 
             <div className="w-full px-4">
-              <h3 className="mb-4 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-4 text-xl font-semibold text-black ">
                 Security Audits
               </h3>
               <div className="mb-6">
@@ -248,8 +248,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Tools Used in Each Process
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -263,7 +263,7 @@ const AboutSectionSeven = () => {
             </div>
 
             <div className="w-full px-4">
-              <h3 className="mb-4 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-4 text-xl font-semibold text-black ">
                 Tools for Security Risk Assessments
               </h3>
               <div className="mb-6">
@@ -275,7 +275,7 @@ const AboutSectionSeven = () => {
             </div>
 
             <div className="w-full px-4">
-              <h3 className="mb-4 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-4 text-xl font-semibold text-black ">
                 Tools for Security Audits
               </h3>
               <div className="mb-6">
@@ -299,8 +299,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Frequency and Timing Differences
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -311,7 +311,7 @@ const AboutSectionSeven = () => {
                 purposes and methodologies.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Security Risk Assessments
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -328,7 +328,7 @@ const AboutSectionSeven = () => {
                 cybersecurity threats and evolving IT environments.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Security Audits
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -345,7 +345,7 @@ const AboutSectionSeven = () => {
                 regulatory reporting deadlines.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Adapting to Change
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -371,8 +371,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Documenting and Reporting Findings
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -384,7 +384,7 @@ const AboutSectionSeven = () => {
                 drive actionable outcomes.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Standardized Reporting Structure
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -399,7 +399,7 @@ const AboutSectionSeven = () => {
                 <li>Compliance insights</li>
               </ul>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Executive Summary
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -408,7 +408,7 @@ const AboutSectionSeven = () => {
                 enable quick decision-making for senior stakeholders.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Detailed Findings and the Five C&apos;s
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -433,7 +433,7 @@ const AboutSectionSeven = () => {
                 </li>
               </ul>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Supporting Evidence
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -443,7 +443,7 @@ const AboutSectionSeven = () => {
                 report.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Risk Evaluation and Prioritization
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -452,7 +452,7 @@ const AboutSectionSeven = () => {
                 prioritize issues.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Actionable Recommendations
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -461,7 +461,7 @@ const AboutSectionSeven = () => {
                 implementation.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Visual Enhancements
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -470,7 +470,7 @@ const AboutSectionSeven = () => {
                 highlight critical areas quickly.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Objective and Constructive Tone
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -479,7 +479,7 @@ const AboutSectionSeven = () => {
                 security improvement.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Compliance Reporting for Audits
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -488,7 +488,7 @@ const AboutSectionSeven = () => {
                 27001. This is especially vital for regulatory audits.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Follow-Up and Continuous Improvement
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -505,8 +505,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Evaluating Potential Threat Scenarios
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -518,7 +518,7 @@ const AboutSectionSeven = () => {
                 incidents and proactively strengthen their defenses.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Threat Modeling Techniques
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -537,7 +537,7 @@ const AboutSectionSeven = () => {
                 </li>
               </ul>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Internal and External Threats
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -547,7 +547,7 @@ const AboutSectionSeven = () => {
                 ensures no major risk vectors are overlooked.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Emerging Technologies and Trends
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -557,7 +557,7 @@ const AboutSectionSeven = () => {
                 risks.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Supply Chain Risks
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -567,7 +567,7 @@ const AboutSectionSeven = () => {
                 Supply Chain Risk Management Task Force.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Risk Matrix and Prioritization
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -577,7 +577,7 @@ const AboutSectionSeven = () => {
                 protection.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Scenario-Based Exercises
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -587,7 +587,7 @@ const AboutSectionSeven = () => {
                 preparedness.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Continuous Threat Scenario Updates
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -606,8 +606,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Risk Assessment Methodologies Overview
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -620,7 +620,7 @@ const AboutSectionSeven = () => {
                 strengths for different organizational needs and risk contexts.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Qualitative Risk Assessment
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -630,7 +630,7 @@ const AboutSectionSeven = () => {
                 uncovering root causes in a collaborative setting.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Quantitative Risk Assessment
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -640,7 +640,7 @@ const AboutSectionSeven = () => {
                 highly regulated environments where precision is critical.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Semi-Quantitative Risk Assessment
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -650,7 +650,7 @@ const AboutSectionSeven = () => {
                 flexible solution.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Asset-Based Risk Assessment
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -661,7 +661,7 @@ const AboutSectionSeven = () => {
                 potentially resource-intensive.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Threat-Based Risk Assessment
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -671,7 +671,7 @@ const AboutSectionSeven = () => {
                 beyond the technical landscape.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 FAIR Framework
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -691,8 +691,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Stakeholder Involvement in Assessments
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -716,7 +716,7 @@ const AboutSectionSeven = () => {
                 perspectives on potential risks and their impacts.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Stakeholder Roles in Risk Assessments
               </h3>
 
@@ -742,7 +742,7 @@ const AboutSectionSeven = () => {
                 business-critical needs.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Best Practices for Stakeholder Engagement
               </h3>
               <ul className="mb-[22px] list-disc pl-6 text-base !leading-relaxed text-body-color md:text-lg">
@@ -778,8 +778,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Prioritizing Risks for Mitigation
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -832,7 +832,7 @@ const AboutSectionSeven = () => {
                 ensures diverse perspectives and alignment with business goals.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 Mitigation Strategies Based on Risk Priority
               </h3>
               <ul className="mb-[22px] list-disc pl-6 text-base !leading-relaxed text-body-color md:text-lg">
@@ -869,8 +869,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Automated Scanning Software Comparison
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -882,7 +882,7 @@ const AboutSectionSeven = () => {
                 of some leading automated scanning tools:
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 1. Acunetix
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -896,7 +896,7 @@ const AboutSectionSeven = () => {
                 sophisticated web presence.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 2. Rapid7 InsightVM
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -910,7 +910,7 @@ const AboutSectionSeven = () => {
                 helps prioritize vulnerabilities on a 1-1000 scale.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 3. OpenVAS
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -924,7 +924,7 @@ const AboutSectionSeven = () => {
                 (CVEs).
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 4. Nmap
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -937,7 +937,7 @@ const AboutSectionSeven = () => {
                 perspective make it a valuable tool for security professionals.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 5. PaperScan
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -962,8 +962,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Compliance Monitoring Tools
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -977,7 +977,7 @@ const AboutSectionSeven = () => {
                 for human error.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 1. Sprinto
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -991,7 +991,7 @@ const AboutSectionSeven = () => {
                 streamline their compliance processes.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 2. AuditBoard
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1005,7 +1005,7 @@ const AboutSectionSeven = () => {
                 monitoring.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 3. Centraleyes
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1018,7 +1018,7 @@ const AboutSectionSeven = () => {
                 managing complex compliance landscapes.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 4. Drata
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1029,7 +1029,7 @@ const AboutSectionSeven = () => {
                 organizations seeking to maintain ongoing compliance.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 5. SentinelOne
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1055,8 +1055,8 @@ const AboutSectionSeven = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10 border-b border-body-color/[.15] dark:border-white/[.15]">
-          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
+        <div className="mb-10 border-b border-body-color/[.15] ">
+          <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
             Manual Testing Techniques Overview
           </h2>
           <div className="-mx-4 flex flex-wrap items-center">
@@ -1069,7 +1069,7 @@ const AboutSectionSeven = () => {
                 in areas requiring human judgment or intuition.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 1. Exploratory Testing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1081,7 +1081,7 @@ const AboutSectionSeven = () => {
                 usage patterns.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 2. Usability Testing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1093,7 +1093,7 @@ const AboutSectionSeven = () => {
                 interacting with the software.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 3. Ad-Hoc Testing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1104,7 +1104,7 @@ const AboutSectionSeven = () => {
                 on their knowledge and experience.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 4. Equivalence Partitioning
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1115,7 +1115,7 @@ const AboutSectionSeven = () => {
                 ensure comprehensive testing.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 5. Boundary Value Analysis
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1125,7 +1125,7 @@ const AboutSectionSeven = () => {
                 these are often prone to errors.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 6. Error Guessing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1135,7 +1135,7 @@ const AboutSectionSeven = () => {
                 when combined with other testing methods.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 7. State Transition Testing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">
@@ -1146,7 +1146,7 @@ const AboutSectionSeven = () => {
                 system&apos;s behavior.
               </p>
 
-              <h3 className="mb-2 text-xl font-semibold text-black dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-black ">
                 8. Decision Table Testing
               </h3>
               <p className="mb-[22px] text-base !leading-relaxed text-body-color md:text-lg">

@@ -92,8 +92,8 @@ const DownloadAndPriceBanner = () => {
             onChange={() => setIncludeApp(!includeApp)}
             className="peer sr-only"
           />
-          <div className="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-sky-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-sky-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-checked:bg-sky-600 dark:peer-focus:ring-sky-800 rtl:peer-checked:after:-translate-x-full"></div>
-          <span className="ms-3 text-sm font-medium text-white dark:text-gray-300">
+          <div className="peer relative h-6 w-11 rounded-full bg-gray-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-sky-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-sky-300     rtl:peer-checked:after:-translate-x-full"></div>
+          <span className="ms-3 text-sm font-medium text-white ">
             {includeApp ? "With" : "Without"} AI ShieldNet
           </span>
         </label>
