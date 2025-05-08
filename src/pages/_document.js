@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { Analytics } from "@vercel/analytics/react";
+import Image from "next/image";
 
 export default function Document() {
   return (
@@ -9,6 +10,16 @@ export default function Document() {
         <Main />
         <Analytics />
         <NextScript />
+        <div className="fixed bottom-8 right-8 z-[99]">
+          <a aria-label="Chat on WhatsApp" href="https://wa.me/85298319379">
+            <Image
+              alt="Chat on WhatsApp"
+              src="/images/contact/WhatsAppButtonGreenMedium.svg"
+              width={189}
+              height={40}
+            />
+          </a>
+        </div>
         {/* Google tag (gtag.js) */}
         <script
           async

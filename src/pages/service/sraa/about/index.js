@@ -81,16 +81,6 @@ const SRAAAboutPage = () => {
 
       <footer>
         <Footer />
-        <div className="fixed bottom-8 right-8 z-[99]">
-          <a aria-label="Chat on WhatsApp" href="https://wa.me/85298319379">
-            <Image
-              alt="Chat on WhatsApp"
-              src="/images/contact/WhatsAppButtonGreenMedium.svg"
-              width={189}
-              height={40}
-            />
-          </a>
-        </div>
       </footer>
     </div>
   );

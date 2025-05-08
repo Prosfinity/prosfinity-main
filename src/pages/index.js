@@ -6,6 +6,7 @@ import Company from "../main/home/company";
 import Footer from "../main/home/footer";
 import Navbar from "../main/home/navbar";
 import Transaction from "../main/home/transaction";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
