@@ -1,11 +1,15 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { Analytics } from "@vercel/analytics/react";
 import Image from "next/image";
+import GTM from "../main/GTM";
+import GTMNoScript from "../main/GTMNoScript";
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <GTM />
+      </Head>
       <body>
         <Main />
         <Analytics />
@@ -35,6 +39,7 @@ export default function Document() {
             `,
           }}
         />
+        <GTMNoScript />
       </body>
     </Html>
   );
