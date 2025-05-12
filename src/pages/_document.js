@@ -9,6 +9,34 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <GTM />
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16987160496"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'AW-16987160496');
+            `,
+          }}
+        />
+        {/* Event snippet for SRAA contact conversion page */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-16987160496/FPVsCPnUo8YaELD_jaQ_',
+                  'value': 1.0,
+                  'currency': 'HKD'
+              });
+            `,
+          }}
+        />
       </Head>
       <body>
         <Main />
@@ -35,6 +63,7 @@ export default function Document() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+
               gtag('config', 'G-QQE488VPHG');
             `,
           }}
