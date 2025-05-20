@@ -111,7 +111,7 @@ const DownloadAndPricePricing = () => {
                 $100 HKD
               </p>
               <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">
-                $49.99 HKD
+                $39.99 HKD
               </p>
               <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
                 /Month Per EndPoint

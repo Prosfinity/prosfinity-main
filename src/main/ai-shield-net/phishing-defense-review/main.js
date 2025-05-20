@@ -215,7 +215,7 @@ const PhishingDefenseReviewMain = () => {
             : ""
         } text-sm md:text-base leading-tight md:leading-normal mt-5`}
       >
-        Exclusive for 10 organizations: 30-day free trial + only HKD $49.99/month
+        Exclusive for 10 organizations: 30-day free trial + only HKD $39.99/month
         thereafter.
       </p>
       <div className="flex justify-center items-center my-5 px-0 lg:px-32">
@@ -266,7 +266,7 @@ const PhishingDefenseReviewMain = () => {
         >
           <BanknoteIcon />
           <p className="text-sm xl:text-base text-black">
-            Only HKD $49.99/month thereafter
+            Only HKD $39.99/month thereafter
           </p>
         </div>
         <div
