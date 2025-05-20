@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Image from "next/image";
 import GTM from "../main/GTM";
 import GTMNoScript from "../main/GTMNoScript";
+import HotJarTracking from "../main/HotJarTracking";
 
 export default function Document() {
   return (
@@ -57,6 +58,8 @@ export default function Document() {
             `,
           }}
         />
+        {/* Hotjar Tracking Code for https://prosfinity.com */}
+        <HotJarTracking />
       </Head>
       <body>
         <Main />
