@@ -2,7 +2,7 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-16 px-5 md:px-0">
       <div className="container mx-auto">
         <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">
           Certificates

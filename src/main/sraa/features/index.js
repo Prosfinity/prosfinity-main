@@ -35,7 +35,7 @@ const Features = () => {
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
-            } w-1/2 mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center mx-auto`}
+            } w-full md:w-1/2 mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center mx-auto`}
           >
             At Prosfinity, we understand that a robust security framework is
             crucial for protecting your assets and maintaining business

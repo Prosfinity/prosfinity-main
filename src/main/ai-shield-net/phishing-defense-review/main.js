@@ -16,7 +16,7 @@ const PhishingDefenseReviewMain = () => {
   }, [inViewport, loaded]);
 
   return (
-    <div className="container mx-auto px-5 md:px-20 mt-20 pt-20">
+    <div className="container mx-auto px-5 md:px-20 mt-10 md:mt-20 pt-10 md:pt-20">
       <h2
         className={`${
           loaded || inViewport

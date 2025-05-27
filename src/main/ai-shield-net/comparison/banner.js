@@ -24,7 +24,7 @@ const ComparisonBanner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
+          } text-2xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
         >
           AIShieldNet: The Future of Cybersecurity with AI-Powered Endpoint
           Phishing Protection

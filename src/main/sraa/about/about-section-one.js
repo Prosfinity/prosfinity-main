@@ -19,7 +19,7 @@ const AboutSectionOne = () => {
   );
 
   return (
-    <section id="about-one" className="pt-16 md:pt-20 lg:pt-28">
+    <section id="about-one" className="pt-16 md:pt-20 lg:pt-28 px-5 md:px-0">
       <div className="container mx-auto">
         <div className="border-b border-body-color/[.15] pb-16  md:pb-20 lg:pb-28">
           <h2 className="mb-4 text-3xl font-bold !leading-tight text-black  sm:text-4xl md:text-[45px]">

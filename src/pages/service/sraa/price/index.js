@@ -19,7 +19,7 @@ const SRAAWhatIsPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-16 container mx-auto">
+      <article className="mt-16 container mx-auto px-5 md:px-0">
         <Breadcrumb
           pageName="Price"
           description="We offer practical security services, transparent pricing, and expert to protect your business."

@@ -55,7 +55,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/product/AIShieldNet"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
                 Endpoint Phishing Protection
               </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/service/sraa"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
                 Security Risk Assessment & Audit
               </Link>

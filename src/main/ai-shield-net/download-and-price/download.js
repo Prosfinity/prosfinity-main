@@ -16,7 +16,7 @@ const DownloadAndPriceDownload = () => {
   }, [inViewport, loaded]);
 
   return (
-    <div ref={ref} className="mx-auto mt-64 px-5 md:mt-20 xl:px-0">
+    <div ref={ref} className="mx-auto mt-20 px-5 xl:px-0 space-y-10">
       <div className="mx-auto flex w-full flex-wrap items-start justify-between gap-10 lg:flex-nowrap xl:w-7/12">
         <div className="mx-auto w-full lg:w-6/12">
           <h2

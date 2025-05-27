@@ -16,7 +16,7 @@ const ContactPage = () => {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <header className="w-full h-[450px] bg-gradient">
+      <header className="w-full h-[800px] md:h-[450px] bg-gradient">
         <Navbar />
         <Banner />
       </header>

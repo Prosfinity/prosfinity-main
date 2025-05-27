@@ -19,7 +19,7 @@ const AIShieldNetDownloadAndPricePage = () => {
         <link rel="icon" href="/images/favicon.png" />
       </Head>
 
-      <header className="w-full h-[400px] bg-gradient">
+      <header className="w-full h-[700px] md:h-[400px] bg-gradient">
         <Navbar />
         <DownloadAndPriceBanner />
       </header>

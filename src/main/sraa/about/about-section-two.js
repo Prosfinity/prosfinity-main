@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="relative py-16 md:py-20 lg:py-28">
+    <section className="relative py-16 md:py-20 lg:py-28 px-5 md:px-0">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-2/3">

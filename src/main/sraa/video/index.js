@@ -17,7 +17,7 @@ const Video = () => {
   }, [inViewport, loaded]);
 
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28 flex flex-col items-center justify-center">
+    <section className="relative z-10 py-16 md:py-20 lg:py-28 flex flex-col items-center justify-center px-5 md:px-0">
       <div className="container">
         <div className="text-center">
           <h2
@@ -34,7 +34,7 @@ const Video = () => {
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
-            } w-1/2 mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center mx-auto`}
+            } w-full md:w-1/2 mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center mx-auto`}
           >
             Our team is ready to provide expert guidance and assistance every
             step of the way.

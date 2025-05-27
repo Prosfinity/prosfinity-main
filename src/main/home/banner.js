@@ -45,7 +45,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } mt-7 space-y-4`}
+          } mt-7 gap-2 flex flex-wrap justify-center`}
         >
           <Link href="/product/AIShieldNet/phishing-defense-review">
             <button className="bg-btnDark text-white w-64 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">

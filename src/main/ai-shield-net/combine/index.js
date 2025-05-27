@@ -13,7 +13,7 @@ import CombineItem from "./combine-item";
 
 const Combine = () => {
   return (
-    <div className="mt-[450px] sm:mt-10 xl:mt-10 px-10">
+    <div className="mt-[500px] sm:mt-10 xl:mt-10 px-10">
       <h3 className="text-3xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
         Combine AI x Anti-Phishing x EDR x Anti-Virus
       </h3>

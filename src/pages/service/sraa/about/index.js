@@ -38,7 +38,7 @@ const SRAAAboutPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-16 container mx-auto">
+      <article className="mt-16 container mx-auto px-5 md:px-0">
         <Breadcrumb
           pageName="About Us"
           description="Prosfinity is a leading cybersecurity company dedicated to safeguarding organizations against evolving digital threats. With our comprehensive suite of security services and cutting-edge AI-powered products, we empower businesses to protect their assets, data, and reputation in an increasingly complex cyber landscape."
