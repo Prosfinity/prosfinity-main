@@ -111,7 +111,7 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                     </th>
                     <td className="flex gap-4 px-6 py-4">
                       <a href="https://chromewebstore.google.com/detail/ai-phishnet/bgpnaianfdfllfbagjenbocnodkfpnfa">
-                        <button className="bg-btnDark flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
+                        <button className="bg-btnBlue flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
                           <img
                             src="/images/download-and-price/chrome-light.png"
                             alt="chrome"
@@ -121,7 +121,7 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                         </button>
                       </a>
                       <a href="https://addons.mozilla.org/zh-TW/firefox/addon/ai-phishnet">
-                        <button className="bg-btnDark flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
+                        <button className="bg-btnBlue flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
                           <img
                             src="/images/download-and-price/firefox-light.png"
                             alt="firefox"

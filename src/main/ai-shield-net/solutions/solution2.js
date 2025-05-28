@@ -86,7 +86,7 @@ const Solution2 = () => {
                   loaded || inViewport
                     ? `animate__animated animate__slideInUp animate__fast`
                     : ""
-                } bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}
+                } bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4`}
               >
                 Demo
               </button>

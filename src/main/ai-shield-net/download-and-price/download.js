@@ -47,7 +47,7 @@ const DownloadAndPriceDownload = () => {
                   loaded || inViewport
                     ? `animate__animated animate__slideInUp animate__fast`
                     : ""
-                } bg-btnDark rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
+                } bg-btnBlue rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
               >
                 Get My Free Download
               </button>
@@ -98,7 +98,7 @@ const DownloadAndPriceDownload = () => {
                   loaded || inViewport
                     ? `animate__animated animate__slideInUp animate__fast`
                     : ""
-                } bg-btnDark rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
+                } bg-btnBlue rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
               >
                 Get My Free Download
               </button>
@@ -149,7 +149,7 @@ const DownloadAndPriceDownload = () => {
                   loaded || inViewport
                     ? `animate__animated animate__slideInUp animate__fast`
                     : ""
-                } bg-btnDark rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
+                } bg-btnBlue rounded-lg px-4 py-2 text-base font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2`}
               >
                 Get My Free Download
               </button>

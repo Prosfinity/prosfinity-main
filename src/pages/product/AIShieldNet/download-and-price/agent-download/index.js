@@ -110,7 +110,7 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                             .NEXT_PUBLIC_AISHIELDNET_DOWNLOAD_WINDOWS_LINK
                         }
                       >
-                        <button className="bg-btnDark rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
+                        <button className="bg-btnBlue rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
                           Download Now
                         </button>
                       </a>

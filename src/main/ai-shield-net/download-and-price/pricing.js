@@ -118,7 +118,7 @@ const DownloadAndPricePricing = () => {
               </p>
             </div>
             <Link href="/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Contact Us
               </button>
             </Link>
@@ -159,7 +159,7 @@ const DownloadAndPricePricing = () => {
               </p>
             </div>
             <Link href="/product/AIShieldNet/download-and-price/download-extension">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Free Download
               </button>
             </Link>
@@ -200,7 +200,7 @@ const DownloadAndPricePricing = () => {
               </div>
             </div>
             <Link href="/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Contact Us
               </button>
             </Link>

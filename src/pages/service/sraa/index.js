@@ -9,6 +9,7 @@ import Features from "../../../main/sraa/features";
 import Hero from "../../../main/sraa/hero";
 import Navbar from "../../../main/sraa/navbar";
 import Video from "../../../main/sraa/video";
+import SRAAPricing from "../../../main/sraa/pricing";
 
 const SRAAPage = () => {
   return (
@@ -79,6 +80,14 @@ const SRAAPage = () => {
         <Hero />
         <Features />
         <Video />
+        <div className="mb-10">
+          <h2
+            className={`text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed mt-5 text-center`}
+          >
+            Pricing
+          </h2>
+          <SRAAPricing />
+        </div>
         <Brands />
         <AboutSectionTwo />
         <AboutSectionOne />

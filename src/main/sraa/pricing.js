@@ -1,7 +1,7 @@
 import { useInViewport } from "ahooks";
-import { CastIcon, CheckIcon, EditIcon, ShieldCheckIcon } from "lucide-react";
+import { CheckIcon } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SRAAPricing = () => {
   const ref = useRef(null);
@@ -18,7 +18,7 @@ const SRAAPricing = () => {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto mt-8 xl:mt-16 gap-5"
+      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto mt-8 xl:mt-8 gap-5"
     >
       <div className="w-full flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10 mt-10">
         <div className="w-full lg:w-4/12 mx-auto">
@@ -67,7 +67,7 @@ const SRAAPricing = () => {
               </div>
             </div>
             <Link href="/service/sraa/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Request SRAA
               </button>
             </Link>
@@ -119,7 +119,7 @@ const SRAAPricing = () => {
               </div>
             </div>
             <Link href="/service/sraa/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Request PT
               </button>
             </Link>
@@ -171,7 +171,7 @@ const SRAAPricing = () => {
               </div>
             </div>
             <Link href="/service/sraa/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Request IR
               </button>
             </Link>

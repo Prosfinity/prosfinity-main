@@ -16,10 +16,7 @@ const Hero = () => {
   }, [inViewport, loaded]);
 
   return (
-    <div
-      ref={ref}
-      className="mx-auto px-5 xl:px-0 py-10"
-    >
+    <div ref={ref} className="mx-auto px-5 xl:px-0 py-10">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
         <div>
           <h2
@@ -47,8 +44,8 @@ const Hero = () => {
           </p>
           <div className="flex justify-center mt-5">
             <Link href="/service/sraa/contact">
-              <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
-                Contact Us
+              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+                Get a free consultation now
               </button>
             </Link>
           </div>

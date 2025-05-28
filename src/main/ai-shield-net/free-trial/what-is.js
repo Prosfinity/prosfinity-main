@@ -52,7 +52,7 @@ const FreeTrialWhatIs = () => {
       </p>
       <div className="flex justify-center mt-5">
         <Link href="/product/AIShieldNet/phishing-defense-review">
-          <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+          <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
             See Phishing Defense Review
           </button>
         </Link>
@@ -91,7 +91,7 @@ const FreeTrialWhatIs = () => {
       </p>
       <div className="flex justify-center mt-5">
         <Link href="/product/AIShieldNet/phishing-defense-review">
-          <button className="bg-btnDark text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+          <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
             See Phishing Defense Review
           </button>
         </Link>

@@ -29,7 +29,8 @@ module.exports = {
       },
       backgroundColor: {
         'btnDark': '#0C233A',
-        'btnLight': '#fff'
+        'btnLight': '#fff',
+        'btnBlue': '#2980f0'
       },
       colors:{
         'blue': '#4B96FE',
