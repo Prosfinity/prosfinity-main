@@ -61,7 +61,6 @@ const SRAAPage = () => {
           <div
             style={{
               backgroundSize: "contain",
-              backgroundAttachment: "fixed",
               backgroundImage: "url(/images/background/1.svg)",
               height: "100vh",
             }}
@@ -70,7 +69,6 @@ const SRAAPage = () => {
           <div
             style={{
               backgroundSize: "contain",
-              backgroundAttachment: "fixed",
               backgroundImage: "url(/images/background/2.svg)",
               height: "100vh",
             }}
