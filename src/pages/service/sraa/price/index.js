@@ -13,6 +13,39 @@ const SRAAWhatIsPage = () => {
       <Head>
         <title>What is SRAA | Security Risk Assessment And Audit</title>
         <link rel="icon" href="/images/favicon.png" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Prosfinity &#8211; Security Risk Assessment And Audit"
+        />
+        <meta
+          property="og:description"
+          content="Prosfinity is a cybersecurity company that provides Security Risk Assessment And Audit services to businesses."
+        />
+        <meta
+          property="og:image"
+          content="https://prosfinity.com/images/background/2.svg"
+        />
+        <meta property="og:url" content="https://prosfinity.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Prosfinity" />
+
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Prosfinity &#8211; Security Risk Assessment And Audit"
+        />
+        <meta
+          name="twitter:description"
+          content="Prosfinity is a cybersecurity company that provides Security Risk Assessment And Audit services to businesses."
+        />
+        <meta
+          name="twitter:image"
+          content="https://prosfinity.com/images/background/2.svg"
+        />
+        <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
       <header className="w-full bg-gradient">
