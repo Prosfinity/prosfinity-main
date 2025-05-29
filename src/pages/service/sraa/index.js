@@ -62,17 +62,15 @@ const SRAAPage = () => {
             style={{
               backgroundSize: "contain",
               backgroundImage: "url(/images/background/1.svg)",
-              height: "100vh",
             }}
-            className="w-full bg-center bg-no-repeat hidden "
+            className="w-full bg-center bg-no-repeat hidden h-[250px] md:h-screen"
           />
           <div
             style={{
               backgroundSize: "contain",
               backgroundImage: "url(/images/background/2.svg)",
-              height: "100vh",
             }}
-            className="w-full bg-center bg-no-repeat block "
+            className="w-full bg-center bg-no-repeat block h-[250px] md:h-screen"
           />
         </div>
         <Hero />
