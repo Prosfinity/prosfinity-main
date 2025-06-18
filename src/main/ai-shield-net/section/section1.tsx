@@ -247,7 +247,7 @@ const Section1 = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } shadow-2xl rounded-2xl`}
-          src="/images/dashboard.jpeg"
+          src="/images/control.png"
           alt="software dashboard"
         />
       </div>

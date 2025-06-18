@@ -45,7 +45,7 @@ const Banner = () => {
               : ""
           } mt-7 gap-2 flex flex-wrap justify-center`}
         >
-          <Link href="/product/AIShieldNet">
+          <Link href="/llm">
             <button className="bg-btnDark text-white mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
               Discover how AIShieldNet uses LLMs
             </button>
