@@ -1,5 +1,10 @@
 import { useInViewport } from "ahooks";
-import { ShieldAlertIcon, ShieldCheckIcon, ShoppingBagIcon } from "lucide-react";
+import {
+  CheckIcon,
+  ShieldAlertIcon,
+  ShieldCheckIcon,
+  ShoppingBagIcon,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Benefit = () => {
@@ -16,9 +21,7 @@ const Benefit = () => {
   let data = [
     {
       id: 1,
-      icon: (
-        <ShieldAlertIcon className="w-16 bg-gradient rounded-lg p-4" />
-      ),
+      icon: <ShieldAlertIcon className="w-16 bg-gradient rounded-lg p-4" />,
       title: "Free Adoption of Prosfinity Self-Train AI",
       href: "/product/AIShieldNet",
       description:
@@ -55,7 +58,7 @@ const Benefit = () => {
           The benefit you get
         </h2>
         <p className="mt-2 w-3/4 mx-auto text-slate-400 text-base">
-          Experience AI-powered solutions from one powerful platform
+          What Happens When Real-Time LLM Watches Every Process?
         </p>
       </div>
       <div className="card-list mt-16 text-center md:text-left flex flex-wrap justify-center gap-10">
@@ -82,6 +85,41 @@ const Benefit = () => {
             </div>
           );
         })}
+        <div
+          className={`${
+            loaded || inViewport
+              ? "animate__animated animate__slideInUp animate__fast"
+              : ""
+          } group hover:bg-midBlue rounded-2xl hover:rounded-2xl transition duration-200 ease-out p-8 w-[360px] xl:w-full`}
+        >
+          <span className="flex justify-center md:justify-start">
+            <ShieldAlertIcon className="w-16 bg-gradient rounded-lg p-4" />
+          </span>
+          <h3 className="mt-8 text-2xl font-medium">
+            What Happens When Real-Time LLM Watches Every Process?
+          </h3>
+          <p className="content  my-4 text-sm leading-loose text-slate-400 group-hover:text-white">
+            <div className="flex items-center gap-2">
+              <CheckIcon size={20} />
+              Real-time threat detection using LLMs – not signatures
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckIcon size={20} />
+              Stops zero-day ransomware before it encrypts
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckIcon size={20} />
+              Analyzes 100% of endpoint process events
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckIcon size={20} />
+              Explains every alert in plain English
+            </div>
+          </p>
+          <a className="font-medium underline" href="/product/AIShieldNet">
+            How AI ShieldNet does it?
+          </a>
+        </div>
       </div>
     </div>
   );

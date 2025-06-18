@@ -27,9 +27,7 @@ const Banner = () => {
               : ""
           } text-4xl md:text-5xl font-bold leading-tight md:leading-tight`}
         >
-          Saas Platform. One Agent
-          <br />
-          EndPoint Phishing and Zero Day Protection
+          LLM-Powered Endpoint Security. One Agent. Real-Time AI Defense
         </h1>
         <p
           className={`${
@@ -38,7 +36,7 @@ const Banner = () => {
               : ""
           } mt-5 text-base md:text-lg leading-normal md:leading-relaxed`}
         >
-          AIShieldNet: Protect your digital assets with advanced AI detection.
+          Unlock the power of Large Language Models in cybersecurity
         </p>
         <div
           className={`${
@@ -47,14 +45,14 @@ const Banner = () => {
               : ""
           } mt-7 gap-2 flex flex-wrap justify-center`}
         >
-          <Link href="/product/AIShieldNet/phishing-defense-review">
-            <button className="bg-btnDark text-white w-64 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
-              Phishing Defense Review
+          <Link href="/product/AIShieldNet">
+            <button className="bg-btnDark text-white mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
+              Discover how AIShieldNet uses LLMs
             </button>
           </Link>
           <Link href="https://www.youtube.com/watch?v=jDOWVF6bpxw">
-            <button className="bg-btnLight text-blue w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">
-              Watch a video
+            <button className="bg-btnLight text-blue mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
+              Watch how LLM defends your endpoints
             </button>
           </Link>
         </div>
