@@ -15,7 +15,7 @@ const OurValues = () => {
   }, [inViewport, loaded]);
 
   return (
-    <div className="flex justify-center items-center mt-10 xl:mt-20 px-5">
+    <div className="flex justify-center items-center mt-10 xl:mt-32 px-5">
       <div className="bg-btnDark rounded-2xl px-5 pt-16 pb-20">
         <h1 className="text-white text-3xl md:text-4xl font-bold leading-tight md:leading-tight uppercase text-center">
           Our Values

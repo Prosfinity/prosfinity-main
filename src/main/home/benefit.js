@@ -98,7 +98,7 @@ const Benefit = () => {
           <h3 className="mt-8 text-2xl font-medium">
             What Happens When Real-Time LLM Watches Every Process?
           </h3>
-          <p className="content  my-4 text-sm leading-loose text-slate-400 group-hover:text-white">
+          <div className="content  my-4 text-sm leading-loose text-slate-400 group-hover:text-white">
             <div className="flex items-center gap-2">
               <CheckIcon size={20} />
               Real-time threat detection using LLMs – not signatures
@@ -115,9 +115,9 @@ const Benefit = () => {
               <CheckIcon size={20} />
               Explains every alert in plain English
             </div>
-          </p>
+          </div>
           <a className="font-medium underline" href="/product/AIShieldNet">
-            How AI ShieldNet does it?
+            How AIShieldNet does it?
           </a>
         </div>
       </div>

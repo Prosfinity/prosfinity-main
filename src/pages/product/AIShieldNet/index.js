@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
-import React from "react";
-import Banner from "../../../main/ai-shield-net/banner";
-import Combine from "../../../main/ai-shield-net/combine";
 import Navbar from "../../../main/ai-shield-net/navbar";
 import OurValues from "../../../main/ai-shield-net/our-values";
-import Solution1 from "../../../main/ai-shield-net/solutions/solution1";
-import Solution2 from "../../../main/ai-shield-net/solutions/solution2";
+import Section1 from "../../../main/ai-shield-net/section/section1";
+import Section2 from "../../../main/ai-shield-net/section/section2";
 import TopFooter from "../../../main/ai-shield-net/top-footer";
 import Footer from "../../../main/home/footer";
+import Combine from "../../../main/ai-shield-net/combine";
+import Section3 from "../../../main/ai-shield-net/section/section3";
+import Section4 from "../../../main/ai-shield-net/section/section4";
 
 const AIShieldNetPage = () => {
   return (
@@ -42,16 +42,17 @@ const AIShieldNetPage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[700px] md:h-[1000px] xl:h-[1200px] bg-gradient">
+      <header className="w-full bg-gradient">
         <Navbar />
-        <Banner />
-        <OurValues />
       </header>
 
-      <article>
+      <article className="mt-10 md:mt-20 pt-10 md:pt-20">
+        <Section1 />
+        <OurValues />
+        <Section2 />
         <Combine />
-        <Solution1 />
-        <Solution2 />
+        <Section3 />
+        <Section4 />
       </article>
 
       <footer>

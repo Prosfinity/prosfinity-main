@@ -2,74 +2,67 @@ import {
   BrainCircuitIcon,
   BrainIcon,
   CloudIcon,
-  FileCodeIcon,
-  MonitorCogIcon,
   ShieldAlertIcon,
   ShieldCheckIcon,
-  SignatureIcon,
+  SignatureIcon
 } from "lucide-react";
-import React from "react";
+import Link from "next/link";
 import CombineItem from "./combine-item";
 
 const Combine = () => {
   return (
-    <div className="mt-[500px] sm:mt-10 xl:mt-10 px-10">
+    <div className="mt-10 sm:mt-20 xl:mt-32 px-10">
       <h3 className="text-3xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
-        Combine AI x Anti-Phishing x EDR x Anti-Virus
+        What Makes AIShieldNet LLM-Powered Approach Truly Unique?
       </h3>
       <div className="flex flex-wrap justify-center gap-5 mt-16">
         <div className="w-full md:w-5/12 xl:w-4/12 flex flex-col gap-5">
           <CombineItem
             icon={<BrainIcon color="white" />}
-            title="AI-Powered Advanced Protection"
-            description="Our AI-powered protection analyzes files in real-time. When users execute high-risk files, our cloud analytics engine springs into action, analyzing and neutralizing threats within 5 seconds."
+            title="LLM-first Detection Engine"
+            description="Not just a helper – the LLM itself flags threats."
             position="left"
           />
           <CombineItem
             icon={<ShieldCheckIcon color="white" />}
-            title="Zero-Day Protection (Malware, Virus, Ransomware)"
-            description="AIShieldNet are engineered to detect and mitigate emerging threats. Our advanced analytics deliver surgical precision to guard against the unknown, from new viruses to malware variants."
+            title="No Process Left Behind"
+            description="Analyzes 100% of Windows process creation events."
             position="left"
           />
           <CombineItem
             icon={<CloudIcon color="white" />}
-            title="Cloud-Based Analysis"
-            description="We offload all processing and scanning to the cloud, eliminating burden on your endpoints. Send suspicious files our way, and let our powerful cloud infrastructure handle the heavy lifting."
-            position="left"
-          />
-          <CombineItem
-            icon={<MonitorCogIcon color="white" />}
-            title="SaaS Reporting and Control"
-            description="Monitor threat trends, review blocking activities, and leverage granular insights to fine-tune your defenses - all from a single, user-friendly dashboard."
+            title="Always Learning in the Cloud"
+            description="No need for manual updates."
             position="left"
           />
         </div>
         <div className="w-full md:w-5/12 xl:w-4/12 flex flex-col gap-5 mt-0 xl:mt-20">
           <CombineItem
             icon={<BrainCircuitIcon color="white" />}
-            title="AI-Zero Day Phishing Detection and Response"
-            description="Leverages machine learning models to detect suspicious activity in real-time, providing proactive threat response and automated mitigation to safeguard users and organizations from emerging phishing threats."
+            title="Detects Zero-Day & Fileless Attacks in Real Time"
+            description="No signature needed. No delay."
             position="right"
           />
           <CombineItem
             icon={<SignatureIcon color="white" />}
-            title="Signature-based Antivirus Protection"
-            description="Signature-based engine scans and blocks threats. Backed by 800,000+ malware samples. Strengthens your systems against dangers."
+            title="Dramatically Fewer False Positives"
+            description="LLM uses natural language reasoning to filter noise."
             position="right"
           />
           <CombineItem
             icon={<ShieldAlertIcon color="white" />}
-            title="Signature-based Phishing Protection"
-            description="Signature-based engine scans and blocks Phishing threat. Backed by 220,000+ Phishing Site. Strengthens your systems against dangers."
-            position="right"
-          />
-          <CombineItem
-            icon={<FileCodeIcon color="white" />}
-            title="Advanced Endpoint Protection with AI-Powered File Analysis (Excel Doc PDF)"
-            description="The AIShieldnet not only protects endpoints but also analyzes files, including Excel, Word documents, and PDFs, for hidden zero-day threats. Using advanced AI and machine learning,"
+            title="Clear Explanations for Every Alert"
+            description='"This process is flagged because it performed X, linked to Y in MITRE ATT&CK."'
             position="right"
           />
         </div>
+      </div>
+      <div className="flex justify-center mt-10">
+        <Link href="https://www.youtube.com/watch?v=jDOWVF6bpxw" target="_blank">
+          <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4 uppercase">
+            SEE A LIVE DEMO
+          </button>
+        </Link>
       </div>
     </div>
   );
