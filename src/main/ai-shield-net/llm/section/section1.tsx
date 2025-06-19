@@ -37,11 +37,22 @@ const Section1 = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } text-lg md:text-xl mt-5`}
+        } text-lg md:text-xl mt-5 text-center italic`}
       >
         LLM-Powered Endpoint Defense - Why AIShieldNet Outperforms Traditional
         EDRs?
       </p>
+      <div className="mt-10">
+        <img
+          className={`${
+            loaded || inViewport
+              ? "animate__animated animate__slideInUp animate__fast"
+              : ""
+          } shadow-2xl rounded-2xl`}
+          src="/images/bannnnn.png"
+          alt="software dashboard"
+        />
+      </div>
       <div className="flex flex-wrap gap-5 mt-16">
         <p
           className={`${
@@ -62,7 +73,7 @@ const Section1 = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-lg md:text-xl font-semibold mt-5`}
+          } text-lg md:text-xl font-semibold flex items-center gap-2 mt-5`}
         >
           <SearchIcon size={30} className="mb-1" />
           Looking for endpoint protection that thinks like an analyst?
@@ -72,10 +83,10 @@ const Section1 = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-base md:text-lg flex gap-2`}
+          } text-lg md:text-xl flex items-center gap-2`}
         >
           <ArrowRightIcon size={30} className="mb-1" />
-          Explore AIShieldNet – Built on Real-Time LLM Endpoint Protection
+          Explore AIShieldNet - Built on Real-Time LLM Endpoint Protection
         </p>
       </div>
       <div className="flex justify-center mt-5">
@@ -84,17 +95,6 @@ const Section1 = () => {
             Discover AIShieldNet <ArrowRightIcon size={20} />
           </button>
         </Link>
-      </div>
-      <div className="mt-10">
-        <img
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } shadow-2xl rounded-2xl`}
-          src="/images/bannnnn.png"
-          alt="software dashboard"
-        />
       </div>
     </div>
   );

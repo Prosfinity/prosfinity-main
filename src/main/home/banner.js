@@ -25,7 +25,7 @@ const Banner = () => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-4xl md:text-5xl font-bold leading-tight md:leading-tight`}
+          } text-3xl md:text-[2.9rem] font-bold leading-tight md:leading-tight`}
         >
           LLM-Powered Endpoint Security. One Agent. Real-Time AI Defense
         </h1>
@@ -45,7 +45,7 @@ const Banner = () => {
               : ""
           } mt-7 gap-2 flex flex-wrap justify-center`}
         >
-          <Link href="/llm">
+          <Link href="/product/AIShieldNet/llm">
             <button className="bg-btnDark text-white mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
               Discover how AIShieldNet uses LLMs
             </button>

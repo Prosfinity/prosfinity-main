@@ -159,6 +159,17 @@ const Section1 = () => {
             </p>
           </div>
         </div>
+        <div className="mt-10">
+          <img
+            className={`${
+              loaded || inViewport
+                ? "animate__animated animate__slideInUp animate__fast"
+                : ""
+            } shadow-2xl rounded-2xl`}
+            src="/images/control.png"
+            alt="software dashboard"
+          />
+        </div>
         <p
           className={`${
             loaded || inViewport
@@ -239,17 +250,6 @@ const Section1 = () => {
             Try Free Now
           </button>
         </Link>
-      </div>
-      <div className="mt-10">
-        <img
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } shadow-2xl rounded-2xl`}
-          src="/images/control.png"
-          alt="software dashboard"
-        />
       </div>
     </div>
   );

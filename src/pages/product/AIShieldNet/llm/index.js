@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
-import Navbar from "../../main/home/navbar";
-import Footer from "../../main/home/footer";
-import Section1 from "../../main/llm/section/section1";
-import Section2 from "../../main/llm/section/section2";
-import Section3 from "../../main/llm/section/section3";
+import Section1 from "../../../../main/ai-shield-net/llm/section/section1";
+import Section2 from "../../../../main/ai-shield-net/llm/section/section2";
+import Section3 from "../../../../main/ai-shield-net/llm/section/section3";
+import Navbar from "../../../../main/ai-shield-net/navbar";
+import Footer from "../../../../main/home/footer";
 
 const LLMPage = () => {
   return (
