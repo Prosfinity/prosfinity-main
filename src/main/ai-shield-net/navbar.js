@@ -80,6 +80,9 @@ const NavbarHome = () => {
           Security Risk Assessment & Audit
         </NavbarLink>
         <div className="md:hidden">
+          <NavbarLink as={Link} href="/product/AIShieldNet/llm">
+            LLM
+          </NavbarLink>
           <NavbarLink as={Link} href="/product/AIShieldNet/why-us">
             Why Us
           </NavbarLink>
