@@ -46,13 +46,8 @@ const Banner = () => {
           } mt-7 gap-2 flex flex-wrap justify-center`}
         >
           <Link href="/product/AIShieldNet/llm">
-            <button className="bg-btnDark text-white mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
+            <button className="bg-btnBlue text-white mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
               Discover how AIShieldNet uses LLMs
-            </button>
-          </Link>
-          <Link href="https://www.youtube.com/watch?v=jDOWVF6bpxw">
-            <button className="bg-btnLight text-blue mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all px-5">
-              Watch how LLM defends your endpoints
             </button>
           </Link>
         </div>
@@ -62,7 +57,7 @@ const Banner = () => {
           loaded || inViewport
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
-        } mt-10 absolute left-0 right-0 md:relative md:mt-20 shadow-2xl rounded-2xl`}
+        } w-full md:w-9/12 mt-10 absolute left-0 right-0 md:relative md:mt-20 shadow-2xl rounded-2xl mx-auto`}
         src="/images/dashboard.jpeg"
         alt="software dashboard"
       />

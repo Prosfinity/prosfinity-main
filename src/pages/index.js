@@ -6,6 +6,7 @@ import Company from "../main/home/company";
 import Footer from "../main/home/footer";
 import Navbar from "../main/home/navbar";
 import Transaction from "../main/home/transaction";
+import Facts from "../main/home/facts";
 
 const HomePage = () => {
   return (
@@ -36,12 +37,13 @@ const HomePage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[700px] md:h-[1000px] xl:h-[1200px] bg-gradient">
+      <header className="w-full h-[500px] md:h-[800px] xl:h-[900px] bg-gradient">
         <Navbar />
         <Banner />
       </header>
 
       <article>
+        <Facts />
         <Company />
         <Benefit />
         <Transaction />

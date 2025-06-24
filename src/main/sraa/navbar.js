@@ -3,7 +3,7 @@ import {
   NavbarBrand,
   NavbarCollapse,
   NavbarLink,
-  NavbarToggle
+  NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -71,7 +71,7 @@ const NavbarHome = () => {
       <NavbarToggle />
       <NavbarCollapse>
         <NavbarLink as={Link} href="/product/AIShieldNet">
-          Endpoint Phishing Protection
+          Zero Day Endpoint Protection
         </NavbarLink>
         <NavbarLink as={Link} href="/service/sraa">
           Security Risk Assessment & Audit

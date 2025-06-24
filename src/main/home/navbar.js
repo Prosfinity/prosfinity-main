@@ -69,7 +69,7 @@ const NavbarHome = () => {
       <NavbarToggle />
       <NavbarCollapse>
         <NavbarLink as={Link} href="/product/AIShieldNet">
-          Endpoint Phishing Protection
+          Zero Day Endpoint Protection
         </NavbarLink>
         <NavbarLink as={Link} href="/service/sraa">
           Security Risk Assessment & Audit
