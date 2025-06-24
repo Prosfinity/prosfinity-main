@@ -25,7 +25,7 @@ const Facts = () => {
         } mt-64 sm:mt-72 md:mt-52 lg:mt-72 xl:mt-52 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto text-white`}
       >
         <div className="mx-auto flex justify-center">
-          <div className="text-center md:text-2xl inline-flex items-center px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-medium mb-8">
+          <div className="text-center text-2xl md:text-3xl inline-flex items-center px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 font-medium mb-8">
             <TriangleAlertIcon className="mr-5" />
             Think Your Systems Are Safe? These 10 Facts Will Change Your Mind.
           </div>
