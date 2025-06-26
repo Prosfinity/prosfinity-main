@@ -30,7 +30,7 @@ const Section2 = () => {
       className="w-full xl:w-container mx-auto px-5 md:px-20 mt-10 sm:mt-20 xl:mt-32"
     >
       <h3 className="text-3xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
-      📊 Accuracy and Coverage Comparison
+        📊 Accuracy and Coverage Comparison
       </h3>
       <div className="mt-10">
         <img

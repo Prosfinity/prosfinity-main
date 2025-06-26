@@ -3,6 +3,7 @@ import Head from "next/head";
 import Section1 from "../../../../main/ai-shield-net/llm/section/section1";
 import Section2 from "../../../../main/ai-shield-net/llm/section/section2";
 import Section3 from "../../../../main/ai-shield-net/llm/section/section3";
+import Section4 from "../../../../main/ai-shield-net/llm/section/section4";
 import Navbar from "../../../../main/ai-shield-net/navbar";
 import Footer from "../../../../main/home/footer";
 
@@ -49,6 +50,7 @@ const LLMPage = () => {
 
       <article className="mt-10 md:mt-15 pt-10 md:pt-20">
         <Section1 />
+        <Section4 />
         <Section2 />
         <Section3 />
       </article>
