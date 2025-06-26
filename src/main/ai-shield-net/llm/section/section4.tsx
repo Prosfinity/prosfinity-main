@@ -113,28 +113,55 @@ const Section4 = () => {
         Why LLM-Powered Detection Changes Everything
       </p>
       <ul className="flex flex-col gap-2 mt-5">
-        <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Detects zero-day, fileless, and insider
-          attacks - <b>no signature needed</b>
+        <li className="flex gap-2 text-base md:text-lg font-light">
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Detects zero-day, fileless, and insider attacks -{" "}
+            <b>no signature needed</b>
+          </span>
         </li>
         <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Analyzes <b>every single process</b> on
-          Windows in real-time
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Analyzes <b>every single process</b> on Windows in real-time
+          </span>
         </li>
         <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Understands attack <b>context and intent</b>,
-          like a human analyst
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Understands attack <b>context and intent</b>, like a human analyst
+          </span>
         </li>
         <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Stops threats in <b>under 1 second</b>, before
-          damage begins
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Stops threats in <b>under 1 second</b>, before damage begins
+          </span>
         </li>
         <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Reduces false positives by up to <b>80%</b>
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Reduces false positives by up to <b>80%</b>
+          </span>
         </li>
         <li className="flex items-center gap-2 text-base md:text-lg font-light">
-          <CheckIcon size={20} /> Learns from your environment over time -{" "}
-          <b>gets smarter automatically</b>
+          <div className="mt-1">
+            <CheckIcon size={20} />
+          </div>
+          <span>
+            Learns from your environment over time -{" "}
+            <b>gets smarter automatically</b>
+          </span>
         </li>
       </ul>
       <div className="flex justify-center mt-5">
