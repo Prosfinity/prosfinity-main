@@ -12,7 +12,7 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
         <title>
           Download Link &#8211; AI ShieldNet Agent Sensor &#8211; AI ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta

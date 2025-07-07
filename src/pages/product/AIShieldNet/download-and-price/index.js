@@ -16,7 +16,7 @@ const AIShieldNetDownloadAndPricePage = () => {
           Download | AIShieldNet &#8211; Your Trusted AI Endpoint Protection
           &#8211; AI ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta

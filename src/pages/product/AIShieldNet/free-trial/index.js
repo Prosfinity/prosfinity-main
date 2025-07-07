@@ -14,7 +14,7 @@ const AIShieldNetFreeTrialPage = () => {
           Free Trial &#8211; Explore Power AI Endpoint Protection &#8211; AI
           ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta

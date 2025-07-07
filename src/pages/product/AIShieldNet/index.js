@@ -18,7 +18,7 @@ const AIShieldNetPage = () => {
           AI ShieldNet &#8211; Unified Phishing Defense for the Modern
           Organization
         </title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Prosfinity &#8211; AI ShieldNet" />

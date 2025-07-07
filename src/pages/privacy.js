@@ -8,7 +8,7 @@ const HomePage = () => {
     <div className="font-Poppins bg-white">
       <Head>
         <title>Privacy Policy &#8211; AI Driven Cybersecurity Partner</title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
       <header>

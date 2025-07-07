@@ -13,7 +13,7 @@ const ContactPage = () => {
           Contact | AIShieldNet &#8211; Your Trusted Cybersecurity Partner
           &#8211; AI ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta

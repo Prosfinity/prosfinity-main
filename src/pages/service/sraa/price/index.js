@@ -12,7 +12,7 @@ const SRAAWhatIsPage = () => {
     <div className="font-Poppins bg-white">
       <Head>
         <title>What is SRAA | Security Risk Assessment And Audit</title>
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
 
         {/* Open Graph */}
         <meta
