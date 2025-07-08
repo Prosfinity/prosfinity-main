@@ -13,7 +13,7 @@ const HomePage = () => {
     <div className="font-Poppins">
       <Head>
         <title>Prosfinity &#8211; AI Driven Cybersecurity Partner</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Prosfinity &#8211; AI Driven Cybersecurity Partner" />

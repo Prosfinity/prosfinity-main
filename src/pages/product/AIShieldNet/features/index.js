@@ -32,7 +32,7 @@ const AIShieldNetFeaturesPage = () => {
           Features &#8211; Explore Power AI Endpoint Protection &#8211; AI
           ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta

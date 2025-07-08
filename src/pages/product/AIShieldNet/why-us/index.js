@@ -22,7 +22,7 @@ const AIShieldNetWhyUsPage = () => {
           Why Us &#8211; Explore Power AI Endpoint Protection &#8211; AI
           ShieldNet
         </title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Prosfinity &#8211; AI ShieldNet Why Us" />

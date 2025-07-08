@@ -10,7 +10,7 @@ const AIShieldNetPhishingDefenseReviewPage = () => {
     <div className="font-Poppins bg-white">
       <Head>
         <title>Phishing Defense Review &#8211; AI ShieldNet</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Prosfinity &#8211; AI ShieldNet Phishing Defense Review" />

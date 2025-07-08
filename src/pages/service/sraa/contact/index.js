@@ -11,7 +11,7 @@ const SRAAContactPage = () => {
     <div className="font-Poppins bg-white">
       <Head>
         <title>Contact Us | Security Risk Assessment And Audit</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
         <meta
