@@ -64,6 +64,21 @@ const Banner = () => {
           </div>
           <div className="mb-5">
             <label
+              htmlFor="phone"
+              className="block mb-2 text-base font-medium text-white "
+            >
+              Phone Number/Whatsapp Number
+            </label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5      "
+            />
+          </div>
+          <div className="mb-5">
+            <label
               htmlFor="email"
               className="block mb-2 text-base font-medium text-white "
             >

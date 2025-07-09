@@ -43,15 +43,17 @@ const Section1 = () => {
         EDRs?
       </p>
       <div className="mt-10">
-        <img
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } shadow-2xl rounded-2xl`}
-          src="/images/bannnnn.png"
-          alt="software dashboard"
-        />
+        <Link href="/files/AIShieldNet%20LLM-Powered%20ZDR%20Technical%20Review.pdf" target="_blank">
+          <img
+            className={`${
+              loaded || inViewport
+                ? "animate__animated animate__slideInUp animate__fast"
+                : ""
+            } shadow-2xl rounded-2xl`}
+            src="/images/banner-llm.jpeg"
+            alt="software dashboard"
+          />
+        </Link>
       </div>
 
       <p

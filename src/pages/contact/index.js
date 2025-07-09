@@ -49,7 +49,7 @@ const ContactPage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[800px] md:h-[450px] bg-gradient">
+      <header className="w-full h-[800px] md:h-[600px] bg-gradient">
         <Navbar />
         <Banner />
       </header>
