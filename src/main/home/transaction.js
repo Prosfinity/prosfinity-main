@@ -39,7 +39,7 @@ const Transaction = () => {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-0 md:px-32 lg:px-12 xl:px-0 mx-auto overflow-hidden text-white flex flex-wrap lg:flex-nowrap justify-center xl:justify-between items-center gap-24 mb-36"
+      className="w-full xl:w-container px-0 md:px-32 lg:px-12 xl:px-0 mx-auto overflow-hidden text-white flex flex-wrap lg:flex-nowrap justify-center xl:justify-between items-center gap-24 mb-20"
     >
       <div className="w-full lg:w-11/12">
         <h2

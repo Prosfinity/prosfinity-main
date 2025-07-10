@@ -7,6 +7,7 @@ import Footer from "../main/home/footer";
 import Navbar from "../main/home/navbar";
 import Transaction from "../main/home/transaction";
 import Facts from "../main/home/facts";
+import Link from "next/link";
 
 const HomePage = () => {
   return (
@@ -16,24 +17,36 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Prosfinity &#8211; AI Driven Cybersecurity Partner" />
+        <meta
+          property="og:title"
+          content="Prosfinity &#8211; AI Driven Cybersecurity Partner"
+        />
         <meta
           property="og:description"
           content="Prosfinity is a cybersecurity company that provides AI-driven cybersecurity solutions to businesses."
         />
-        <meta property="og:image" content="https://prosfinity.com/images/logo-light.png" />
+        <meta
+          property="og:image"
+          content="https://prosfinity.com/images/logo-light.png"
+        />
         <meta property="og:url" content="https://prosfinity.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Prosfinity" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Prosfinity &#8211; AI Driven Cybersecurity Partner" />
+        <meta
+          name="twitter:title"
+          content="Prosfinity &#8211; AI Driven Cybersecurity Partner"
+        />
         <meta
           name="twitter:description"
           content="Prosfinity is a cybersecurity company that provides AI-driven cybersecurity solutions to businesses."
         />
-        <meta name="twitter:image" content="https://prosfinity.com/images/logo-light.png" />
+        <meta
+          name="twitter:image"
+          content="https://prosfinity.com/images/logo-light.png"
+        />
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
@@ -47,6 +60,18 @@ const HomePage = () => {
         <Company />
         <Benefit />
         <Transaction />
+        <div className="px-5 mb-20">
+          <Link
+            href="/files/AIShieldNet%20LLM-Powered%20ZDR%20Technical%20Review.pdf"
+            target="_blank"
+          >
+            <img
+              className="w-full md:w-1/2 mx-auto shadow-2xl rounded-2xl"
+              src="/images/banner-llm.jpeg"
+              alt="software dashboard"
+            />
+          </Link>
+        </div>
       </article>
 
       <footer>
