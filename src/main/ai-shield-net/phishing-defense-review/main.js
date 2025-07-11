@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useInViewport } from "ahooks";
 import { BanknoteIcon, CheckIcon, InfinityIcon, SirenIcon } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const PhishingDefenseReviewMain = () => {
@@ -26,6 +27,19 @@ const PhishingDefenseReviewMain = () => {
       >
         Schedule a Phishing Defense Review
       </h2>
+      <div className="w-full md:w-3/4 mx-auto mt-10">
+        <Link href="/files/AIShieldNet%20LLM-Powered%20ZDR%20Technical%20Review.pdf" target="_blank">
+          <img
+            className={`${
+              loaded || inViewport
+                ? "animate__animated animate__slideInUp animate__fast"
+                : ""
+            } shadow-2xl rounded-2xl`}
+            src="/images/banner-llm.jpeg"
+            alt="software dashboard"
+          />
+        </Link>
+      </div>
       <div className="flex flex-col md:flex-row gap-2 mt-5">
         <div className="w-full md:w-7/12 mx-auto">
           <p
