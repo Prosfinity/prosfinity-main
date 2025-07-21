@@ -108,10 +108,10 @@ const DownloadAndPricePricing = () => {
             </div>
             <div className="flex flex-col gap-2 mt-5 text-gray-800">
               <p className="text-lg md:text-xl text-center leading-tight md:leading-normal line-through font-semibold">
-                $100 HKD
+                $20.00 USD
               </p>
               <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">
-                $39.99 HKD
+                $12.49 USD
               </p>
               <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
                 /Month Per EndPoint
@@ -152,7 +152,7 @@ const DownloadAndPricePricing = () => {
             </div>
             <div className="flex flex-col gap-2 mt-5 text-gray-800">
               <p className="text-xl md:text-2xl text-center leading-tight md:leading-normal font-semibold">
-                $0 HKD
+                $0 USD
               </p>
               <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
                 /Month
