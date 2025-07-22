@@ -19,14 +19,24 @@ const Hero = () => {
     <div ref={ref} className="mx-auto px-5 xl:px-0 py-10">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
         <div>
-          <h2
+          <h1
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
             } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed mt-5 text-center`}
           >
-            Security Risk Assessment And Audit
+            Security Risk Assessment And Audit (SRAA)
+          </h1>
+          <h2
+            className={`${
+              loaded || inViewport
+                ? "animate__animated animate__slideInUp animate__fast"
+                : ""
+            } text-xl italic md:text-2xl font-normal leading-normal md:leading-relaxed mt-5 text-center`}
+          >
+            Your first step toward cybersecurity readiness. Trusted by SMEs in
+            Hong Kong and beyond
           </h2>
           <p
             className={`${
@@ -35,19 +45,18 @@ const Hero = () => {
                 : ""
             } mt-5 text-lg md:text-xl font-light leading-6 lg:leading-10 text-center`}
           >
-            Protect your business with our expert Security Risk Assessment and
-            Audit Services! Identify vulnerabilities, mitigate risks, and
-            strengthen your defenses with our comprehensive solutions. Plus, as
-            a special bonus, receive FREE Zero-Day Endpoint Protection and
-            Response to safeguard your systems against the latest threats. Stay
-            secure, stay ahead—partner with us today!
+            Is Your Business Ready to Face Cybersecurity Risks? According to
+            Chubb's 2023 survey, 63% of small and medium-sized enterprises
+            (SMEs) in Asia fell victim to cyberattacks within just 12 months.
+            Even more concerning, most companies were unaware of the security
+            vulnerabilities in their systems until an incident occurred.
+            <br />
+            So how can you proactively prevent these risks?
           </p>
           <div className="flex justify-center mt-5">
-            <Link href="/service/sraa/contact">
-              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
-                Get a free consultation now
-              </button>
-            </Link>
+            <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
+              READ MORE
+            </button>
           </div>
         </div>
       </div>
