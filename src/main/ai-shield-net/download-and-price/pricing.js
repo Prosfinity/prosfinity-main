@@ -45,7 +45,7 @@ const DownloadAndPricePricing = () => {
       </div>
       <div className="w-full flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10 mt-10">
         <div className="w-full lg:w-4/12 mx-auto">
-          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[700px]">
+          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[600px]">
             <ShieldCheckIcon color="#605BE5" size={50} />
             <p className="text-center text-lg md:text-xl font-semibold leading-normal md:leading-relaxed">
               Zero-Day Phishing Detection
@@ -106,7 +106,7 @@ const DownloadAndPricePricing = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-2 mt-5 text-gray-800">
+            {/* <div className="flex flex-col gap-2 mt-5 text-gray-800">
               <p className="text-lg md:text-xl text-center leading-tight md:leading-normal line-through font-semibold">
                 $20.00 USD
               </p>
@@ -116,7 +116,7 @@ const DownloadAndPricePricing = () => {
               <p className="text-base md:text-lg text-center leading-tight md:leading-normal">
                 /Month Per EndPoint
               </p>
-            </div>
+            </div> */}
             <Link href="/contact">
               <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-2">
                 Contact Us
@@ -125,7 +125,7 @@ const DownloadAndPricePricing = () => {
           </div>
         </div>
         <div className="w-full lg:w-4/12 mx-auto">
-          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[700px]">
+          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[600px]">
             <CastIcon color="#605BE5" size={50} />
             <p className="text-center text-lg md:text-xl font-semibold leading-normal md:leading-relaxed">
               Browser Extension
@@ -166,7 +166,7 @@ const DownloadAndPricePricing = () => {
           </div>
         </div>
         <div className="w-full lg:w-4/12 mx-auto">
-          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[700px]">
+          <div className="flex flex-col items-center gap-2 shadow-xl p-5 rounded-lg min-h-[600px]">
             <EditIcon color="#605BE5" size={50} />
             <p className="text-center text-lg md:text-xl font-semibold leading-normal md:leading-relaxed">
               API

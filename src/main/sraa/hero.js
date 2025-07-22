@@ -2,6 +2,7 @@
 import { useInViewport } from "ahooks";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import Blog from "./blog";
 
 const Hero = () => {
   const ref = useRef(null);
@@ -60,6 +61,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/* <Blog /> */}
     </div>
   );
 };
