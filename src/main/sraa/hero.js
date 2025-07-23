@@ -81,18 +81,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div ref={blogRef}>
-        {isReadMore && <Blog />}
-        {isReadMore && (
-          <div className="flex justify-center mt-5">
-            <button
-              className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4"
-              onClick={() => setIsReadMore(!isReadMore)}
-            >
-              READ LESS
-            </button>
-          </div>
-        )}
+      <div ref={blogRef} className={`${isReadMore ? "block" : "hidden"}`}>
+        <div className="flex justify-center mt-5">
+          <button
+            className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4"
+            onClick={() => setIsReadMore(!isReadMore)}
+          >
+            READ LESS
+          </button>
+        </div>
       </div>
     </div>
   );
