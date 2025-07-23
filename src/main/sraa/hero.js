@@ -1,14 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import { useInViewport } from "ahooks";
-import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Blog from "./blog";
 
 const Hero = () => {
   const ref = useRef(null);
 
+  const viewRef = useRef(null);
+  const blogRef = useRef(null);
+
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
+
+  const [isReadMore, setIsReadMore] = useState(false);
 
   useEffect(() => {
     if (!loaded && inViewport) {
@@ -16,10 +20,23 @@ const Hero = () => {
     }
   }, [inViewport, loaded]);
 
+  useEffect(() => {
+    if (isReadMore && blogRef.current) {
+      const y =
+        blogRef.current.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+    if (!isReadMore && viewRef.current) {
+      const y =
+        viewRef.current.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }, [isReadMore]);
+
   return (
     <div ref={ref} className="mx-auto px-5 xl:px-0 py-10">
       <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
-        <div>
+        <div ref={viewRef}>
           <h1
             className={`${
               loaded || inViewport
@@ -55,13 +72,28 @@ const Hero = () => {
             So how can you proactively prevent these risks?
           </p>
           <div className="flex justify-center mt-5">
-            <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4">
-              READ MORE
+            <button
+              className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4"
+              onClick={() => setIsReadMore(!isReadMore)}
+            >
+              {isReadMore ? "READ LESS" : "READ MORE"}
             </button>
           </div>
         </div>
       </div>
-      {/* <Blog /> */}
+      <div ref={blogRef}>
+        {isReadMore && <Blog />}
+        {isReadMore && (
+          <div className="flex justify-center mt-5">
+            <button
+              className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4"
+              onClick={() => setIsReadMore(!isReadMore)}
+            >
+              READ LESS
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
