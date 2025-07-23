@@ -29,7 +29,7 @@ const SRAAPage = () => {
         />
         <meta
           property="og:image"
-          content="https://prosfinity.com/images/background/2.svg"
+          content="https://prosfinity.com/images/background.png"
         />
         <meta property="og:url" content="https://prosfinity.com/" />
         <meta property="og:type" content="website" />
@@ -47,7 +47,7 @@ const SRAAPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://prosfinity.com/images/background/2.svg"
+          content="https://prosfinity.com/images/background.png"
         />
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
@@ -57,20 +57,20 @@ const SRAAPage = () => {
       </header>
 
       <article className="mt-16">
-        <div>
+        <div className="pt-20 lg:pt-0">
           <div
             style={{
               backgroundSize: "contain",
-              backgroundImage: "url(/images/background/1.svg)",
+              backgroundImage: "url(/images/background.png)",
             }}
-            className="w-full bg-center bg-no-repeat hidden h-[250px] md:h-screen"
+            className="w-full md:w-8/12 mx-auto bg-center bg-no-repeat hidden h-[250px] lg:h-screen"
           />
           <div
             style={{
               backgroundSize: "contain",
               backgroundImage: "url(/images/background.png)",
             }}
-            className="w-full bg-center bg-no-repeat block h-[250px] md:h-screen"
+            className="w-full md:w-8/12 mx-auto bg-center bg-no-repeat block h-[250px] lg:h-screen"
           />
         </div>
         <Hero />

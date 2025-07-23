@@ -25,7 +25,7 @@ const SRAAWhatIsPage = () => {
         />
         <meta
           property="og:image"
-          content="https://prosfinity.com/images/background/2.svg"
+          content="https://prosfinity.com/images/background.png"
         />
         <meta property="og:url" content="https://prosfinity.com/" />
         <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ const SRAAWhatIsPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://prosfinity.com/images/background/2.svg"
+          content="https://prosfinity.com/images/background.png"
         />
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
