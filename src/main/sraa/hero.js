@@ -82,6 +82,7 @@ const Hero = () => {
         </div>
       </div>
       <div ref={blogRef} className={`${isReadMore ? "block" : "hidden"}`}>
+        <Blog />
         <div className="flex justify-center mt-5">
           <button
             className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4"
