@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useInViewport } from "ahooks";
+import { useInViewport, useUpdateEffect } from "ahooks";
 import { useEffect, useRef, useState } from "react";
 import Blog from "./blog";
 
@@ -20,7 +20,7 @@ const Hero = () => {
     }
   }, [inViewport, loaded]);
 
-  useEffect(() => {
+  useUpdateEffect(() => {
     if (isReadMore && blogRef.current) {
       const y =
         blogRef.current.getBoundingClientRect().top + window.pageYOffset - 100;
