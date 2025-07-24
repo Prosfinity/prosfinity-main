@@ -57,20 +57,10 @@ const SRAAPage = () => {
       </header>
 
       <article className="mt-16">
-        <div className="pt-20 lg:pt-0">
-          <div
-            style={{
-              backgroundSize: "contain",
-              backgroundImage: "url(/images/background.png)",
-            }}
-            className="w-full md:w-8/12 mx-auto bg-center bg-no-repeat hidden h-[250px] lg:h-screen"
-          />
-          <div
-            style={{
-              backgroundSize: "contain",
-              backgroundImage: "url(/images/background.png)",
-            }}
-            className="w-full md:w-8/12 mx-auto bg-center bg-no-repeat block h-[250px] lg:h-screen"
+        <div className="pt-10 lg:pt-20">
+          <img
+            className="shadow-2xl rounded-2xl w-full md:w-8/12 mx-auto"
+            src="/images/background.png"
           />
         </div>
         <Hero />
