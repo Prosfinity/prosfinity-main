@@ -39,8 +39,8 @@ const Section4 = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } shadow-2xl rounded-2xl`}
-          src="/images/dashboard.jpeg"
-          alt="software dashboard"
+          src="/images/portal_dashboard.png"
+          alt="portal dashboard"
         />
       </div>
       <p
@@ -59,8 +59,8 @@ const Section4 = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } shadow-2xl rounded-2xl`}
-          src="/images/dashboard.jpeg"
-          alt="software dashboard"
+          src="/images/portal_llm_detection.png"
+          alt="portal llm detection"
         />
       </div>
       <p
@@ -79,8 +79,8 @@ const Section4 = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } shadow-2xl rounded-2xl`}
-          src="/images/dashboard.jpeg"
-          alt="software dashboard"
+          src="/images/portal_endpoint_dashboard.png"
+          alt="portal endpoint dashboard"
         />
       </div>
       <p
@@ -99,8 +99,8 @@ const Section4 = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } shadow-2xl rounded-2xl`}
-          src="/images/dashboard.jpeg"
-          alt="software dashboard"
+          src="/images/portal_antivirus_dashboard.png"
+          alt="portal antivirus dashboard"
         />
       </div>
     </div>
