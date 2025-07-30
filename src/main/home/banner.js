@@ -58,7 +58,7 @@ const Banner = () => {
             ? "animate__animated animate__slideInUp animate__fast"
             : ""
         } w-full md:w-9/12 mt-10 absolute left-0 right-0 md:relative md:mt-20 shadow-2xl rounded-2xl mx-auto`}
-        src="/images/dashboard.jpeg"
+        src="/images/portal_dashboard.png"
         alt="software dashboard"
       />
     </div>
