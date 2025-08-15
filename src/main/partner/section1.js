@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useInViewport } from "ahooks";
-import { HeadsetIcon, ServerIcon, ShieldQuestionIcon } from "lucide-react";
+import { BrickWallShieldIcon, HandFistIcon, NetworkIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const Section1 = () => {
@@ -17,7 +17,7 @@ const Section1 = () => {
 
   return (
     <div ref={ref} className="mx-auto px-5 xl:px-0 py-10">
-      <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
+      <div className="w-full xl:w-8/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
         <div>
           <h2
             className={`${
@@ -26,17 +26,20 @@ const Section1 = () => {
                 : ""
             } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed mt-5 text-center`}
           >
-            Are you providing IT services to small and medium-sized businesses
-            (SMEs)?
+            Are you providing IT services to small
+            <br />
+            and medium-sized businesses (SMEs)?
           </h2>
-          <div className={`${
+          <div
+            className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
-            } grid grid-cols-1 md:grid-cols-3 gap-5 mt-10`}>
+            } grid grid-cols-1 md:grid-cols-3 gap-5 mt-10`}
+          >
             <div className="flex flex-col items-center gap-5">
               <div className="bg-gradient rounded-lg p-4">
-                <HeadsetIcon className="size-10 text-white" />
+                <HandFistIcon className="size-10 text-white" />
               </div>
               <p className="text-center text-lg">
                 An IT Support or IT Outsourcing company?
@@ -44,7 +47,7 @@ const Section1 = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
               <div className="bg-gradient rounded-lg p-4">
-                <ServerIcon className="size-10 text-white" />
+                <NetworkIcon className="size-10 text-white" />
               </div>
               <p className="text-center text-lg">
                 A provider of network setup, infrastructure, or hardware
@@ -53,7 +56,7 @@ const Section1 = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
               <div className="bg-gradient rounded-lg p-4">
-                <ShieldQuestionIcon className="size-10 text-white" />
+                <BrickWallShieldIcon className="size-10 text-white" />
               </div>
               <p className="text-center text-lg">
                 Offering cybersecurity services but lacking deep in-house
@@ -61,16 +64,17 @@ const Section1 = () => {
               </p>
             </div>
           </div>
-          <div className={`${
+          <div
+            className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
-            } mt-10`}>
-            <p className="text-lg">
+            } mt-10`}
+          >
+            <p className="text-lg text-center">
               If yes - you're sitting on an untapped goldmine: the rising demand
-              for cybersecurity from your existing clients.
-              <br />
-              See what you stand to gain?
+              for cybersecurity from your existing clients. See what you stand
+              to gain?
             </p>
           </div>
         </div>

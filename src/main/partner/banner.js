@@ -1,11 +1,10 @@
 import { useInViewport } from "ahooks";
 import { Button } from "flowbite-react";
 import { ArrowDownIcon } from "lucide-react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-const Banner = () => {
+const Banner = ({ setContact }) => {
   const ref = useRef(null);
 
   const [loaded, setLoaded] = useState(false);
@@ -23,15 +22,6 @@ const Banner = () => {
       className="w-full flex flex-col xl:flex-row xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white mt-16 xl:mt-16 py-20 space-y-10 md:space-y-0 gap-10"
     >
       <div className="w-full md:w-5/6 mx-auto">
-        <p
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } uppercase text-sm font-bold`}
-        >
-          become a partnerstack partner
-        </p>
         <h2
           className={`${
             loaded || inViewport
@@ -39,8 +29,11 @@ const Banner = () => {
               : ""
           } text-2xl md:text-4xl font-bold leading-tight mt-4`}
         >
-          Partner with Prosfinity. Enhance the value of your IT services. Earn
-          unlimited commissions.
+          Partner with Prosfinity.
+          <br />
+          Enhance the value of your IT services.
+          <br />
+          Earn unlimited commissions.
         </h2>
         <h4
           className={`${
@@ -59,6 +52,7 @@ const Banner = () => {
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
           } text-sm md:text-base mt-5`}
+          onClick={() => setContact(true)}
         >
           Become a Partner <ArrowDownIcon className="size-5 ml-2" />
         </Button>

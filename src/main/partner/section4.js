@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { useInViewport } from "ahooks";
-import { SparkleIcon } from "lucide-react";
+import { LockIcon, SparkleIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-const Section4 = () => {
+const Section4 = ({ contact }) => {
   const ref = useRef(null);
 
+  const contactRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
   const [inViewport] = useInViewport(ref);
 
@@ -16,16 +17,24 @@ const Section4 = () => {
     }
   }, [inViewport, loaded]);
 
+  useEffect(() => {
+    if (contact && contactRef.current) {
+      const y =
+        contactRef.current.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }, [contact]);
+
   return (
     <div ref={ref} className="mx-auto px-5 xl:px-0 py-10">
-      <div className="w-full xl:w-7/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
+      <div className="w-full xl:w-8/12 flex flex-wrap lg:flex-nowrap justify-between items-start mx-auto gap-10">
         <div>
           <h2
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
                 : ""
-            } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed mt-5 text-center`}
+            } text-2xl md:text-3xl font-semibold leading-normal md:leading-relaxed mt-5 text-center text-nowrap`}
           >
             What Do Your Company Gain from This Partnership Model?
           </h2>
@@ -40,7 +49,7 @@ const Section4 = () => {
               <span className="mt-1">
                 <SparkleIcon className="size-4" />
               </span>
-              <span>
+              <span className="text-justify">
                 <b>Attractive Commission from the Very First Deal</b>: Earn
                 high-margin commissions as soon as the client signs the contract
                 - no need to wait for implementation to finish.
@@ -50,7 +59,7 @@ const Section4 = () => {
               <span className="mt-1">
                 <SparkleIcon className="size-4" />
               </span>
-              <span>
+              <span className="text-justify">
                 <b>Stable, Recurring Revenue</b>: With ongoing services like
                 regular security assessments, 24/7 system monitoring, and
                 quarterly audits, you build a sustainable stream of recurring
@@ -61,7 +70,7 @@ const Section4 = () => {
               <span className="mt-1">
                 <SparkleIcon className="size-4" />
               </span>
-              <span>
+              <span className="text-justify">
                 <b>Stronger Client Retention</b>: By offering high-value
                 services, you create stickiness - making it harder for clients
                 to leave. This opens up opportunities to upsell other solutions
@@ -72,7 +81,7 @@ const Section4 = () => {
               <span className="mt-1">
                 <SparkleIcon className="size-4" />
               </span>
-              <span>
+              <span className="text-justify">
                 <b>Zero Operational Costs</b>: No need to invest in technical
                 staff, backend systems, or post-sale support. We handle
                 everything.
@@ -82,7 +91,7 @@ const Section4 = () => {
               <span className="mt-1">
                 <SparkleIcon className="size-4" />
               </span>
-              <span>
+              <span className="text-justify">
                 <b>Ready-to-Use Sales & Support Materials</b>: You'll receive a
                 complete sales toolkit - pitch decks, demos, pricing sheets,
                 technical documents - all ready for you to start connecting and
@@ -91,6 +100,7 @@ const Section4 = () => {
             </li>
           </ul>
           <h3
+            ref={contactRef}
             className={`${
               loaded || inViewport
                 ? "animate__animated animate__slideInUp animate__fast"
@@ -180,8 +190,8 @@ const Section4 = () => {
           </form>
           <div className="flex justify-center mt-10">
             <Link href="/product/AIShieldNet">
-              <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4 uppercase">
-                Unlock AI-Powered Security Now
+              <button className="bg-red-500 text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4 uppercase flex items-center gap-2">
+                <LockIcon className="size-4" /> Unlock AI-Powered Security Now
               </button>
             </Link>
           </div>

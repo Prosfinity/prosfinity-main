@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
+import { useState } from "react";
 import Footer from "../../main/home/footer";
 import Navbar from "../../main/home/navbar";
 import Banner from "../../main/partner/banner";
@@ -10,6 +11,8 @@ import Section3 from "../../main/partner/section3";
 import Section4 from "../../main/partner/section4";
 
 const PartnerPage = () => {
+  const [contact, setContact] = useState(false);
+
   return (
     <div className="font-Poppins bg-white">
       <Head>
@@ -50,19 +53,19 @@ const PartnerPage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full bg-gradient">
+      <header className="z-10 w-full bg-gradient">
         <Navbar />
-        <Banner />
+        <Banner setContact={setContact} />
       </header>
 
-      <article>
+      <article className="z-10">
         <Section1 />
         <Section2 />
         <Section3 />
-        <Section4 />
+        <Section4 contact={contact} />
       </article>
 
-      <div className="fixed top-0 left-0 w-full h-full">
+      <div className="z-0fixed top-0 left-0 w-full h-full">
         <Particles />
       </div>
 
