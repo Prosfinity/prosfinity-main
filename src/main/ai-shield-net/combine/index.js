@@ -58,7 +58,7 @@ const Combine = () => {
         </div>
       </div>
       <div className="flex justify-center mt-10">
-        <Link href="https://www.youtube.com/watch?v=BnJ3-17rDSo" target="_blank">
+        <Link href="https://www.youtube.com/watch?v=jDOWVF6bpxw" target="_blank">
           <button className="bg-btnBlue text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4 uppercase">
             SEE A LIVE DEMO
           </button>

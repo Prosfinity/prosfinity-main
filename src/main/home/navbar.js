@@ -74,6 +74,9 @@ const NavbarHome = () => {
         <NavbarLink as={Link} href="/service/sraa">
           Security Risk Assessment & Audit
         </NavbarLink>
+        <NavbarLink as={Link} href="/partner">
+          Partner
+        </NavbarLink>
       </NavbarCollapse>
     </Navbar>
   );

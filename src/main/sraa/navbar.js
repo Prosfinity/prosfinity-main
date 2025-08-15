@@ -6,7 +6,6 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
-import { useState } from "react";
 
 const theme = {
   root: {
@@ -57,8 +56,6 @@ const theme = {
 };
 
 const NavbarHome = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <Navbar fluid rounded className="rounded-none lg:pb-0 pb-2" theme={theme}>
       <NavbarBrand as={Link} href="/">
@@ -75,6 +72,9 @@ const NavbarHome = () => {
         </NavbarLink>
         <NavbarLink as={Link} href="/service/sraa">
           Security Risk Assessment & Audit
+        </NavbarLink>
+        <NavbarLink as={Link} href="/partner">
+          Partner
         </NavbarLink>
         <div className="md:hidden">
           <NavbarLink as={Link} href="/service/sraa/what-is-sraa">
