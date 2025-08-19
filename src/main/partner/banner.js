@@ -27,7 +27,7 @@ const Banner = ({ setContact }) => {
             loaded || inViewport
               ? "animate__animated animate__slideInUp animate__fast"
               : ""
-          } text-2xl md:text-4xl font-bold leading-tight mt-4`}
+          } text-2xl md:text-4xl font-bold leading-tight`}
         >
           Partner with Prosfinity.
           <br />

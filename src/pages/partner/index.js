@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import Footer from "../../main/home/footer";
 import Navbar from "../../main/home/navbar";
 import Banner from "../../main/partner/banner";
@@ -12,6 +13,13 @@ import Section4 from "../../main/partner/section4";
 
 const PartnerPage = () => {
   const [contact, setContact] = useState(false);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    if (searchParams.get("contact") === "true") {
+      setContact(true);
+    }
+  }, []);
 
   return (
     <div className="font-Poppins bg-white">
