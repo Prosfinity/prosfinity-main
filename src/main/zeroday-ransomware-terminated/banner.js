@@ -50,7 +50,7 @@ const Banner = () => {
           >
             <div className="relative aspect-[77/40] items-center justify-center">
               <Image
-                src="/images/video/maxresdefault.jpg"
+                src="/images/video/maxresdefault.jpg?v=1"
                 alt="video image"
                 fill
                 objectFit="cover"
@@ -79,7 +79,7 @@ const Banner = () => {
           autoplay={true}
           start={true}
           isOpen={isOpen}
-          videoId="jDOWVF6bpxw"
+          videoId="ZeScAYRHBPE"
           onClose={() => setOpen(false)}
         />
       </div>
