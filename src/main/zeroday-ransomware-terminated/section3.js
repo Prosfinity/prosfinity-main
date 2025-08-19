@@ -39,7 +39,7 @@ const Section3 = () => {
             }`}
           >
             {/* Contact Our Experts Section */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-green-500/30 via-blue-500/10 to-background border-green-500 rounded-xl">
+            <div className="relative overflow-hidden bg-gradient-to-br from-green-500/30 via-blue-500/10 to-background rounded-xl">
               <div className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
                   <div className="flex-shrink-0">
@@ -77,7 +77,7 @@ const Section3 = () => {
             </div>
 
             {/* Partner With Us Section */}
-            <div className="bg-card border border-black/10 rounded-xl bg-gradient-to-br from-yellow-500/30 via-yellow-500/10 to-background border-green-500">
+            <div className="bg-card border border-black/10 rounded-xl bg-gradient-to-br from-yellow-500/30 via-yellow-500/10 to-background">
               <div className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
                   <div className="flex-shrink-0">
