@@ -20,6 +20,10 @@ const nextConfig = {
         source: '/api/:path*',
         destination: 'https://vpn.prosfinity.com/api/:path*',
       },
+      {
+        source: '/payment/:path*',
+        destination: 'https://vpn.prosfinity.com/payment/:path*',
+      },
     ];
   },
 };
