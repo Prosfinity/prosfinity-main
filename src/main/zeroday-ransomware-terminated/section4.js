@@ -41,7 +41,7 @@ const Section3 = () => {
                     ? "animate__animated animate__slideInUp animate__fast"
                     : ""
                 } shadow-2xl rounded-2xl`}
-                src="/images/banner-new.png"
+                src="/images/banner-new.jpeg"
                 alt="software dashboard"
               />
             </Link>
