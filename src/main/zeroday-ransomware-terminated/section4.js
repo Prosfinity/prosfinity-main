@@ -32,7 +32,7 @@ const Section3 = () => {
           </h2>
           <div className="w-full mx-auto mt-10">
             <Link
-              href="/files/AIShieldNet%20LLM-Powered%20ZDR%20Technical%20Review.pdf"
+              href="/files/AIShieldNet%20Ransomware%20Detection.pdf"
               target="_blank"
             >
               <img
