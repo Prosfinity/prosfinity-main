@@ -51,7 +51,7 @@ const SRAAContactPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-16 container mx-auto px-5 md:px-0">
+      <article className="container mx-auto px-5 md:px-0">
         <Breadcrumb
           pageName="Contact"
           description="Have questions or need assistance? We're here to help! Reach out to us through any of the following channels."

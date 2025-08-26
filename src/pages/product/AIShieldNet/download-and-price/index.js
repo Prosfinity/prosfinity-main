@@ -52,7 +52,7 @@ const AIShieldNetDownloadAndPricePage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[700px] md:h-[400px] bg-gradient">
+      <header className="w-full h-[700px] md:h-[500px] bg-gradient">
         <Navbar />
         <DownloadAndPriceBanner />
       </header>

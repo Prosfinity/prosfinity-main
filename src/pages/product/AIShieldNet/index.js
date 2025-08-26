@@ -46,7 +46,7 @@ const AIShieldNetPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-10 md:mt-20 pt-10 md:pt-20">
+      <article className="pt-20 md:pt-0">
         <Section1 />
         <OurValues />
         <Section2 />

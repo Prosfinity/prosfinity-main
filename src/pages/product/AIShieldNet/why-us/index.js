@@ -46,7 +46,7 @@ const AIShieldNetWhyUsPage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[400px] bg-gradient">
+      <header className="w-full h-[500px] bg-gradient">
         <Navbar />
         <WhyUsBanner />
       </header>

@@ -48,7 +48,7 @@ const LLMPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-10 md:mt-15 pt-10 md:pt-20">
+      <article className="pt-20 md:pt-10">
         <Section1 />
         <Section4 />
         <Section2 />

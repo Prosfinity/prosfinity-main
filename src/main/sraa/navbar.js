@@ -6,6 +6,7 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 import Link from "next/link";
+import NavbarNew from "../home/navbar-new";
 
 const theme = {
   root: {
@@ -57,97 +58,105 @@ const theme = {
 
 const NavbarHome = () => {
   return (
-    <Navbar fluid rounded className="rounded-none lg:pb-0 pb-2" theme={theme}>
-      <NavbarBrand as={Link} href="/">
-        <img
-          src="/images/logo-light.png"
-          className="h-20"
-          alt="Prosfinity Logo"
-        />
-      </NavbarBrand>
-      <NavbarToggle />
-      <NavbarCollapse>
-        <NavbarLink as={Link} href="/product/AIShieldNet">
-          Zero Day Endpoint Protection
-        </NavbarLink>
-        <NavbarLink as={Link} href="/service/sraa">
-          Security Risk Assessment & Audit
-        </NavbarLink>
-        <NavbarLink as={Link} href="/zeroday-ransomware-terminated">
-          Zeroday Ransomware Terminated
-        </NavbarLink>
-        <NavbarLink as={Link} href="/partner">
-          Partner
-        </NavbarLink>
-        <div className="md:hidden">
-          <NavbarLink as={Link} href="/service/sraa/what-is-sraa">
-            What is SRAA
-          </NavbarLink>
-          <NavbarLink as={Link} href="/service/sraa/price">
-            Price
-          </NavbarLink>
-          <NavbarLink as={Link} href="/service/sraa/about">
-            About Us
-          </NavbarLink>
-          <NavbarLink as={Link} href="/service/sraa/contact">
-            Contact
-          </NavbarLink>
+    <div>
+      <NavbarNew />
+      <Navbar
+        fluid
+        rounded
+        className="rounded-none lg:pb-0 pb-2 md:hidden"
+        theme={theme}
+      >
+        <NavbarBrand as={Link} href="/">
+          <img
+            src="/images/logo-light.png"
+            className="h-20"
+            alt="Prosfinity Logo"
+          />
+        </NavbarBrand>
+        <NavbarToggle />
+        <NavbarCollapse>
           <NavbarLink as={Link} href="/product/AIShieldNet">
-            Zero Day EndPoint Protection
+            Zero Day Endpoint Protection
           </NavbarLink>
+          <NavbarLink as={Link} href="/service/sraa">
+            Security Risk Assessment & Audit
+          </NavbarLink>
+          <NavbarLink as={Link} href="/zeroday-ransomware-terminated">
+            Zeroday Ransomware Terminated
+          </NavbarLink>
+          <NavbarLink as={Link} href="/partner">
+            Partner
+          </NavbarLink>
+          <div className="md:hidden">
+            <NavbarLink as={Link} href="/service/sraa/what-is-sraa">
+              What is SRAA
+            </NavbarLink>
+            <NavbarLink as={Link} href="/service/sraa/price">
+              Price
+            </NavbarLink>
+            <NavbarLink as={Link} href="/service/sraa/about">
+              About Us
+            </NavbarLink>
+            <NavbarLink as={Link} href="/service/sraa/contact">
+              Contact
+            </NavbarLink>
+            <NavbarLink as={Link} href="/product/AIShieldNet">
+              Zero Day EndPoint Protection
+            </NavbarLink>
+          </div>
+        </NavbarCollapse>
+        <div className="flex-wrap items-center justify-between ml-auto p-4 hidden md:flex border-t border-gray-200">
+          <div></div>
+          <div
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  md: ">
+              <li>
+                <Link
+                  href="/service/sraa/what-is-sraa"
+                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                >
+                  What is SRAA
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/service/sraa/price"
+                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                >
+                  Price
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/service/sraa/about"
+                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/service/sraa/contact"
+                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/product/AIShieldNet"
+                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
+                >
+                  Zero Day EndPoint Protection
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-      </NavbarCollapse>
-      <div className="flex-wrap items-center justify-between ml-auto p-4 hidden md:flex border-t border-gray-200">
-        <div></div>
-        <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  md: ">
-            <li>
-              <Link
-                href="/service/sraa/what-is-sraa"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-              >
-                What is SRAA
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/service/sraa/price"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-              >
-                Price
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/service/sraa/about"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/service/sraa/contact"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/product/AIShieldNet"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-              >
-                Zero Day EndPoint Protection
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </Navbar>
+      </Navbar>
+    </div>
   );
 };
 

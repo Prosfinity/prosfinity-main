@@ -1,6 +1,5 @@
 import { useInViewport } from "ahooks";
-import { BotIcon, CheckIcon, Quote, QuoteIcon } from "lucide-react";
-import Image from "next/image";
+import { BotIcon, CheckIcon, QuoteIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 

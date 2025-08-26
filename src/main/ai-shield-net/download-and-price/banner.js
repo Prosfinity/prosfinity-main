@@ -21,7 +21,7 @@ const DownloadAndPriceBanner = () => {
   return (
     <div
       ref={ref}
-      className="xl:w-container mx-auto mt-16 flex w-full flex-col gap-5 px-8 pt-10 text-white lg:flex-row lg:px-20 xl:mt-28 xl:px-0"
+      className="xl:w-container mx-auto flex w-full flex-col gap-5 px-8 pt-20 md:pt-10 text-white lg:flex-row lg:px-20 xl:px-0"
     >
       <div className="w-full lg:w-6/12">
         <p

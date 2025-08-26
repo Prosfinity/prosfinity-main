@@ -16,7 +16,7 @@ const ComparisonBanner = () => {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white mt-16 xl:mt-28 pt-10"
+      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white pt-28 md:pt-10"
     >
       <div className="w-full lg:w-4/6">
         <p

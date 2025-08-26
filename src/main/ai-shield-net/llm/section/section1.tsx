@@ -1,14 +1,9 @@
 import { useInViewport } from "ahooks";
 import {
   ArrowRightIcon,
-  BotIcon,
   CheckIcon,
-  HandIcon,
-  Quote,
-  QuoteIcon,
-  SearchIcon,
+  SearchIcon
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -27,7 +22,7 @@ const Section1 = () => {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container mx-auto px-5 md:px-20 mt-10 sm:mt-20 xl:mt-10"
+      className="w-full xl:w-container mx-auto px-5 md:px-20"
     >
       <h3 className="text-3xl md:text-4xl font-bold leading-tight md:leading-tight text-center">
         AIShieldNet - Real-Time LLM Intelligence - New Security Standard

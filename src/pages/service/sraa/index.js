@@ -56,7 +56,7 @@ const SRAAPage = () => {
         <Navbar />
       </header>
 
-      <article className="mt-16">
+      <article className="">
         <div className="pt-10 lg:pt-20">
           <img
             className="shadow-2xl rounded-2xl w-full md:w-8/12 mx-auto"

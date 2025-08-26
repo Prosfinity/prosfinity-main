@@ -17,7 +17,7 @@ const Banner = () => {
   return (
     <div
       ref={ref}
-      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white text-center mt-16 xl:mt-16 pt-28"
+      className="w-full xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white text-center pt-10 md:pt-28"
     >
       <div className="w-full lg:w-4/6 mx-auto">
         <h1
