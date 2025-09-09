@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useInViewport } from "ahooks";
 import { BrickWallShieldIcon, HandFistIcon, NetworkIcon } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Section1 = () => {
@@ -73,10 +74,17 @@ const Section1 = () => {
           >
             <p className="text-lg text-center">
               If yes - you're sitting on an untapped goldmine: the rising demand
-              for cybersecurity from your existing clients. See what you stand
-              to gain?
+              for cybersecurity from your existing clients.
             </p>
           </div>
+          <Link
+            href="/files/AI%20ShieldNet%20Partnership%20Strategy%20for%20Business%20Growth%20Presentation.pdf"
+            target="_blank"
+          >
+            <button className="bg-sky-500 text-white font-medium rounded-lg hover:shadow-xl transition-all text-base px-4 py-2 md:px-8 md:py-4 uppercase flex items-center gap-2 mx-auto mt-10">
+              See what you stand to gain?
+            </button>
+          </Link>
         </div>
       </div>
     </div>
