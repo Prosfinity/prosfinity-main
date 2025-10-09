@@ -91,7 +91,7 @@ const NavbarHome = () => {
             <NavbarLink as={Link} href="/service/sraa/what-is-sraa">
               What is SRAA
             </NavbarLink>
-            <NavbarLink as={Link} href="/service/sraa/price">
+            <NavbarLink as={Link} href="/service/sraa/pricing">
               Price
             </NavbarLink>
             <NavbarLink as={Link} href="/service/sraa/about">
