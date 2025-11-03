@@ -91,7 +91,7 @@ const NavbarHome = () => {
             <NavbarLink as={Link} href="/service/sraa/what-is-sraa">
               What is SRAA
             </NavbarLink>
-            <NavbarLink as={Link} href="/service/sraa/price">
+            <NavbarLink as={Link} href="/service/sraa/pricing">
               Price
             </NavbarLink>
             <NavbarLink as={Link} href="/service/sraa/about">
@@ -122,7 +122,7 @@ const NavbarHome = () => {
               </li>
               <li>
                 <Link
-                  href="/service/sraa/price"
+                  href="/service/sraa/pricing"
                   className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
                 >
                   Price
