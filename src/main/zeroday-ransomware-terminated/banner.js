@@ -50,7 +50,7 @@ const Banner = () => {
           >
             <div className="relative aspect-[77/40] items-center justify-center">
               <Image
-                src="/images/video/maxresdefault.jpg?v=1"
+                src="/images/video/maxresdefault.jpg"
                 alt="video image"
                 fill
                 objectFit="cover"
