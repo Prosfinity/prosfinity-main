@@ -104,7 +104,7 @@ const AIShieldNetDownloadAndPriceAgentDownloadPage = () => {
                     </td>
                     <td className="px-6 py-4 text-gray-900 ">18.1 MB</td>
                     <td className="px-6 py-4">
-                      <a href="/files/AIShieldNet_agent_1.1.4.exe" target="_blank">
+                      <a href="/files/AIShieldNet_agent_1.1.6.exe" target="_blank">
                         <button className="bg-btnBlue rounded-lg px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-xl md:px-8 md:py-2 md:text-sm">
                           Download Now
                         </button>
