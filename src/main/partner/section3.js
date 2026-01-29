@@ -111,7 +111,7 @@ const Section3 = () => {
                 icon: ShuffleIcon,
                 text: `The Prosfinity Brand - Your Trustworthy Badge at the Negotiation
             Table: We don't just offer solutions – we bring a trusted
-            cybersecurity brand backed by SMEs across Hong Kong and Asia. This
+            cybersecurity brand backed by SMEs across Singapore and Asia. This
             empowers you to:
             `,
                 children: [

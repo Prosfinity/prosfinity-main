@@ -237,7 +237,7 @@ const Section1 = () => {
                 other tools missed it entirely."
               </p>
               <cite className="text-sm font-medium text-purple-600 not-italic">
-                — Head of Cybersecurity at a Finance Org, Hong Kong
+                — Head of Cybersecurity at a Finance Org, Singapore
               </cite>
             </div>
           </blockquote>

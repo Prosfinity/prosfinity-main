@@ -75,7 +75,7 @@ const Blog = () => {
             </li>
             <li className="flex items-center gap-2">
               <CheckIcon />
-              In Hong Kong, over 60% of SMEs have no structured risk assessment
+              In Singapore, over 60% of SMEs have no structured risk assessment
               or audit process, according to PwC.
             </li>
           </ul>
@@ -239,7 +239,7 @@ const Blog = () => {
             </span>
             <span>
               <b className="font-semibold">Global Mindset, Asian Context</b>:
-              With headquarters in Hong Kong and international experience, our
+              With headquarters in Singapore and international experience, our
               experts understand both{" "}
               <b className="font-semibold">
                 regional challenges and global compliance requirements

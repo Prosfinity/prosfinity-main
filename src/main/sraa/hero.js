@@ -54,7 +54,7 @@ const Hero = () => {
             } text-xl italic md:text-2xl font-normal leading-normal md:leading-relaxed mt-5 text-center`}
           >
             Your first step toward cybersecurity readiness. Trusted by SMEs in
-            Hong Kong and beyond
+            Singapore and beyond
           </h2>
           <p
             className={`${
