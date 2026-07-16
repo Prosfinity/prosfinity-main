@@ -8,15 +8,11 @@ import {
 import {
   BarChart3,
   ChevronDown,
-  DollarSign,
   Download,
   Globe,
-  Info,
   MailWarning,
-  Phone,
   Search,
   Shield,
-  ShieldCheck,
   Users,
 } from "lucide-react";
 import Link from "next/link";
@@ -69,36 +65,6 @@ const productsItems = [
     description: "Evaluate our phishing detection and prevention performance.",
     icon: MailWarning,
     href: "/product/AIShieldNet/phishing-defense-review",
-  },
-];
-
-const servicesItems = [
-  {
-    title: "What is SRAA",
-    description:
-      "Learn about Security Risk Assessment & Audit and why it matters for your organization.",
-    icon: ShieldCheck,
-    href: "/service/sraa/what-is-sraa",
-  },
-  {
-    title: "Pricing",
-    description:
-      "Transparent pricing plans tailored to your business security needs.",
-    icon: DollarSign,
-    href: "/service/sraa/pricing",
-  },
-  {
-    title: "About Us",
-    description:
-      "Get to know our mission, expertise, and commitment to cybersecurity.",
-    icon: Info,
-    href: "/service/sraa/about",
-  },
-  {
-    title: "Contact",
-    description: "Reach out to our team for consultation or support anytime.",
-    icon: Phone,
-    href: "/service/sraa/contact",
   },
 ];
 
@@ -177,57 +143,6 @@ const NavbarNew = () => {
                 </div>
                 <div className="grid grid-cols-3 gap-6">
                   {productsItems.map((item) => (
-                    <Link
-                      key={item.title}
-                      href={item.href}
-                      className="group block space-y-2 rounded-lg p-3 hover:bg-gray-50 transition-colors"
-                    >
-                      <div className="flex items-center space-x-2">
-                        <item.icon className="h-5 w-5 text-red-600" />
-                        <h4 className="font-medium text-sm group-hover:text-red-600 transition-colors">
-                          {item.title}
-                        </h4>
-                      </div>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        {item.description}
-                      </p>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Services Mega Menu */}
-          <div
-            className="relative"
-            onMouseEnter={() => handleMouseEnter("services")}
-            onMouseLeave={handleMouseLeave}
-          >
-            <button className="flex items-center space-x-1 text-sm font-medium hover:text-red-600 transition-colors py-2">
-              <span>Services</span>
-              <ChevronDown className="h-4 w-4" />
-            </button>
-
-            {activeDropdown === "services" && (
-              <div
-                className="absolute top-full left-0 w-[800px] bg-white border border-gray-200 rounded-lg shadow-lg p-6 mt-1"
-                onMouseEnter={handleDropdownMouseEnter}
-                onMouseLeave={handleDropdownMouseLeave}
-              >
-                <div className="mb-4">
-                  <h3 className="text-lg font-semibold mb-2 text-red-600">
-                    Services →{" "}
-                    <a
-                      href="/service/sraa"
-                      className="text-red-600 hover:text-red-700 hover:underline"
-                    >
-                      Security Risk Assessment & Audit
-                    </a>
-                  </h3>
-                </div>
-                <div className="grid grid-cols-3 gap-6">
-                  {servicesItems.map((item) => (
                     <Link
                       key={item.title}
                       href={item.href}

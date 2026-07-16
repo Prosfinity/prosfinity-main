@@ -26,18 +26,6 @@ export default function Document() {
             `,
           }}
         />
-        {/* Event snippet for SRAA contact conversion page */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-16987160496/FPVsCPnUo8YaELD_jaQ_',
-                  'value': 1.0,
-                  'currency': 'HKD'
-              });
-            `,
-          }}
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `

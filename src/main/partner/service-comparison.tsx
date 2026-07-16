@@ -1,4 +1,4 @@
-import { CheckCircle, Info, SearchIcon, ShieldIcon } from "lucide-react"
+import { CheckCircle, Info, ShieldIcon } from "lucide-react"
 
 export function ServiceComparison() {
   const services = [
@@ -20,26 +20,6 @@ export function ServiceComparison() {
       valueDescription:
         "Most SMEs lack specialized in-house cybersecurity teams. AI ShieldNet gives them enterprise-grade protection - without the cost of hiring or building new infrastructure.",
       badge: "Real-Time Protection",
-    },
-    {
-      id: "security-audit",
-      title: "Security Risk Assessment & Audit",
-      subtitle: "Comprehensive Cybersecurity Checkup",
-      description: "A recurring (quarterly or bi-annual) assessment service that helps businesses:",
-      icon: SearchIcon,
-      color: "bg-emerald-500",
-      borderColor: "border-emerald-200",
-      bgColor: "bg-emerald-50",
-      features: [
-        "Analyze all existing cybersecurity risks within their systems",
-        "Audit configurations, user privileges, data infrastructure, and potential vulnerabilities",
-        "Receive in-depth reports with clear, actionable recommendations",
-        "Track and measure improvements in security posture over time",
-      ],
-      valueTitle: "Value for Your Clients:",
-      valueDescription:
-        "This service helps businesses accurately assess their current security landscape, understand hidden risks, and develop improvement plans tailored to their budget. Not just assessment - but hands-on guidance for real fixes.",
-      badge: "Comprehensive Analysis",
     },
   ]
 

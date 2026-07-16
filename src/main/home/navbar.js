@@ -25,9 +25,6 @@ const NavbarHome = () => {
           <NavbarLink as={Link} href="/product/AIShieldNet">
             Zero Day Endpoint Protection
           </NavbarLink>
-          <NavbarLink as={Link} href="/service/sraa">
-            Security Risk Assessment & Audit
-          </NavbarLink>
           <NavbarLink as={Link} href="/zeroday-ransomware-terminated">
             Zeroday Ransomware Terminated
           </NavbarLink>
