@@ -420,6 +420,88 @@ function ConsoleVisual({ pageKey }) {
   );
 }
 
+function ExtensionCore() {
+  return (
+    <section className="border-b border-cyan-400/20 bg-cyan-400/[0.045] px-5 py-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[.85fr_1.15fr]">
+        <div>
+          <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+            <Globe2 className="h-4 w-4" /> Browser extension powered
+          </span>
+          <h2 className="mt-5 text-3xl font-semibold md:text-5xl">Protection lives inside the browser—not behind the traffic</h2>
+          <p className="mt-5 text-lg leading-8 text-slate-300">Prosfinity BDR uses a lightweight managed browser extension to see the destination and user action at the moment it happens. That gives security teams context which endpoint agents and network-only tools can miss.</p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {[
+            ["01", "Deploy", "Push the extension through your existing browser or endpoint management workflow."],
+            ["02", "Protect inline", "Evaluate uploads, downloads, clipboard and GenAI interactions before completion."],
+            ["03", "Manage centrally", "Publish policy and review response evidence from the BDR console."],
+          ].map(([n, title, text]) => (
+            <div key={n} className="rounded-2xl border border-white/10 bg-[#091321] p-6">
+              <p className="text-xs font-semibold text-cyan-400">{n}</p>
+              <h3 className="mt-7 text-xl font-semibold">{title}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PageSpecificContent({ pageKey, page }) {
+  if (pageKey === "comparison") {
+    const rows = [
+      ["In-page upload / paste context", "Strong", "Limited", "Limited"],
+      ["Warn before data transfer", "Yes", "Rare", "Site-level"],
+      ["GenAI prompt governance", "Native", "Limited", "Limited"],
+      ["Malware / process protection", "Complementary", "Strong", "No"],
+      ["Browser event investigation", "Action-level", "Process-level", "Traffic-level"],
+    ];
+    return (
+      <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
+        <p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">Side-by-side coverage</p>
+        <h2 className="mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">The missing control point in a layered security stack</h2>
+        <div className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
+          <div className="min-w-[760px]">
+            <div className="grid grid-cols-[1.5fr_repeat(3,1fr)] bg-white/[.06] p-5 text-sm font-semibold"><span>Capability</span><span className="text-cyan-300">Prosfinity BDR</span><span>Endpoint / EDR</span><span>SWG</span></div>
+            {rows.map(row => <div key={row[0]} className="grid grid-cols-[1.5fr_repeat(3,1fr)] border-t border-white/10 p-5 text-sm text-slate-300">{row.map((cell, i) => <span key={cell} className={i === 1 ? "font-semibold text-cyan-300" : ""}>{cell}</span>)}</div>)}
+          </div>
+        </div>
+      </div></section>
+    );
+  }
+
+  const styles = {
+    features: "md:grid-cols-2 lg:grid-cols-4 [&>*:first-child]:lg:col-span-2 [&>*:nth-child(6)]:lg:col-span-2",
+    "use-cases": "md:grid-cols-2 [&>*:nth-child(3n+1)]:md:col-span-2",
+    "how-it-works": "md:grid-cols-2 lg:grid-cols-3",
+    deployment: "md:grid-cols-2 lg:grid-cols-3",
+    "why-bdr": "md:grid-cols-2",
+  }[pageKey];
+  const headings = {
+    features: ["Extension controls", "Control every critical browser data channel"],
+    "use-cases": ["Real-world workflows", "Different risks need different browser decisions"],
+    "how-it-works": ["Extension-to-console workflow", "One decision path from browser action to evidence"],
+    deployment: ["Rollout blueprint", "From extension pilot to controlled enforcement"],
+    "why-bdr": ["Why now", "The browser has become the new data perimeter"],
+  }[pageKey];
+  return (
+    <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
+      <p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">{headings[0]}</p>
+      <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">{headings[1]}</h2>
+      <div className={`mt-14 grid gap-5 ${styles}`}>
+        {page.cards.map(([Icon, title, text], i) => (
+          <div key={title} className={`rounded-2xl border p-7 ${pageKey === "how-it-works" ? "border-cyan-400/25 bg-gradient-to-br from-cyan-400/[.08] to-transparent" : pageKey === "use-cases" ? "border-white/10 bg-white/[.035]" : "border-white/10 bg-[#091321]"}`}>
+            <div className="flex items-start justify-between"><span className="inline-flex rounded-xl bg-cyan-400/10 p-3 text-cyan-400"><Icon className="h-6 w-6" /></span><span className="text-xs font-semibold text-slate-600">{String(i + 1).padStart(2, "0")}</span></div>
+            <h3 className="mt-7 text-xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-slate-400">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div></section>
+  );
+}
+
 export default function BdrPage({ pageKey }) {
   const page = pages[pageKey];
   return (
@@ -462,6 +544,7 @@ export default function BdrPage({ pageKey }) {
             <ConsoleVisual pageKey={pageKey} />
           </div>
         </section>
+        <ExtensionCore />
         <section className="border-b border-white/10 px-5 py-10">
           <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
             {page.stats.map(([value, label]) => (
@@ -475,30 +558,7 @@ export default function BdrPage({ pageKey }) {
             ))}
           </div>
         </section>
-        <section className="px-5 py-24">
-          <div className="mx-auto max-w-7xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-              Capabilities in depth
-            </p>
-            <h2 className="mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">
-              Browser protection built around real user actions
-            </h2>
-            <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {page.cards.map(([Icon, title, text]) => (
-                <div
-                  key={title}
-                  className="rounded-2xl border border-white/10 bg-[#091321] p-7 transition hover:-translate-y-1 hover:border-cyan-400/40"
-                >
-                  <span className="inline-flex rounded-xl bg-cyan-400/10 p-3 text-cyan-400">
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <h3 className="mt-6 text-xl font-semibold">{title}</h3>
-                  <p className="mt-3 leading-7 text-slate-400">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <PageSpecificContent pageKey={pageKey} page={page} />
         <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]">
             <div>

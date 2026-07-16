@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import NavbarNew from "../home/navbar-new";
+import AIShieldNavigation from "./navigation";
 
 const theme = {
   root: {
@@ -278,6 +279,7 @@ const NavbarHome = () => {
           </div>
         </div>
       </Navbar>
+      <AIShieldNavigation />
     </div>
   );
 };

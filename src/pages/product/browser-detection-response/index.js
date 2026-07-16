@@ -160,6 +160,9 @@ export default function BrowserDetectionResponse() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(34,211,238,0.12),transparent_34%)]" />
           <div className="relative mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
             <div>
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
+                <Monitor className="h-4 w-4" /> Powered by a lightweight browser extension
+              </div>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-400">
                 Prosfinity BDR · Browser Detection & Response
               </p>
@@ -168,9 +171,10 @@ export default function BrowserDetectionResponse() {
                 <span className="text-cyan-400">Inside the Browser</span>
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-slate-300">
-                Gain real-time visibility and policy control over file uploads,
-                downloads, clipboard activity, and GenAI interactions—without
-                replacing the user&apos;s browser.
+                Deploy our managed extension into the browser to gain real-time
+                visibility and policy control over file uploads, downloads,
+                clipboard activity, and GenAI interactions—without replacing
+                the user&apos;s familiar browser.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link
@@ -256,10 +260,10 @@ export default function BrowserDetectionResponse() {
           <div className="mx-auto max-w-7xl">
             <div className="text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
-                How it works
+                Extension-first architecture
               </p>
               <h2 className="mt-4 text-3xl font-semibold md:text-5xl">
-                Protection in three clear steps
+                Browser-native protection in three clear steps
               </h2>
             </div>
             <div className="mt-14 grid gap-5 md:grid-cols-3">

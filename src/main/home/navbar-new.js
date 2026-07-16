@@ -132,7 +132,7 @@ const NavbarNew = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur hidden md:block">
+    <header className="sticky top-0 z-50 hidden w-full border-b bg-white text-slate-900 backdrop-blur md:block">
       <div className="container mx-auto flex h-16 items-center px-4">
         <div className="mr-8">
           <Link href="/">
@@ -144,14 +144,14 @@ const NavbarNew = () => {
           </Link>
         </div>
 
-        <nav className="flex flex-wrap items-center gap-y-1 space-x-8">
+        <nav className="flex flex-wrap items-center gap-y-1 space-x-8 text-slate-900">
           {/* Platform Mega Menu */}
           <div
             className="relative"
             onMouseEnter={() => handleMouseEnter("platform")}
             onMouseLeave={handleMouseLeave}
           >
-            <button className="flex items-center space-x-1 text-sm font-medium hover:text-red-600 transition-colors py-2">
+            <button className="flex items-center space-x-1 py-2 text-sm font-medium text-slate-900 transition-colors hover:text-red-600">
               <span>Products</span>
               <ChevronDown className="h-4 w-4" />
             </button>
@@ -257,7 +257,7 @@ const NavbarNew = () => {
 
           <Link
             href="/partner"
-            className="text-sm font-medium hover:text-red-600 transition-colors"
+            className="text-sm font-medium text-slate-900 transition-colors hover:text-red-600"
           >
             Partner
           </Link>
