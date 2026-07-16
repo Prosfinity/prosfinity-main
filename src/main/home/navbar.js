@@ -23,10 +23,10 @@ const NavbarHome = () => {
         <NavbarToggle />
         <NavbarCollapse>
           <NavbarLink as={Link} href="/product/AIShieldNet">
-            Zero Day Endpoint Protection
+            AIShieldNet — Zero Day Endpoint Protection
           </NavbarLink>
-          <NavbarLink as={Link} href="/zeroday-ransomware-terminated">
-            Zeroday Ransomware Terminated
+          <NavbarLink as={Link} href="/product/browser-detection-response">
+            Prosfinity BDR — Browser Detection & Response
           </NavbarLink>
           <NavbarLink as={Link} href="/partner">
             Partner
