@@ -28,6 +28,44 @@ const NavbarHome = () => {
           <NavbarLink as={Link} href="/product/browser-detection-response">
             Prosfinity BDR — Browser Detection & Response
           </NavbarLink>
+          <div className="md:hidden pl-3">
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/why-bdr"
+            >
+              Why BDR
+            </NavbarLink>
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/features"
+            >
+              BDR Features
+            </NavbarLink>
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/use-cases"
+            >
+              Use Cases
+            </NavbarLink>
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/how-it-works"
+            >
+              How It Works
+            </NavbarLink>
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/comparison"
+            >
+              BDR Comparison
+            </NavbarLink>
+            <NavbarLink
+              as={Link}
+              href="/product/browser-detection-response/deployment"
+            >
+              Deployment
+            </NavbarLink>
+          </div>
           <NavbarLink as={Link} href="/partner">
             Partner
           </NavbarLink>

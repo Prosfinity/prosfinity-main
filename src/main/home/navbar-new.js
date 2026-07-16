@@ -29,14 +29,14 @@ const endpointItems = [
   },
   {
     title: "Why AIShieldNet",
-    description:
-      "Why it is built for unknown and zero-day endpoint threats.",
+    description: "Why it is built for unknown and zero-day endpoint threats.",
     icon: Users,
     href: "/product/AIShieldNet/why-us",
   },
   {
     title: "Features",
-    description: "Explore detection, monitoring, policy, and response capabilities.",
+    description:
+      "Explore detection, monitoring, policy, and response capabilities.",
     icon: Search,
     href: "/product/AIShieldNet/features",
   },
@@ -54,7 +54,8 @@ const endpointItems = [
   },
   {
     title: "Free Trial",
-    description: "Evaluate AIShieldNet endpoint protection in your environment.",
+    description:
+      "Evaluate AIShieldNet endpoint protection in your environment.",
     icon: Globe,
     href: "/product/AIShieldNet/free-trial",
   },
@@ -64,6 +65,39 @@ const endpointItems = [
     icon: MailWarning,
     href: "/product/AIShieldNet/phishing-defense-review",
   },
+];
+
+const bdrItems = [
+  [
+    "Why BDR",
+    "Browser security gaps and the need for action-level control.",
+    "/product/browser-detection-response/why-bdr",
+  ],
+  [
+    "Features",
+    "Upload, download, clipboard, GenAI, policy and investigation.",
+    "/product/browser-detection-response/features",
+  ],
+  [
+    "Use Cases",
+    "Protect GenAI, SaaS, webmail and sensitive browser workflows.",
+    "/product/browser-detection-response/use-cases",
+  ],
+  [
+    "How It Works",
+    "See the extension, policy and response workflow.",
+    "/product/browser-detection-response/how-it-works",
+  ],
+  [
+    "Comparison",
+    "Compare BDR with endpoint, network, browser and DLP controls.",
+    "/product/browser-detection-response/comparison",
+  ],
+  [
+    "Deployment",
+    "Plan a low-friction pilot and progressive rollout.",
+    "/product/browser-detection-response/deployment",
+  ],
 ];
 
 const NavbarNew = () => {
@@ -124,11 +158,11 @@ const NavbarNew = () => {
 
             {activeDropdown === "platform" && (
               <div
-                className="absolute top-full left-0 w-[900px] bg-white border border-gray-200 rounded-xl shadow-xl p-6 mt-1"
+                className="absolute top-full left-0 w-[1040px] bg-white border border-gray-200 rounded-xl shadow-xl p-6 mt-1"
                 onMouseEnter={handleDropdownMouseEnter}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <div className="grid grid-cols-[1fr_280px] gap-6">
+                <div className="grid grid-cols-2 gap-6">
                   <div>
                     <Link
                       href="/product/AIShieldNet"
@@ -161,7 +195,7 @@ const NavbarNew = () => {
                           <div className="flex items-center gap-2">
                             <item.icon className="h-4 w-4 text-red-600" />
                             <h4 className="text-sm font-semibold group-hover:text-red-600">
-                            {item.title}
+                              {item.title}
                             </h4>
                           </div>
                           <p className="mt-1.5 text-xs leading-relaxed text-gray-600">
@@ -177,25 +211,44 @@ const NavbarNew = () => {
                     </p>
                     <Link
                       href="/product/browser-detection-response"
-                      className="group block rounded-xl border border-cyan-100 bg-cyan-50/60 p-5 hover:border-cyan-300 hover:shadow-md"
+                      className="group mb-4 flex items-center justify-between rounded-xl border border-cyan-100 bg-cyan-50/60 p-4 hover:border-cyan-300 hover:shadow-md"
                     >
-                      <span className="inline-flex rounded-lg bg-white p-2 text-cyan-600">
-                        <Monitor className="h-5 w-5" />
+                      <div className="flex items-center gap-3">
+                        <span className="inline-flex rounded-lg bg-white p-2 text-cyan-600">
+                          <Monitor className="h-5 w-5" />
+                        </span>
+                        <div>
+                          <h3 className="font-semibold group-hover:text-cyan-600">
+                            Prosfinity BDR
+                          </h3>
+                          <p className="text-xs font-medium text-gray-500">
+                            Browser Detection & Response
+                          </p>
+                        </div>
+                      </div>
+                      <span className="text-sm font-semibold text-cyan-600">
+                        Product overview →
                       </span>
-                      <h3 className="mt-4 font-semibold group-hover:text-cyan-600">
-                        Prosfinity BDR
-                      </h3>
-                      <p className="mt-1 text-xs font-medium text-gray-500">
-                        Browser Detection & Response
-                      </p>
-                      <p className="mt-4 text-sm leading-relaxed text-gray-600">
-                        Control browser data movement, secure GenAI use, and
-                        investigate risky activity.
-                      </p>
-                      <p className="mt-4 text-sm font-semibold text-cyan-600">
-                        Explore product →
-                      </p>
                     </Link>
+                    <div className="grid grid-cols-2 gap-2">
+                      {bdrItems.map(([title, description, href]) => (
+                        <Link
+                          key={title}
+                          href={href}
+                          className="group rounded-lg p-3 hover:bg-cyan-50/60"
+                        >
+                          <div className="flex items-center gap-2">
+                            <Monitor className="h-4 w-4 text-cyan-600" />
+                            <h4 className="text-sm font-semibold group-hover:text-cyan-600">
+                              {title}
+                            </h4>
+                          </div>
+                          <p className="mt-1.5 text-xs leading-relaxed text-gray-600">
+                            {description}
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

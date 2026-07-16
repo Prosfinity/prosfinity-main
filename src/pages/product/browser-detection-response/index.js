@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Navbar from "../../../main/home/navbar";
 import Footer from "../../../main/home/footer";
+import BdrNavigation from "../../../main/bdr/navigation";
 
 const capabilities = [
   {
@@ -152,6 +153,7 @@ export default function BrowserDetectionResponse() {
         />
       </Head>
       <Navbar />
+      <BdrNavigation />
 
       <main>
         <section className="relative overflow-hidden border-b border-white/10 px-5 pb-24 pt-24 md:pb-32 md:pt-32">
