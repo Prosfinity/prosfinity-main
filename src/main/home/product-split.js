@@ -55,17 +55,15 @@ const ProductSplit = () => (
         </Link>
       </div>
       <div className="home-browser-visual" aria-hidden="true">
-        <div className="home-browser-bar"><i/><i/><i/><span>protected workspace</span></div>
-        <div className="home-browser-body">
-          <aside><b>V</b><i/><i/><i/></aside>
-          <div className="home-browser-console">
-            <small>EXTENSION CONTROL</small><strong>Browser activity</strong>
-            <div className="home-browser-row"><i className="ok"/><span>File upload</span><b>MONITOR</b></div>
-            <div className="home-browser-row"><i className="risk"/><span>GenAI paste</span><b>BLOCKED</b></div>
-            <div className="home-browser-row"><i className="ok"/><span>Domain access</span><b>ALLOWED</b></div>
-          </div>
+        <div className="home-browser-orbit orbit-one" />
+        <div className="home-browser-orbit orbit-two" />
+        <div className="home-browser-core">
+          <Chrome size={42} />
+          <strong>BDR</strong><small>EXTENSION ACTIVE</small>
         </div>
-        <div className="home-extension-badge"><Chrome size={17}/><span><b>Extension connected</b><small>Policy synced</small></span><i/></div>
+        <div className="home-browser-signal signal-one"><i /> FILE UPLOAD <b>MONITOR</b></div>
+        <div className="home-browser-signal signal-two"><i /> GENAI PASTE <b>BLOCKED</b></div>
+        <div className="home-browser-signal signal-three"><i /> POLICY SYNCED <b>PROTECTED</b></div>
       </div>
     </section>
     <div className="home-split-divider" aria-hidden="true"><span>2 PRODUCTS</span></div>
