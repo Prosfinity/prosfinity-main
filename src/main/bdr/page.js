@@ -11,7 +11,6 @@ import {
   Eye,
   FileSearch,
   FileUp,
-  Fingerprint,
   Gauge,
   Globe2,
   KeyRound,
@@ -88,7 +87,7 @@ const pages = {
     intro:
       "Discover the visibility, policy, response and investigation capabilities designed to protect data across everyday browser workflows.",
     stats: [
-      ["6 controls", "Form, clipboard, upload, download, domain and login"],
+      ["5 controls", "Form, clipboard, upload, download and domain"],
       ["3 modes", "Monitor, warn and block"],
       ["Centralized", "Policy and investigation console"],
     ],
@@ -134,19 +133,9 @@ const pages = {
         "Track policy hits, protected browsers, high-risk destinations and response trends across the organization.",
       ],
       [
-        Fingerprint,
-        "Redacted evidence & export",
-        "Redact detected secrets before storage and export alert, timeline, response, audit and case evidence as structured JSON.",
-      ],
-      [
         Globe2,
         "Navigation blocking",
         "Apply configured domain policy in the extension, redirect blocked tabs and record the completed response.",
-      ],
-      [
-        KeyRound,
-        "Risky login detection",
-        "Detect password fields on insecure HTTP pages and create destination-aware evidence for analyst triage.",
       ],
       [
         Activity,

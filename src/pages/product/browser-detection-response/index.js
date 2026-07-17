@@ -8,9 +8,7 @@ import {
   Clipboard,
   Download,
   Eye,
-  FileWarning,
   FileUp,
-  Fingerprint,
   Globe2,
   ListChecks,
   Monitor,
@@ -65,7 +63,6 @@ const protectionCoverage = [
   [FileUp, "Upload & drag-drop control", "File-input and drag-drop uploads, including local inspection of supported text-like files for sensitive indicators.", "Clear a blocked upload before transfer and record the policy decision for analyst review."],
   [Download, "Download cancellation", "Download URL, filename, MIME type and file-extension context when available.", "Cancel policy-matched downloads and retain a completed response record—not just an alert."],
   [Globe2, "Domain & navigation policy", "Navigation to configured blocked AI, SaaS or other restricted domains.", "Prevent access, redirect the tab to a clear block page and record the navigation response."],
-  [FileWarning, "Risky credential entry", "Password fields on insecure HTTP pages, with the page and browser context attached.", "Surface high-risk login behavior for rapid triage and user guidance."],
 ];
 
 const platformCapabilities = [
@@ -74,7 +71,6 @@ const platformCapabilities = [
   [PackageCheck, "Extension inventory", "Collect browser extension inventory snapshots and review endpoint, user and profile coverage from the management console."],
   [UserRoundSearch, "Analyst investigation", "Search and filter alerts, assign an owner, manage case status and add investigation comments."],
   [ListChecks, "Response Chain", "Connect the original detection, matched policy, browser response event and completed response action in one timeline."],
-  [Fingerprint, "Privacy-aware evidence", "Redact detected secrets before storage and export alert, response, audit and case evidence as structured JSON."],
 ];
 
 const risks = [
