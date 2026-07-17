@@ -496,12 +496,12 @@ function PageSpecificContent({ pageKey, page }) {
       <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
         <Reveal><p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">Side-by-side coverage</p>
         <h2 className="mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">The missing control point in a layered security stack</h2></Reveal>
-        <Stagger className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
-          <div className="min-w-[760px]">
+        <div className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
+          <Stagger className="min-w-[760px]">
             <div className="grid grid-cols-[1.5fr_repeat(3,1fr)] bg-white/[.06] p-5 text-sm font-semibold"><span>Capability</span><span className="text-cyan-300">Prosfinity BDR</span><span>Endpoint / EDR</span><span>SWG</span></div>
             {rows.map(row => <div key={row[0]} className="grid grid-cols-[1.5fr_repeat(3,1fr)] border-t border-white/10 p-5 text-sm text-slate-300">{row.map((cell, i) => <span key={cell} className={i === 1 ? "font-semibold text-cyan-300" : ""}>{cell}</span>)}</div>)}
-          </div>
-        </Stagger>
+          </Stagger>
+        </div>
       </div></section>
     );
   }
@@ -620,7 +620,7 @@ export default function BdrPage({ pageKey }) {
             </Stagger>
           </div>
         </section>
-        <section className="px-5 py-24 text-center">
+        <Reveal as="section" className="px-5 py-24 text-center">
           <Monitor className="mx-auto h-10 w-10 text-cyan-400" />
           <h2 className="mt-6 text-3xl font-semibold md:text-5xl">
             See Prosfinity BDR in your environment
@@ -635,7 +635,7 @@ export default function BdrPage({ pageKey }) {
           >
             Request a Demo <ArrowRight className="h-4 w-4" />
           </Link>
-        </section>
+        </Reveal>
       </main>
       <div className="bg-white text-gray-900">
         <Footer />

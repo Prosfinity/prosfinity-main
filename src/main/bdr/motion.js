@@ -102,7 +102,7 @@ export function Stagger({ children, className = "", as: Tag = "div" }) {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -7%" },
+      { threshold: 0.16, rootMargin: "0px 0px -14%" },
     );
     observer.observe(node);
     return () => observer.disconnect();
