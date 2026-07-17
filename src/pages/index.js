@@ -1,13 +1,8 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
-import Banner from "../main/home/banner";
-import Benefit from "../main/home/benefit";
-import Company from "../main/home/company";
 import Footer from "../main/home/footer";
 import Navbar from "../main/home/navbar";
-import Transaction from "../main/home/transaction";
-import Facts from "../main/home/facts";
-import Link from "next/link";
+import ProductSplit from "../main/home/product-split";
 
 const HomePage = () => {
   return (
@@ -50,29 +45,10 @@ const HomePage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[500px] md:h-[800px] xl:h-[900px] bg-gradient">
+      <header>
         <Navbar />
-        <Banner />
       </header>
-
-      <article>
-        <Facts />
-        <Company />
-        <Benefit />
-        <Transaction />
-        <div className="px-5 mb-20">
-          <Link
-            href="/files/AIShieldNet%20LLM-Powered%20ZDR%20Technical%20Review.pdf"
-            target="_blank"
-          >
-            <img
-              className="w-full md:w-1/2 mx-auto shadow-2xl rounded-2xl"
-              src="/images/banner-llm.jpeg"
-              alt="software dashboard"
-            />
-          </Link>
-        </div>
-      </article>
+      <ProductSplit />
 
       <footer>
         <Footer />
