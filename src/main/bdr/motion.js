@@ -133,19 +133,20 @@ export function ScrollStory({ steps }) {
     <section className="bdr-story px-5 py-24"><div className="mx-auto max-w-7xl">
       <p className="text-sm font-semibold uppercase tracking-[.22em] text-cyan-400">Scroll through the response chain</p>
       <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">One browser action. A complete security story.</h2>
-      <div className="mt-14 grid gap-12 lg:grid-cols-[.78fr_1.22fr]">
-        <div className="relative">
-          <div className="bdr-story-line" aria-hidden="true"><i style={{ height: `${((active + 1) / steps.length) * 100}%` }} /></div>
-          {steps.map((step, index) => <article key={step.title} ref={(node) => { refs.current[index] = node; }} className={`bdr-story-step ${active === index ? "is-active" : ""}`}>
+      <div className="relative mt-14">
+        <div className="bdr-story-line" aria-hidden="true"><i style={{ height: `${((active + 1) / steps.length) * 100}%` }} /></div>
+        {steps.map((step, index) => <article key={step.title} ref={(node) => { refs.current[index] = node; }} className={`bdr-story-step ${active === index ? "is-active" : ""}`}>
+          <div className="bdr-story-copy">
             <span className="bdr-story-dot">{String(index + 1).padStart(2, "0")}</span>
             <p className="text-xs font-semibold uppercase tracking-[.18em] text-cyan-400">{step.label}</p>
-            <h3 className="mt-3 text-2xl font-semibold md:text-3xl">{step.title}</h3><p className="mt-4 max-w-lg leading-7 text-slate-400">{step.text}</p>
-          </article>)}
-        </div>
-        <div className="bdr-story-stage lg:sticky lg:top-28"><div className="bdr-story-screen">
-          {steps.map((step, index) => <div key={step.label} className={`bdr-story-image ${active === index ? "is-active" : ""}`}><RoadmapVisual step={step} index={index} /></div>)}
-          <div className="bdr-story-caption"><span>Browser extension → policy → response</span><b>{steps[active].label}</b></div>
-        </div></div>
+            <h3 className="mt-3 text-2xl font-semibold md:text-3xl">{step.title}</h3>
+            <p className="mt-4 max-w-lg leading-7 text-slate-400">{step.text}</p>
+          </div>
+          <div className="bdr-story-stage"><div className="bdr-story-screen">
+            <div className="bdr-story-image is-active"><RoadmapVisual step={step} index={index} /></div>
+            <div className="bdr-story-caption"><span>Browser extension → policy → response</span><b>{step.label}</b></div>
+          </div></div>
+        </article>)}
       </div>
     </div></section>
   );

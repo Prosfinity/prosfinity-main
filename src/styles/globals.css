@@ -40,13 +40,14 @@ html {
 .bdr-orb-one { right:-10rem; top:-13rem; background:#22d3ee; animation:bdr-drift-one 14s ease-in-out infinite alternate; }
 .bdr-orb-two { left:-15rem; bottom:-18rem; background:#2563eb; animation:bdr-drift-two 17s ease-in-out infinite alternate; }
 .bdr-story { border-bottom:1px solid rgba(255,255,255,.1); background:radial-gradient(circle at 75% 35%,rgba(34,211,238,.07),transparent 34%),#050b14; }
-.bdr-story-line { position:absolute; left:23px; top:46px; bottom:46px; width:2px; overflow:hidden; background:rgba(148,163,184,.15); }
+.bdr-story-line { position:absolute; left:23px; top:15vh; bottom:15vh; width:2px; overflow:hidden; background:rgba(148,163,184,.15); }
 .bdr-story-line i { display:block; width:100%; background:linear-gradient(#22d3ee,#3b82f6); transition:height .6s cubic-bezier(.2,.8,.2,1); }
-.bdr-story-step { position:relative; min-height:58vh; padding:15vh 1rem 8vh 5rem; opacity:.28; transform:translateY(20px); transition:opacity .55s ease,transform .55s ease; }
+.bdr-story-step { position:relative; display:grid; min-height:82vh; grid-template-columns:.78fr 1.22fr; align-items:center; gap:3rem; padding:9vh 0 9vh 5rem; opacity:.28; transform:translateY(20px); transition:opacity .55s ease,transform .55s ease; }
 .bdr-story-step.is-active { opacity:1; transform:none; }
-.bdr-story-dot { position:absolute; left:0; top:15vh; z-index:2; display:grid; width:48px; height:48px; place-items:center; border:1px solid rgba(34,211,238,.25); border-radius:999px; background:#07111e; color:#64748b; font-size:11px; font-weight:700; transition:.45s ease; }
+.bdr-story-copy { position:relative; }
+.bdr-story-dot { position:absolute; left:-5rem; top:0; z-index:2; display:grid; width:48px; height:48px; place-items:center; border:1px solid rgba(34,211,238,.25); border-radius:999px; background:#07111e; color:#64748b; font-size:11px; font-weight:700; transition:.45s ease; }
 .bdr-story-step.is-active .bdr-story-dot { border-color:#22d3ee; background:#22d3ee; color:#06101c; box-shadow:0 0 35px rgba(34,211,238,.35); }
-.bdr-story-stage { height:min(72vh,680px); align-self:start; }
+.bdr-story-stage { position:relative; height:min(68vh,640px); min-height:480px; }
 .bdr-story-screen { position:relative; height:100%; overflow:hidden; border:1px solid rgba(34,211,238,.22); border-radius:24px; background:#07101d; box-shadow:0 35px 90px rgba(0,0,0,.45); }
 .bdr-story-screen::after { content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.09) 50%,transparent 58%); transform:translateX(-130%); animation:bdr-sheen 7s ease-in-out infinite; }
 .bdr-story-image { position:absolute; inset:0; opacity:0; transform:scale(1.035); filter:blur(8px); transition:opacity .65s ease,transform 1s cubic-bezier(.2,.8,.2,1),filter .65s ease; }
@@ -95,5 +96,5 @@ html {
   .bdr-story-step { opacity:1; transform:none; }
   .bdr-story-image { filter:none; transition:none; }
 }
-@media (max-width:1023px){.bdr-story-step{min-height:auto;padding:3rem 1rem 3rem 4.5rem}.bdr-story-dot{top:3rem}.bdr-story-stage{position:relative;height:58vw;min-height:390px}.bdr-story-line{top:64px;bottom:64px}}
+@media (max-width:1023px){.bdr-story-step{min-height:auto;grid-template-columns:1fr;gap:2rem;padding:4rem 0 4rem 4.5rem}.bdr-story-dot{left:-4.5rem;top:0}.bdr-story-stage{height:58vw;min-height:390px}.bdr-story-line{top:64px;bottom:64px}}
 @media (max-width:640px){.bdr-roadmap-visual{padding:20px}.bdr-visual-flow{inset:16% 5% 22%;flex-direction:column}.bdr-visual-segment{width:100%;flex-direction:column}.bdr-visual-node{min-height:82px;width:100%;padding:10px;display:grid;grid-template-columns:45px 1fr;grid-template-rows:auto auto;text-align:left}.bdr-visual-icon{grid-row:1/3;width:38px;height:38px;border-radius:12px;font-size:18px}.bdr-visual-node strong,.bdr-visual-node small{margin:0}.bdr-visual-node>span{display:none}.bdr-visual-connector{width:2px;height:14px;flex:0 0 14px}.bdr-visual-status{bottom:62px;left:20px;right:20px}.bdr-visual-topbar em{display:none}.bdr-story-caption span{max-width:180px}.bdr-visual-orbit{width:280px;height:280px}}
