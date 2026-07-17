@@ -1,5 +1,74 @@
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+
+const visualFlows = {
+  Visibility: [
+    ["Browser action", "Upload · Paste · Prompt"],
+    ["Extension sensor", "Action-level context"],
+    ["Security overview", "Live operational signal"],
+  ],
+  Policy: [
+    ["Business rule", "Channel + destination"],
+    ["Policy engine", "User · Group · Device"],
+    ["Decision", "Monitor / Block"],
+  ],
+  Response: [
+    ["Matched event", "Rule + destination"],
+    ["Browser response", "Action enforced"],
+    ["Analyst alert", "Triage with context"],
+  ],
+  Coverage: [
+    ["Managed browser", "Chrome / Chromium"],
+    ["Extension health", "Version + last seen"],
+    ["Inventory", "Coverage in one view"],
+  ],
+  Assignment: [
+    ["Identity", "User directory"],
+    ["Targeting", "Group · Role · Device"],
+    ["Protection", "Right rule, right user"],
+  ],
+  Governance: [
+    ["Admin change", "Who changed what"],
+    ["Audit record", "Time + action + outcome"],
+    ["Evidence", "Accountable history"],
+  ],
+  Extension: [
+    ["Lightweight control", "In-browser enforcement"],
+    ["Secure sync", "Policy + event delivery"],
+    ["Central console", "Operate at scale"],
+  ],
+};
+
+function RoadmapVisual({ step, index }) {
+  const nodes = visualFlows[step.label] || [];
+  return (
+    <div className="bdr-roadmap-visual" aria-label={`${step.label} product flow`}>
+      <div className="bdr-visual-topbar">
+        <span><i /> PROSFINITY BDR</span>
+        <em>LIVE RESPONSE CHAIN</em>
+      </div>
+      <div className="bdr-visual-orbit" aria-hidden="true"><i /><i /><i /></div>
+      <div className="bdr-visual-flow">
+        {nodes.map(([title, detail], nodeIndex) => (
+          <div className="bdr-visual-segment" key={title} style={{ "--node-delay": `${nodeIndex * 180}ms` }}>
+            <div className="bdr-visual-node">
+              <span>{String(index + 1).padStart(2, "0")}.{nodeIndex + 1}</span>
+              <i className="bdr-visual-icon" aria-hidden="true">
+                {nodeIndex === 0 ? "◎" : nodeIndex === 1 ? "◇" : "✓"}
+              </i>
+              <strong>{title}</strong>
+              <small>{detail}</small>
+            </div>
+            {nodeIndex < nodes.length - 1 && <div className="bdr-visual-connector"><i /></div>}
+          </div>
+        ))}
+      </div>
+      <div className="bdr-visual-status">
+        <span><i /> Extension connected</span>
+        <b>{step.label}</b>
+      </div>
+    </div>
+  );
+}
 
 export function Reveal({ children, className = "", delay = 0, as: Tag = "div" }) {
   const ref = useRef(null);
@@ -71,8 +140,8 @@ export function ScrollStory({ steps }) {
           </article>)}
         </div>
         <div className="bdr-story-stage lg:sticky lg:top-28"><div className="bdr-story-screen">
-          {steps.map((step, index) => <Image key={step.image} src={step.image} alt={step.alt} fill sizes="(max-width: 1024px) 100vw, 55vw" className={`bdr-story-image ${active === index ? "is-active" : ""}`} />)}
-          <div className="bdr-story-caption"><span>Live product console</span><b>{steps[active].label}</b></div>
+          {steps.map((step, index) => <div key={step.label} className={`bdr-story-image ${active === index ? "is-active" : ""}`}><RoadmapVisual step={step} index={index} /></div>)}
+          <div className="bdr-story-caption"><span>Browser extension → policy → response</span><b>{steps[active].label}</b></div>
         </div></div>
       </div>
     </div></section>
