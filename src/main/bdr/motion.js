@@ -1,54 +1,57 @@
 import { useEffect, useRef, useState } from "react";
 
 const visualFlows = {
-  Visibility: [
+  Visibility: { icon: "◎", accent: "cyan", result: "Action context captured", nodes: [
     ["Browser action", "Upload · Paste · Prompt"],
     ["Extension sensor", "Action-level context"],
     ["Security overview", "Live operational signal"],
-  ],
-  Policy: [
+  ] },
+  Policy: { icon: "◇", accent: "violet", result: "Policy evaluated", nodes: [
     ["Business rule", "Channel + destination"],
     ["Policy engine", "User · Group · Device"],
     ["Decision", "Monitor / Block"],
-  ],
-  Response: [
+  ] },
+  Response: { icon: "↯", accent: "amber", result: "Response completed", nodes: [
     ["Matched event", "Rule + destination"],
     ["Browser response", "Action enforced"],
     ["Analyst alert", "Triage with context"],
-  ],
-  Coverage: [
+  ] },
+  Coverage: { icon: "◉", accent: "emerald", result: "Coverage verified", nodes: [
     ["Managed browser", "Chrome / Chromium"],
     ["Extension health", "Version + last seen"],
     ["Inventory", "Coverage in one view"],
-  ],
-  Assignment: [
+  ] },
+  Assignment: { icon: "⌘", accent: "blue", result: "Protection assigned", nodes: [
     ["Identity", "User directory"],
     ["Targeting", "Group · Role · Device"],
     ["Protection", "Right rule, right user"],
-  ],
-  Governance: [
+  ] },
+  Governance: { icon: "≋", accent: "rose", result: "Evidence preserved", nodes: [
     ["Admin change", "Who changed what"],
     ["Audit record", "Time + action + outcome"],
     ["Evidence", "Accountable history"],
-  ],
-  Extension: [
+  ] },
+  Extension: { icon: "⬡", accent: "cyan", result: "Extension operational", nodes: [
     ["Lightweight control", "In-browser enforcement"],
     ["Secure sync", "Policy + event delivery"],
     ["Central console", "Operate at scale"],
-  ],
+  ] },
 };
 
 function RoadmapVisual({ step, index }) {
-  const nodes = visualFlows[step.label] || [];
+  const flow = visualFlows[step.label] || { icon: "◎", accent: "cyan", result: "Flow complete", nodes: [] };
   return (
-    <div className="bdr-roadmap-visual" aria-label={`${step.label} product flow`}>
+    <div className={`bdr-roadmap-visual is-${flow.accent}`} aria-label={`${step.label} product flow`}>
       <div className="bdr-visual-topbar">
         <span><i /> PROSFINITY BDR</span>
         <em>LIVE RESPONSE CHAIN</em>
       </div>
       <div className="bdr-visual-orbit" aria-hidden="true"><i /><i /><i /></div>
+      <div className="bdr-visual-watermark" aria-hidden="true">
+        <span>{String(index + 1).padStart(2, "0")}</span><i>{flow.icon}</i>
+      </div>
       <div className="bdr-visual-flow">
-        {nodes.map(([title, detail], nodeIndex) => (
+        {flow.nodes.map(([title, detail], nodeIndex) => (
           <div className="bdr-visual-segment" key={title} style={{ "--node-delay": `${nodeIndex * 180}ms` }}>
             <div className="bdr-visual-node">
               <span>{String(index + 1).padStart(2, "0")}.{nodeIndex + 1}</span>
@@ -58,13 +61,13 @@ function RoadmapVisual({ step, index }) {
               <strong>{title}</strong>
               <small>{detail}</small>
             </div>
-            {nodeIndex < nodes.length - 1 && <div className="bdr-visual-connector"><i /></div>}
+            {nodeIndex < flow.nodes.length - 1 && <div className="bdr-visual-connector"><i /></div>}
           </div>
         ))}
       </div>
       <div className="bdr-visual-status">
         <span><i /> Extension connected</span>
-        <b>{step.label}</b>
+        <b>{flow.result}</b>
       </div>
     </div>
   );
