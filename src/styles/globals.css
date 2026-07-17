@@ -22,3 +22,33 @@ html {
 .animate-scroll {
   animation: scroll 30s linear infinite;
 }
+/* BDR product storytelling motion */
+.bdr-reveal {
+  opacity: 0;
+  transform: translate3d(0, 34px, 0);
+  filter: blur(7px);
+  transition: opacity .85s cubic-bezier(.22,1,.36,1), transform .85s cubic-bezier(.22,1,.36,1), filter .85s ease;
+  transition-delay: var(--bdr-delay, 0ms);
+}
+.bdr-reveal.bdr-reveal-visible { opacity: 1; transform: none; filter: none; }
+.bdr-stagger > * { transition: transform .45s cubic-bezier(.22,1,.36,1), border-color .45s ease, background-color .45s ease, box-shadow .45s ease; }
+.bdr-stagger > *:hover { transform: translateY(-7px); border-color: rgba(34,211,238,.35); box-shadow: 0 24px 70px rgba(8,145,178,.12); }
+.bdr-console-float { animation: bdr-console-float 7s ease-in-out infinite; transform-origin: center; }
+.bdr-console-frame { position: relative; isolation: isolate; }
+.bdr-console-frame::after { content:""; position:absolute; inset:-60% -35%; z-index:2; pointer-events:none; background:linear-gradient(105deg, transparent 42%, rgba(255,255,255,.11) 49%, transparent 56%); transform:translateX(-55%) rotate(2deg); animation:bdr-sheen 8s ease-in-out infinite; }
+.bdr-orb { position:absolute; display:block; width:34rem; height:34rem; border-radius:999px; filter:blur(80px); opacity:.14; }
+.bdr-orb-one { right:-10rem; top:-13rem; background:#22d3ee; animation:bdr-drift-one 14s ease-in-out infinite alternate; }
+.bdr-orb-two { left:-15rem; bottom:-18rem; background:#2563eb; animation:bdr-drift-two 17s ease-in-out infinite alternate; }
+.bdr-grid { position:absolute; inset:0; opacity:.16; background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size:64px 64px; mask-image:linear-gradient(to bottom,black,transparent 88%); }
+.bdr-pulse { position:relative; }
+.bdr-pulse::before { content:""; position:absolute; inset:-5px; border:1px solid rgba(34,211,238,.35); border-radius:inherit; animation:bdr-pulse 2.8s ease-out infinite; }
+@keyframes bdr-console-float { 0%,100%{transform:translate3d(0,0,0) rotateX(0)} 50%{transform:translate3d(0,-9px,0) rotateX(.7deg)} }
+@keyframes bdr-sheen { 0%,28%{transform:translateX(-60%) rotate(2deg)} 60%,100%{transform:translateX(65%) rotate(2deg)} }
+@keyframes bdr-drift-one { to{transform:translate3d(-8rem,6rem,0) scale(1.08)} }
+@keyframes bdr-drift-two { to{transform:translate3d(9rem,-5rem,0) scale(.9)} }
+@keyframes bdr-pulse { 0%{opacity:.8;transform:scale(.96)} 70%,100%{opacity:0;transform:scale(1.14)} }
+@media (prefers-reduced-motion: reduce) {
+  .bdr-reveal { opacity:1; transform:none; filter:none; transition:none; }
+  .bdr-console-float,.bdr-console-frame::after,.bdr-orb,.bdr-pulse::before { animation:none; }
+  .bdr-stagger > * { transition:none; }
+}

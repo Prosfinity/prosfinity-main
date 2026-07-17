@@ -24,6 +24,7 @@ import {
 import Navbar from "../../../main/home/navbar";
 import Footer from "../../../main/home/footer";
 import BdrNavigation from "../../../main/bdr/navigation";
+import { AmbientGlow, Reveal, Stagger } from "../../../main/bdr/motion";
 
 const capabilities = [
   {
@@ -85,7 +86,7 @@ function ProductVisual() {
   return (
     <div className="relative mx-auto max-w-2xl">
       <div className="absolute -inset-10 rounded-full bg-cyan-500/10 blur-3xl" />
-      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b1628] shadow-2xl shadow-cyan-950/50">
+      <div className="bdr-console-frame bdr-console-float relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b1628] shadow-2xl shadow-cyan-950/50">
         <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
           <div className="flex items-center gap-2 text-sm font-semibold text-white">
             <Monitor className="h-5 w-5 text-cyan-400" /> Prosfinity BDR
@@ -179,9 +180,9 @@ export default function BrowserDetectionResponse() {
 
       <main>
         <section className="relative overflow-hidden border-b border-white/10 px-5 pb-24 pt-24 md:pb-32 md:pt-32">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(34,211,238,0.12),transparent_34%)]" />
+          <AmbientGlow />
           <div className="relative mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
-            <div>
+            <Reveal>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
                 <Monitor className="h-4 w-4" /> Powered by a lightweight browser extension
               </div>
@@ -212,8 +213,8 @@ export default function BrowserDetectionResponse() {
                   Explore Capabilities
                 </a>
               </div>
-            </div>
-            <ProductVisual />
+            </Reveal>
+            <Reveal delay={180}><ProductVisual /></Reveal>
           </div>
         </section>
 
@@ -224,7 +225,7 @@ export default function BrowserDetectionResponse() {
               <h2 className="mt-4 text-3xl font-semibold md:text-5xl">What BDR detects—and what it can stop</h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-400">Each browser signal is connected to an enforceable response. Start in monitor mode, validate real workflows, then block tested high-confidence activity without shutting down the whole website or browser.</p>
             </div>
-            <div className="mt-14 grid gap-5 lg:grid-cols-2">
+            <Stagger className="mt-14 grid gap-5 lg:grid-cols-2">
               {protectionCoverage.map(([Icon, label, detects, effect]) => (
                 <div key={label} className="overflow-hidden rounded-2xl border border-white/10 bg-[#091321]">
                   <div className="flex items-center gap-4 border-b border-white/10 p-6">
@@ -237,7 +238,7 @@ export default function BrowserDetectionResponse() {
                   </div>
                 </div>
               ))}
-            </div>
+            </Stagger>
           </div>
         </section>
 
@@ -247,10 +248,10 @@ export default function BrowserDetectionResponse() {
               <div><p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Real product console</p><h2 className="mt-4 text-3xl font-semibold md:text-5xl">See browser risk, policy and extension health in one view</h2></div>
               <p className="text-lg leading-8 text-slate-400">This demo tenant shows the actual BDR console used to review policy effectiveness, browser events, endpoint coverage and extension health.</p>
             </div>
-            <div className="mt-12 overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#091321] shadow-2xl shadow-cyan-950/30">
+            <Reveal className="bdr-console-frame mt-12 overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#091321] shadow-2xl shadow-cyan-950/30">
               <div className="flex items-center justify-between border-b border-white/10 px-5 py-4"><span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Security Overview</span><span className="text-xs text-slate-500">Demo tenant</span></div>
               <div className="relative aspect-[16/9]"><Image src="/images/bdr-console-overview.jpg" alt="Prosfinity BDR security overview dashboard" fill sizes="100vw" className="object-cover object-top" /></div>
-            </div>
+            </Reveal>
           </div>
         </section>
 

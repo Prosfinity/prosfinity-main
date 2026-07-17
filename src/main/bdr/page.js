@@ -30,6 +30,7 @@ import {
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
 import BdrNavigation from "./navigation";
+import { AmbientGlow, Reveal, Stagger } from "./motion";
 
 const pages = {
   "why-bdr": {
@@ -370,7 +371,7 @@ function ConsoleVisual({ pageKey }) {
   };
   const [screenshot, alt] = screenshots[pageKey];
   return (
-    <div className="overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#0b1628] shadow-2xl shadow-cyan-950/40">
+    <div className="bdr-console-frame bdr-console-float overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#0b1628] shadow-2xl shadow-cyan-950/40">
       <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
         <span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Live product console</span>
         <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">Demo tenant</span>
@@ -457,14 +458,14 @@ function ExtensionCore() {
   return (
     <section className="border-b border-cyan-400/20 bg-cyan-400/[0.045] px-5 py-16">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[.85fr_1.15fr]">
-        <div>
+        <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300">
             <Globe2 className="h-4 w-4" /> Browser extension powered
           </span>
           <h2 className="mt-5 text-3xl font-semibold md:text-5xl">Protection lives inside the browser—not behind the traffic</h2>
           <p className="mt-5 text-lg leading-8 text-slate-300">Prosfinity BDR uses a lightweight managed browser extension to see the destination and user action at the moment it happens. That gives security teams context which endpoint agents and network-only tools can miss.</p>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-3">
+        </Reveal>
+        <Stagger className="grid gap-3 sm:grid-cols-3">
           {[
             ["01", "Deploy", "Push the extension through your existing browser or endpoint management workflow."],
             ["02", "Protect inline", "Evaluate uploads, downloads, clipboard and GenAI interactions before completion."],
@@ -476,7 +477,7 @@ function ExtensionCore() {
               <p className="mt-3 text-sm leading-6 text-slate-400">{text}</p>
             </div>
           ))}
-        </div>
+        </Stagger>
       </div>
     </section>
   );
@@ -523,14 +524,14 @@ function PageSpecificContent({ pageKey, page }) {
     <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
       <p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">{headings[0]}</p>
       <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">{headings[1]}</h2>
-      <div className={`mt-14 grid gap-5 ${styles}`}>
+      <Stagger className={`mt-14 grid gap-5 ${styles}`}>
         {page.cards.map(([Icon, title, text], i) => (
           <div key={title} className={`rounded-2xl border p-7 ${pageKey === "how-it-works" ? "border-cyan-400/25 bg-gradient-to-br from-cyan-400/[.08] to-transparent" : pageKey === "use-cases" ? "border-white/10 bg-white/[.035]" : "border-white/10 bg-[#091321]"}`}>
             <div className="flex items-start justify-between"><span className="inline-flex rounded-xl bg-cyan-400/10 p-3 text-cyan-400"><Icon className="h-6 w-6" /></span><span className="text-xs font-semibold text-slate-600">{String(i + 1).padStart(2, "0")}</span></div>
             <h3 className="mt-7 text-xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-slate-400">{text}</p>
           </div>
         ))}
-      </div>
+      </Stagger>
     </div></section>
   );
 }
@@ -547,9 +548,9 @@ export default function BdrPage({ pageKey }) {
       <BdrNavigation />
       <main>
         <section className="relative overflow-hidden border-b border-white/10 px-5 py-24">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(34,211,238,0.13),transparent_35%)]" />
+          <AmbientGlow />
           <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-            <div>
+            <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-400">
                 {page.eyebrow}
               </p>
@@ -573,13 +574,13 @@ export default function BdrPage({ pageKey }) {
                   Explore Features
                 </Link>
               </div>
-            </div>
-            <ConsoleVisual pageKey={pageKey} />
+            </Reveal>
+            <Reveal delay={180}><ConsoleVisual pageKey={pageKey} /></Reveal>
           </div>
         </section>
         <ExtensionCore />
         <section className="border-b border-white/10 px-5 py-10">
-          <div className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
+          <Stagger className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
             {page.stats.map(([value, label]) => (
               <div
                 key={value}
@@ -589,20 +590,20 @@ export default function BdrPage({ pageKey }) {
                 <p className="mt-1 text-sm text-slate-400">{label}</p>
               </div>
             ))}
-          </div>
+          </Stagger>
         </section>
         <PageSpecificContent pageKey={pageKey} page={page} />
         <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]">
-            <div>
+            <Reveal>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
                 Operational value
               </p>
               <h2 className="mt-4 text-3xl font-semibold md:text-5xl">
                 {page.detailTitle}
               </h2>
-            </div>
-            <div className="space-y-4">
+            </Reveal>
+            <Stagger className="space-y-4">
               {page.details.map((item, i) => (
                 <div
                   key={item}
@@ -617,7 +618,7 @@ export default function BdrPage({ pageKey }) {
                   </div>
                 </div>
               ))}
-            </div>
+            </Stagger>
           </div>
         </section>
         <section className="px-5 py-24 text-center">
