@@ -30,7 +30,43 @@ import {
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
 import BdrNavigation from "./navigation";
-import { AmbientGlow, Reveal, Stagger } from "./motion";
+import { AmbientGlow, Reveal, ScrollStory, Stagger } from "./motion";
+
+const pageStories = {
+  "why-bdr": [
+    { label: "Visibility", title: "See the browser action endpoint tools miss", text: "The managed extension captures the user, destination and data channel at the moment an upload, paste, prompt or download happens." },
+    { label: "Policy", title: "Turn context into a precise decision", text: "Centrally assigned rules evaluate the browser action without reducing every decision to allow or deny an entire website." },
+    { label: "Response", title: "Stop the risky action before completion", text: "A matched block policy prevents the browser action and records the result for security review." },
+  ],
+  features: [
+    { label: "Extension", title: "A lightweight control point inside Chrome", text: "The managed extension stays close to the user action and synchronises centrally managed policy and browser events." },
+    { label: "Policy", title: "Build controls around real browser workflows", text: "Apply monitor or block decisions to supported uploads, downloads, clipboard actions, GenAI interactions and domain access." },
+    { label: "Response", title: "Connect every match to a recorded outcome", text: "Security teams can review the matched policy, response action and event trail from the central console." },
+    { label: "Coverage", title: "Know which managed browsers are protected", text: "Inventory and health views show browser extension status, device context, last seen activity and coverage gaps." },
+  ],
+  "use-cases": [
+    { label: "Visibility", title: "An employee submits data to a public AI tool", text: "BDR sees the supported prompt, paste or attachment action together with its browser destination." },
+    { label: "Policy", title: "The action is checked against the assigned rule", text: "The policy engine evaluates the relevant user, group, site, channel and configured content conditions." },
+    { label: "Response", title: "High-risk transfer is blocked and recorded", text: "The browser prevents the matched action while the portal creates evidence for investigation and follow-up." },
+  ],
+  "how-it-works": [
+    { label: "Extension", title: "Observe at the point of action", text: "The managed browser extension identifies supported upload, download, clipboard, GenAI and navigation events." },
+    { label: "Assignment", title: "Apply the right centrally assigned policy", text: "Policy is synchronised to the relevant user, group, role or managed device context." },
+    { label: "Policy", title: "Evaluate browser context before completion", text: "The extension matches the action and destination against the active monitor or block rules." },
+    { label: "Response", title: "Respond inline and preserve the outcome", text: "The action is monitored or blocked, then delivered to the portal for alert review and investigation." },
+  ],
+  comparison: [
+    { label: "Visibility", title: "BDR sees the in-browser action", text: "It adds destination and interaction context that process-level endpoint telemetry or traffic-level controls may not provide." },
+    { label: "Response", title: "BDR acts at the browser control point", text: "Matched browser actions can be stopped before completion instead of relying only on site access or post-event investigation." },
+    { label: "Extension", title: "BDR complements the existing stack", text: "Use it alongside endpoint protection and network security to cover browser-native data workflows." },
+  ],
+  deployment: [
+    { label: "Assignment", title: "Deploy to a representative pilot group", text: "Push the managed extension through the organisation's existing browser or endpoint management workflow." },
+    { label: "Coverage", title: "Verify extension health and fleet coverage", text: "Confirm which browsers are online, synchronised and reporting before expanding the rollout." },
+    { label: "Policy", title: "Baseline activity in monitor mode", text: "Review browser events and tune centrally assigned rules around approved business workflows." },
+    { label: "Governance", title: "Move tested risks into controlled enforcement", text: "Record policy changes, expand coverage in stages and retain operational evidence for review." },
+  ],
+};
 
 const pages = {
   "why-bdr": {
@@ -591,6 +627,7 @@ export default function BdrPage({ pageKey }) {
             ))}
           </Stagger>
         </section>
+        <ScrollStory steps={pageStories[pageKey]} />
         <PageSpecificContent pageKey={pageKey} page={page} />
         <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]">
