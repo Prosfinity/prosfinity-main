@@ -8,12 +8,19 @@ import {
   Clipboard,
   Download,
   Eye,
+  FileWarning,
   FileUp,
+  Fingerprint,
+  Globe2,
+  ListChecks,
   Monitor,
+  PackageCheck,
+  RadioTower,
   Search,
   Settings2,
   Shield,
   ShieldAlert,
+  UserRoundSearch,
 } from "lucide-react";
 import Navbar from "../../../main/home/navbar";
 import Footer from "../../../main/home/footer";
@@ -50,6 +57,24 @@ const capabilities = [
     title: "Detection & Investigation",
     text: "Correlate browser events, policy decisions, and response actions in one investigation timeline.",
   },
+];
+
+const protectionCoverage = [
+  [Bot, "AI & SaaS data egress", "Sensitive prompts, pasted text, form submissions and file attachments going to external AI or SaaS services.", "Allow approved workflows; warn the user or stop high-confidence data leakage before submission."],
+  [Clipboard, "Copy & paste protection", "Sensitive content copied from or pasted into browser pages, with destination and action context.", "Block only the risky copy or paste action instead of disabling the clipboard across the endpoint."],
+  [FileUp, "Upload & drag-drop control", "File-input and drag-drop uploads, including local inspection of supported text-like files for sensitive indicators.", "Clear a blocked upload before transfer and record the policy decision for analyst review."],
+  [Download, "Download cancellation", "Download URL, filename, MIME type and file-extension context when available.", "Cancel policy-matched downloads and retain a completed response record—not just an alert."],
+  [Globe2, "Domain & navigation policy", "Navigation to configured blocked AI, SaaS or other restricted domains.", "Prevent access, redirect the tab to a clear block page and record the navigation response."],
+  [FileWarning, "Risky credential entry", "Password fields on insecure HTTP pages, with the page and browser context attached.", "Surface high-risk login behavior for rapid triage and user guidance."],
+];
+
+const platformCapabilities = [
+  [Settings2, "Central policy control", "Enable rules centrally and assign monitor, warn or block mode; extension policy sync applies the same decision at the browser endpoint."],
+  [RadioTower, "Reliable event delivery", "The extension queues and retries browser events, exposes runtime health and supports a manual queue flush from its endpoint console."],
+  [PackageCheck, "Extension inventory", "Collect browser extension inventory snapshots and review endpoint, user and profile coverage from the management console."],
+  [UserRoundSearch, "Analyst investigation", "Search and filter alerts, assign an owner, manage case status and add investigation comments."],
+  [ListChecks, "Response Chain", "Connect the original detection, matched policy, browser response event and completed response action in one timeline."],
+  [Fingerprint, "Privacy-aware evidence", "Redact detected secrets before storage and export alert, response, audit and case evidence as structured JSON."],
 ];
 
 const risks = [
@@ -192,6 +217,49 @@ export default function BrowserDetectionResponse() {
               </div>
             </div>
             <ProductVisual />
+          </div>
+        </section>
+
+        <section className="px-5 py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-4xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Protection coverage</p>
+              <h2 className="mt-4 text-3xl font-semibold md:text-5xl">What BDR detects—and what it can stop</h2>
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-400">Each browser signal is connected to an enforceable response. Start with visibility, warn users in context, then block tested high-confidence activity without shutting down the whole website or browser.</p>
+            </div>
+            <div className="mt-14 grid gap-5 lg:grid-cols-2">
+              {protectionCoverage.map(([Icon, label, detects, effect]) => (
+                <div key={label} className="overflow-hidden rounded-2xl border border-white/10 bg-[#091321]">
+                  <div className="flex items-center gap-4 border-b border-white/10 p-6">
+                    <span className="rounded-xl bg-cyan-400/10 p-3 text-cyan-400"><Icon className="h-6 w-6" /></span>
+                    <h3 className="text-xl font-semibold">{label}</h3>
+                  </div>
+                  <div className="grid gap-5 p-6 sm:grid-cols-2">
+                    <div><p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Detects</p><p className="mt-2 leading-7 text-slate-300">{detects}</p></div>
+                    <div><p className="text-xs font-semibold uppercase tracking-wider text-cyan-400">Protection effect</p><p className="mt-2 leading-7 text-slate-300">{effect}</p></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">From endpoint to investigation</p>
+              <h2 className="mt-4 text-3xl font-semibold md:text-5xl">More than a browser blocker</h2>
+              <p className="mt-5 text-lg leading-8 text-slate-400">The managed extension, policy engine and analyst console form one evidence-driven operating loop.</p>
+            </div>
+            <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {platformCapabilities.map(([Icon, title, text]) => (
+                <div key={title} className="rounded-2xl border border-white/10 bg-[#091321] p-7">
+                  <Icon className="h-7 w-7 text-cyan-400" />
+                  <h3 className="mt-6 text-xl font-semibold">{title}</h3>
+                  <p className="mt-3 leading-7 text-slate-400">{text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

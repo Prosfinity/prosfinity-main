@@ -88,7 +88,7 @@ const pages = {
     intro:
       "Discover the visibility, policy, response and investigation capabilities designed to protect data across everyday browser workflows.",
     stats: [
-      ["4 channels", "Upload, download, clipboard and GenAI"],
+      ["6 controls", "Form, clipboard, upload, download, domain and login"],
       ["3 modes", "Monitor, warn and block"],
       ["Centralized", "Policy and investigation console"],
     ],
@@ -135,16 +135,36 @@ const pages = {
       ],
       [
         Fingerprint,
-        "Audit evidence",
-        "Retain consistent policy-decision evidence to support reviews, incident handling and compliance workflows.",
+        "Redacted evidence & export",
+        "Redact detected secrets before storage and export alert, timeline, response, audit and case evidence as structured JSON.",
+      ],
+      [
+        Globe2,
+        "Navigation blocking",
+        "Apply configured domain policy in the extension, redirect blocked tabs and record the completed response.",
+      ],
+      [
+        KeyRound,
+        "Risky login detection",
+        "Detect password fields on insecure HTTP pages and create destination-aware evidence for analyst triage.",
+      ],
+      [
+        Activity,
+        "Response Chain",
+        "Link the trigger event, policy decision, endpoint response event and completed action in one correlated view.",
+      ],
+      [
+        Layers3,
+        "Extension inventory & health",
+        "Collect inventory snapshots and review runtime state, queued events, policy version and endpoint health.",
       ],
     ],
     detailTitle: "Policy that matches the way your organization works",
     details: [
-      "Create different controls for departments, roles, contractors and high-risk users.",
-      "Allow trusted business applications while applying stricter controls to personal and unknown services.",
-      "Use warning mode to educate users and measure impact before enforcement.",
-      "Review policy outcomes centrally and refine rules using real activity evidence.",
+      "Block sensitive form submissions, clipboard copy/paste, file uploads, drag-drop, restricted-domain navigation and policy-matched downloads.",
+      "Search and filter alerts, assign an owner, add comments and manage open, investigating, acknowledged or closed states.",
+      "Use monitor and warning modes to measure impact and educate users before high-confidence blocking.",
+      "Review top rules, egress domains, policy modes, browser event volume and Chrome endpoint health centrally.",
     ],
   },
   "use-cases": {
