@@ -1,42 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 
 const visualFlows = {
-  Visibility: { icon: "◎", accent: "cyan", result: "Action context captured", nodes: [
-    ["Browser action", "Upload · Paste · Prompt"],
-    ["Extension sensor", "Action-level context"],
-    ["Security overview", "Live operational signal"],
-  ] },
-  Policy: { icon: "◇", accent: "violet", result: "Policy evaluated", nodes: [
-    ["Business rule", "Channel + destination"],
-    ["Policy engine", "User · Group · Device"],
-    ["Decision", "Monitor / Block"],
-  ] },
-  Response: { icon: "↯", accent: "amber", result: "Response completed", nodes: [
-    ["Matched event", "Rule + destination"],
-    ["Browser response", "Action enforced"],
-    ["Analyst alert", "Triage with context"],
-  ] },
-  Coverage: { icon: "◉", accent: "emerald", result: "Coverage verified", nodes: [
-    ["Managed browser", "Chrome / Chromium"],
-    ["Extension health", "Version + last seen"],
-    ["Inventory", "Coverage in one view"],
-  ] },
-  Assignment: { icon: "⌘", accent: "blue", result: "Protection assigned", nodes: [
-    ["Identity", "User directory"],
-    ["Targeting", "Group · Role · Device"],
-    ["Protection", "Right rule, right user"],
-  ] },
-  Governance: { icon: "≋", accent: "rose", result: "Evidence preserved", nodes: [
-    ["Admin change", "Who changed what"],
-    ["Audit record", "Time + action + outcome"],
-    ["Evidence", "Accountable history"],
-  ] },
-  Extension: { icon: "⬡", accent: "cyan", result: "Extension operational", nodes: [
-    ["Lightweight control", "In-browser enforcement"],
-    ["Secure sync", "Policy + event delivery"],
-    ["Central console", "Operate at scale"],
-  ] },
+  Visibility: { icon: "◎", accent: "cyan", result: "Context captured", glyphs: ["cursor", "radar", "chart"], labels: ["Action", "Sense", "See"] },
+  Policy: { icon: "◇", accent: "violet", result: "Policy evaluated", glyphs: ["rule", "filter", "split"], labels: ["Rule", "Match", "Decide"] },
+  Response: { icon: "↯", accent: "amber", result: "Threat contained", glyphs: ["alert", "shield", "bell"], labels: ["Detect", "Block", "Alert"] },
+  Coverage: { icon: "◉", accent: "emerald", result: "Coverage verified", glyphs: ["browser", "pulse", "grid"], labels: ["Browser", "Health", "Fleet"] },
+  Assignment: { icon: "⌘", accent: "blue", result: "Protection assigned", glyphs: ["person", "target", "lock"], labels: ["Identity", "Target", "Protect"] },
+  Governance: { icon: "≋", accent: "rose", result: "Evidence preserved", glyphs: ["edit", "ledger", "check"], labels: ["Change", "Record", "Prove"] },
+  Extension: { icon: "⬡", accent: "cyan", result: "Extension operational", glyphs: ["extension", "sync", "console"], labels: ["Control", "Sync", "Operate"] },
 };
+
+function FlowGlyph({ type }) {
+  return <span className={`bdr-glyph bdr-glyph-${type}`} aria-hidden="true"><i /><i /><i /><i /></span>;
+}
 
 function RoadmapVisual({ step, index }) {
   const flow = visualFlows[step.label] || { icon: "◎", accent: "cyan", result: "Flow complete", nodes: [] };
@@ -51,22 +27,18 @@ function RoadmapVisual({ step, index }) {
         <span>{String(index + 1).padStart(2, "0")}</span><i>{flow.icon}</i>
       </div>
       <div className="bdr-visual-flow">
-        {flow.nodes.map(([title, detail], nodeIndex) => (
-          <div className="bdr-visual-segment" key={title} style={{ "--node-delay": `${nodeIndex * 180}ms` }}>
+        {flow.glyphs.map((glyph, nodeIndex) => (
+          <div className="bdr-visual-segment" key={glyph} style={{ "--node-delay": `${nodeIndex * 220}ms` }}>
             <div className="bdr-visual-node">
-              <span>{String(index + 1).padStart(2, "0")}.{nodeIndex + 1}</span>
-              <i className="bdr-visual-icon" aria-hidden="true">
-                {nodeIndex === 0 ? "◎" : nodeIndex === 1 ? "◇" : "✓"}
-              </i>
-              <strong>{title}</strong>
-              <small>{detail}</small>
+              <FlowGlyph type={glyph} />
+              <strong>{flow.labels[nodeIndex]}</strong>
             </div>
-            {nodeIndex < flow.nodes.length - 1 && <div className="bdr-visual-connector"><i /></div>}
+            {nodeIndex < flow.glyphs.length - 1 && <div className="bdr-visual-connector"><i /><b /></div>}
           </div>
         ))}
       </div>
       <div className="bdr-visual-status">
-        <span><i /> Extension connected</span>
+        <span><i /> Live</span>
         <b>{flow.result}</b>
       </div>
     </div>
