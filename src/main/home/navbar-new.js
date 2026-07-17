@@ -98,11 +98,6 @@ const bdrItems = [
     "Plan a low-friction pilot and progressive rollout.",
     "/product/browser-detection-response/deployment",
   ],
-  [
-    "Developer Installation",
-    "Build, install and verify the managed Chrome extension.",
-    "/product/browser-detection-response/developer-installation",
-  ],
 ];
 
 const NavbarNew = () => {

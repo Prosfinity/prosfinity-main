@@ -9,7 +9,6 @@ export const bdrLinks = [
   ["How It Works", "/product/browser-detection-response/how-it-works"],
   ["Comparison", "/product/browser-detection-response/comparison"],
   ["Deployment", "/product/browser-detection-response/deployment"],
-  ["Developer Install", "/product/browser-detection-response/developer-installation"],
 ];
 
 export default function BdrNavigation() {
