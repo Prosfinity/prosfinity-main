@@ -30,17 +30,7 @@ import {
 import Navbar from "../home/navbar";
 import Footer from "../home/footer";
 import BdrNavigation from "./navigation";
-import { AmbientGlow, Reveal, ScrollStory, Stagger } from "./motion";
-
-const storySteps = [
-  { label: "Visibility", title: "See browser risk as it develops", text: "Start with browser activity, extension health, policy effectiveness and critical events in one operational view.", image: "/images/bdr-console-overview.jpg", alt: "BDR security overview dashboard" },
-  { label: "Policy", title: "Turn business rules into browser controls", text: "Create and assign centrally managed Monitor or Block policies for supported browser channels, users, groups and destinations.", image: "/images/bdr-console-policies.jpg", alt: "BDR policy management console" },
-  { label: "Response", title: "Surface the action that needs attention", text: "Search, filter and triage browser alerts with the event, destination, policy and response context analysts need.", image: "/images/bdr-console-alerts.jpg", alt: "BDR alert investigation console" },
-  { label: "Coverage", title: "Know which browsers are protected", text: "Review device, user, browser profile, extension version, last-seen state and runtime health from the inventory.", image: "/images/bdr-console-inventory.png", alt: "BDR extension and browser inventory" },
-  { label: "Assignment", title: "Connect protection to the right users", text: "Maintain the user directory and the identities used to target centrally managed browser policy.", image: "/images/bdr-console-directory.jpg", alt: "BDR user directory console" },
-  { label: "Governance", title: "Preserve an accountable audit trail", text: "Review administrative and security activity so policy and operational changes remain visible to the team.", image: "/images/bdr-console-audit.jpg", alt: "BDR audit console" },
-  { label: "Extension", title: "Manage the control point itself", text: "Operate extension security and tenant configuration from the same platform that receives browser evidence.", image: "/images/bdr-console-extension-security.jpg", alt: "BDR extension security console" },
-];
+import { AmbientGlow, Reveal, Stagger } from "./motion";
 
 const pages = {
   "why-bdr": {
@@ -588,8 +578,6 @@ export default function BdrPage({ pageKey }) {
             <Reveal delay={180}><ConsoleVisual pageKey={pageKey} /></Reveal>
           </div>
         </section>
-        <ExtensionCore />
-        <ScrollStory steps={storySteps} />
         <section className="border-b border-white/10 px-5 py-10">
           <Stagger className="mx-auto grid max-w-7xl gap-4 md:grid-cols-3">
             {page.stats.map(([value, label]) => (
