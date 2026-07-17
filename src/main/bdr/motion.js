@@ -59,6 +59,33 @@ function RoadmapVisual({ step, index }) {
   );
 }
 
+const storyProfiles = {
+  "why-bdr": { eyebrow: "Expose the browser security gap", title: "See what changes when protection moves into the browser.", caption: "Blind spot → browser context → control", mode: "gap", labels: ["Hidden action", "Extension context", "Controlled"] },
+  features: { eyebrow: "Explore the control surface", title: "Each capability becomes active as you move through the platform.", caption: "Capability workspace", mode: "bento", labels: ["Channel", "Policy", "Outcome"] },
+  "use-cases": { eyebrow: "Follow a risky browser journey", title: "Watch a real workflow move from user action to security outcome.", caption: "Live browser journey", mode: "journey", labels: ["User action", "Rule match", "Recorded result"] },
+  "how-it-works": { eyebrow: "Inside the architecture", title: "Trace the secure path from managed browser to central console.", caption: "Extension architecture", mode: "architecture", labels: ["Managed browser", "Policy service", "BDR console"] },
+  comparison: { eyebrow: "Compare the control points", title: "See where BDR adds context that the existing stack cannot provide alone.", caption: "Coverage comparison", mode: "compare", labels: ["Endpoint", "Network", "Browser"] },
+  deployment: { eyebrow: "Roll out with confidence", title: "Move from pilot visibility to measured enforcement, one stage at a time.", caption: "Deployment timeline", mode: "timeline", labels: ["Pilot", "Validate", "Scale"] },
+};
+
+function SpecializedVisual({ step, index, variant }) {
+  const profile = storyProfiles[variant];
+  const flow = visualFlows[step.label] || visualFlows.Visibility;
+  return <div className={`bdr-special-visual is-${profile.mode} is-${flow.accent}`}>
+    <div className="bdr-special-chrome"><span><i /> PROSFINITY BDR</span><b>{profile.caption}</b></div>
+    <div className="bdr-special-canvas">
+      {profile.labels.map((label, i) => <div className={`bdr-special-panel panel-${i + 1}`} key={label} style={{"--panel-delay": `${i * 180}ms`}}>
+        <span className="bdr-special-icon"><i /><i /><i /></span>
+        <small>{label}</small>
+        <strong>{i === 1 ? step.label : i === 2 ? flow.result : String(index + 1).padStart(2, "0")}</strong>
+        <em><i /><i /><i /></em>
+      </div>)}
+      <div className="bdr-special-path"><i /><i /></div>
+    </div>
+    <div className="bdr-special-footer"><span>LIVE</span><b>{step.title}</b></div>
+  </div>;
+}
+
 export function Reveal({ children, className = "", delay = 0, as: Tag = "div" }) {
   const ref = useRef(null);
 
@@ -121,7 +148,7 @@ export function AmbientGlow() {
   );
 }
 
-export function ScrollStory({ steps }) {
+export function ScrollStory({ steps, variant = "overview" }) {
   const [active, setActive] = useState(0);
   const refs = useRef([]);
   useEffect(() => {
@@ -133,10 +160,11 @@ export function ScrollStory({ steps }) {
     });
     return () => observers.forEach((observer) => observer?.disconnect());
   }, [steps.length]);
+  const profile = storyProfiles[variant];
   return (
-    <section className="bdr-story px-5 py-24"><div className="mx-auto max-w-7xl">
-      <p className="text-sm font-semibold uppercase tracking-[.22em] text-cyan-400">Scroll through the response chain</p>
-      <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">One browser action. A complete security story.</h2>
+    <section className={`bdr-story bdr-story-${profile?.mode || "roadmap"} px-5 py-24`}><div className="mx-auto max-w-7xl">
+      <p className="text-sm font-semibold uppercase tracking-[.22em] text-cyan-400">{profile?.eyebrow || "Scroll through the response chain"}</p>
+      <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">{profile?.title || "One browser action. A complete security story."}</h2>
       <div className="relative mt-14">
         <div className="bdr-story-line" aria-hidden="true"><i style={{ height: `${((active + 1) / steps.length) * 100}%` }} /></div>
         {steps.map((step, index) => <article key={step.title} ref={(node) => { refs.current[index] = node; }} className={`bdr-story-step ${active === index ? "is-active" : ""}`}>
@@ -147,8 +175,8 @@ export function ScrollStory({ steps }) {
             <p className="mt-4 max-w-lg leading-7 text-slate-400">{step.text}</p>
           </div>
           <div className="bdr-story-stage"><div className="bdr-story-screen">
-            <div className="bdr-story-image is-active"><RoadmapVisual step={step} index={index} /></div>
-            <div className="bdr-story-caption"><span>Browser extension → policy → response</span><b>{step.label}</b></div>
+            <div className="bdr-story-image is-active">{profile ? <SpecializedVisual step={step} index={index} variant={variant} /> : <RoadmapVisual step={step} index={index} />}</div>
+            <div className="bdr-story-caption"><span>{profile?.caption || "Browser extension → policy → response"}</span><b>{step.label}</b></div>
           </div></div>
         </article>)}
       </div>

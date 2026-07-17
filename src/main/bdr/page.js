@@ -627,7 +627,7 @@ export default function BdrPage({ pageKey }) {
             ))}
           </Stagger>
         </section>
-        <ScrollStory steps={pageStories[pageKey]} />
+        <ScrollStory steps={pageStories[pageKey]} variant={pageKey} />
         <PageSpecificContent pageKey={pageKey} page={page} />
         <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]">
