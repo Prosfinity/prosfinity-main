@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Activity,
@@ -55,7 +56,7 @@ const pages = {
       [
         SlidersHorizontal,
         "Control without overblocking",
-        "Start in monitor mode, introduce contextual warnings, then block only validated high-risk behavior.",
+        "Start in monitor mode, validate business workflows, then block only tested high-risk behavior.",
       ],
       [
         FileSearch,
@@ -88,7 +89,7 @@ const pages = {
       "Discover the visibility, policy, response and investigation capabilities designed to protect data across everyday browser workflows.",
     stats: [
       ["5 controls", "Form, clipboard, upload, download and domain"],
-      ["3 modes", "Monitor, warn and block"],
+      ["2 modes", "Monitor and block"],
       ["Centralized", "Policy and investigation console"],
     ],
     cards: [
@@ -120,7 +121,7 @@ const pages = {
       [
         ShieldAlert,
         "Inline response",
-        "Monitor silently, explain risk with a user warning, or block the action before data is transferred.",
+        "Monitor activity for visibility or block a matched action before data is transferred.",
       ],
       [
         Search,
@@ -152,7 +153,7 @@ const pages = {
     details: [
       "Block sensitive form submissions, clipboard copy/paste, file uploads, drag-drop, restricted-domain navigation and policy-matched downloads.",
       "Search and filter alerts, assign an owner, add comments and manage open, investigating, acknowledged or closed states.",
-      "Use monitor and warning modes to measure impact and educate users before high-confidence blocking.",
+      "Use monitor mode to measure impact and tune policy before high-confidence blocking.",
       "Review top rules, egress domains, policy modes, browser event volume and Chrome endpoint health centrally.",
     ],
   },
@@ -203,7 +204,7 @@ const pages = {
       "Protect intellectual property during cloud and GenAI adoption.",
       "Enforce acceptable-use and data-handling policy inside browser workflows.",
       "Provide incident responders with destination-aware browser evidence.",
-      "Support phased rollouts with measurable monitor, warn and block outcomes.",
+      "Support phased rollouts with measurable monitor and block outcomes.",
     ],
   },
   "how-it-works": {
@@ -213,7 +214,7 @@ const pages = {
       "A lightweight browser extension observes protected data channels, evaluates each action against centrally managed policy and records the decision for investigation.",
     stats: [
       ["1", "Lightweight browser extension"],
-      ["3", "Monitor, warn or block response"],
+      ["2", "Monitor or block response"],
       ["End-to-end", "Action-to-investigation workflow"],
     ],
     cards: [
@@ -235,7 +236,7 @@ const pages = {
       [
         ShieldAlert,
         "4. Respond",
-        "The action is monitored, interrupted with a contextual warning, or blocked before completion.",
+        "The action is monitored for visibility or blocked before completion.",
       ],
       [
         Activity,
@@ -252,7 +253,7 @@ const pages = {
     details: [
       "Deploy to a pilot group and establish a baseline in monitor mode.",
       "Validate legitimate workflows and tune trusted destinations or user groups.",
-      "Add contextual warnings to guide users at the moment of risk.",
+      "Refine policies and assignments using the monitor-mode evidence.",
       "Enforce blocking for tested, high-confidence data movement scenarios.",
     ],
   },
@@ -270,7 +271,7 @@ const pages = {
       [
         Monitor,
         "Prosfinity BDR",
-        "Sees browser data actions and applies granular monitor, warn or block responses with investigation evidence.",
+        "Sees browser data actions and applies granular monitor or block responses with investigation evidence.",
       ],
       [
         Shield,
@@ -340,7 +341,7 @@ const pages = {
       [
         ShieldAlert,
         "Progressive enforcement",
-        "Introduce warnings first, then block tested high-risk scenarios with clear user feedback.",
+        "Move tested high-risk scenarios from monitoring to blocking with clear response evidence.",
       ],
       [
         Gauge,
@@ -359,15 +360,38 @@ const pages = {
 };
 
 function ConsoleVisual({ pageKey }) {
+  const screenshots = {
+    "why-bdr": ["/images/bdr-console-overview.jpg", "BDR security overview dashboard"],
+    features: ["/images/bdr-console-policies.jpg", "BDR centrally managed policy console"],
+    "use-cases": ["/images/bdr-console-alerts.jpg", "BDR alert investigation console"],
+    "how-it-works": ["/images/bdr-console-overview.jpg", "BDR extension health and response dashboard"],
+    comparison: ["/images/bdr-console-overview.jpg", "BDR browser security operations dashboard"],
+    deployment: ["/images/bdr-console-inventory.png", "BDR extension and device inventory"],
+  };
+  const [screenshot, alt] = screenshots[pageKey];
+  return (
+    <div className="overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#0b1628] shadow-2xl shadow-cyan-950/40">
+      <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
+        <span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Live product console</span>
+        <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">Demo tenant</span>
+      </div>
+      <div className="relative aspect-[16/10] bg-slate-950">
+        <Image src={screenshot} alt={alt} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-top" priority={pageKey === "why-bdr"} />
+      </div>
+    </div>
+  );
+}
+
+function LegacyConsoleVisual({ pageKey }) {
   const rows = {
     "why-bdr": [
-      ["Unapproved GenAI", "Prompt paste", "Warned"],
+      ["Unapproved GenAI", "Prompt paste", "Blocked"],
       ["Personal Drive", "File upload", "Blocked"],
       ["Webmail", "Attachment", "Monitored"],
     ],
     features: [
       ["finance-export.csv", "Upload", "Blocked"],
-      ["Customer records", "Clipboard", "Warned"],
+      ["Customer records", "Clipboard", "Monitored"],
       ["AI assistant", "Prompt", "Monitored"],
     ],
     "use-cases": [
@@ -387,7 +411,7 @@ function ConsoleVisual({ pageKey }) {
     ],
     deployment: [
       ["Pilot group", "124 browsers", "Healthy"],
-      ["Warn policy", "18 events", "Review"],
+      ["Monitor policy", "18 events", "Review"],
       ["Block policy", "7 events", "Enforced"],
     ],
   }[pageKey];
@@ -462,7 +486,7 @@ function PageSpecificContent({ pageKey, page }) {
   if (pageKey === "comparison") {
     const rows = [
       ["In-page upload / paste context", "Strong", "Limited", "Limited"],
-      ["Warn before data transfer", "Yes", "Rare", "Site-level"],
+      ["Block before data transfer", "Yes", "Varies", "Site-level"],
       ["GenAI prompt governance", "Native", "Limited", "Limited"],
       ["Malware / process protection", "Complementary", "Strong", "No"],
       ["Browser event investigation", "Action-level", "Process-level", "Traffic-level"],

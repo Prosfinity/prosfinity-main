@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Activity,
@@ -38,7 +39,7 @@ const capabilities = [
   {
     icon: Clipboard,
     title: "Clipboard Protection",
-    text: "Apply monitor, warn, or block policies to sensitive copy and paste actions in the browser.",
+    text: "Apply monitor or block policies to sensitive copy and paste actions in the browser.",
   },
   {
     icon: Bot,
@@ -58,7 +59,7 @@ const capabilities = [
 ];
 
 const protectionCoverage = [
-  [Bot, "AI & SaaS data egress", "Sensitive prompts, pasted text, form submissions and file attachments going to external AI or SaaS services.", "Allow approved workflows; warn the user or stop high-confidence data leakage before submission."],
+  [Bot, "AI & SaaS data egress", "Sensitive prompts, pasted text, form submissions and file attachments going to external AI or SaaS services.", "Monitor approved workflows or stop high-confidence data leakage before submission."],
   [Clipboard, "Copy & paste protection", "Sensitive content copied from or pasted into browser pages, with destination and action context.", "Block only the risky copy or paste action instead of disabling the clipboard across the endpoint."],
   [FileUp, "Upload & drag-drop control", "File-input and drag-drop uploads, including local inspection of supported text-like files for sensitive indicators.", "Clear a blocked upload before transfer and record the policy decision for analyst review."],
   [Download, "Download cancellation", "Download URL, filename, MIME type and file-extension context when available.", "Cancel policy-matched downloads and retain a completed response record—not just an alert."],
@@ -66,7 +67,7 @@ const protectionCoverage = [
 ];
 
 const platformCapabilities = [
-  [Settings2, "Central policy control", "Enable rules centrally and assign monitor, warn or block mode; extension policy sync applies the same decision at the browser endpoint."],
+  [Settings2, "Central policy control", "Enable rules centrally and assign monitor or block mode; extension policy sync applies the same decision at the browser endpoint."],
   [RadioTower, "Reliable event delivery", "The extension queues and retries browser events, exposes runtime health and supports a manual queue flush from its endpoint console."],
   [PackageCheck, "Extension inventory", "Collect browser extension inventory snapshots and review endpoint, user and profile coverage from the management console."],
   [UserRoundSearch, "Analyst investigation", "Search and filter alerts, assign an owner, manage case status and add investigation comments."],
@@ -221,7 +222,7 @@ export default function BrowserDetectionResponse() {
             <div className="max-w-4xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Protection coverage</p>
               <h2 className="mt-4 text-3xl font-semibold md:text-5xl">What BDR detects—and what it can stop</h2>
-              <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-400">Each browser signal is connected to an enforceable response. Start with visibility, warn users in context, then block tested high-confidence activity without shutting down the whole website or browser.</p>
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-400">Each browser signal is connected to an enforceable response. Start in monitor mode, validate real workflows, then block tested high-confidence activity without shutting down the whole website or browser.</p>
             </div>
             <div className="mt-14 grid gap-5 lg:grid-cols-2">
               {protectionCoverage.map(([Icon, label, detects, effect]) => (
@@ -236,6 +237,19 @@ export default function BrowserDetectionResponse() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="grid items-end gap-8 lg:grid-cols-[1fr_.7fr]">
+              <div><p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Real product console</p><h2 className="mt-4 text-3xl font-semibold md:text-5xl">See browser risk, policy and extension health in one view</h2></div>
+              <p className="text-lg leading-8 text-slate-400">This demo tenant shows the actual BDR console used to review policy effectiveness, browser events, endpoint coverage and extension health.</p>
+            </div>
+            <div className="mt-12 overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#091321] shadow-2xl shadow-cyan-950/30">
+              <div className="flex items-center justify-between border-b border-white/10 px-5 py-4"><span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Security Overview</span><span className="text-xs text-slate-500">Demo tenant</span></div>
+              <div className="relative aspect-[16/9]"><Image src="/images/bdr-console-overview.jpg" alt="Prosfinity BDR security overview dashboard" fill sizes="100vw" className="object-cover object-top" /></div>
             </div>
           </div>
         </section>
@@ -340,7 +354,7 @@ export default function BrowserDetectionResponse() {
                 [
                   Settings2,
                   "Define policies",
-                  "Choose monitor, warn, or block controls for each protected data channel.",
+                  "Choose monitor or block controls for each protected data channel.",
                 ],
                 [
                   Activity,
