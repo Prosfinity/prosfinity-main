@@ -8,7 +8,6 @@ import {
 import {
   BarChart3,
   ChevronDown,
-  Download,
   Globe,
   MailWarning,
   Monitor,
@@ -45,12 +44,6 @@ const endpointItems = [
     description: "Compare AIShieldNet with EDR and traditional antivirus.",
     icon: BarChart3,
     href: "/product/AIShieldNet/comparison",
-  },
-  {
-    title: "Downloads & Pricing",
-    description: "Download the agent and review available plans.",
-    icon: Download,
-    href: "/product/AIShieldNet/download-and-price",
   },
   {
     title: "Free Trial",

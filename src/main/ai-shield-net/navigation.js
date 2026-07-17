@@ -7,7 +7,6 @@ const links = [
   ["Why AIShieldNet", "/product/AIShieldNet/why-us"],
   ["Features", "/product/AIShieldNet/features"],
   ["Comparison", "/product/AIShieldNet/comparison"],
-  ["Downloads & Pricing", "/product/AIShieldNet/download-and-price"],
   ["Free Trial", "/product/AIShieldNet/free-trial"],
 ];
 
@@ -21,7 +20,7 @@ export default function AIShieldNavigation() {
           AIShieldNet
         </Link>
         {links.map(([label, href]) => {
-          const active = pathname === href || (href.includes("download-and-price") && pathname.startsWith(href));
+          const active = pathname === href;
           return (
             <Link key={href} href={href} className={`shrink-0 rounded-md px-3 py-2 text-sm transition ${active ? "bg-red-500 text-white" : "text-slate-300 hover:bg-white/10 hover:text-white"}`}>
               {label}

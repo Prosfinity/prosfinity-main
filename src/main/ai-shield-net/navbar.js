@@ -104,12 +104,6 @@ const NavbarHome = () => {
             <NavbarLink as={Link} href="/product/AIShieldNet/comparison">
               Comparison
             </NavbarLink>
-            <NavbarLink
-              as={Link}
-              href="/product/AIShieldNet/download-and-price"
-            >
-              Downloads & Price
-            </NavbarLink>
             <NavbarLink as={Link} href="/product/AIShieldNet/free-trial">
               Free Trial
             </NavbarLink>
@@ -158,14 +152,6 @@ const NavbarHome = () => {
                   className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
                 >
                   Comparison
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/product/AIShieldNet/download-and-price"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:    md: "
-                >
-                  Downloads & Price
                 </Link>
               </li>
               <li>
