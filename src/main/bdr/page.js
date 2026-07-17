@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Activity,
@@ -396,29 +395,6 @@ const pages = {
   },
 };
 
-function ConsoleVisual({ pageKey }) {
-  const screenshots = {
-    "why-bdr": ["/images/bdr-console-overview.jpg", "BDR security overview dashboard"],
-    features: ["/images/bdr-console-policies.jpg", "BDR centrally managed policy console"],
-    "use-cases": ["/images/bdr-console-alerts.jpg", "BDR alert investigation console"],
-    "how-it-works": ["/images/bdr-console-overview.jpg", "BDR extension health and response dashboard"],
-    comparison: ["/images/bdr-console-overview.jpg", "BDR browser security operations dashboard"],
-    deployment: ["/images/bdr-console-inventory.png", "BDR extension and device inventory"],
-  };
-  const [screenshot, alt] = screenshots[pageKey];
-  return (
-    <div className="bdr-console-frame bdr-console-float overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#0b1628] shadow-2xl shadow-cyan-950/40">
-      <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-        <span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Live product console</span>
-        <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">Demo tenant</span>
-      </div>
-      <div className="relative aspect-[16/10] bg-slate-950">
-        <Image src={screenshot} alt={alt} fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-top" priority={pageKey === "why-bdr"} />
-      </div>
-    </div>
-  );
-}
-
 function LegacyConsoleVisual({ pageKey }) {
   const rows = {
     "why-bdr": [
@@ -585,15 +561,15 @@ export default function BdrPage({ pageKey }) {
       <main>
         <section className="relative overflow-hidden border-b border-white/10 px-5 py-24">
           <AmbientGlow />
-          <div className="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
-            <Reveal>
+          <div className="relative mx-auto max-w-7xl">
+            <Reveal className="max-w-6xl">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-400">
                 {page.eyebrow}
               </p>
-              <h1 className="mt-5 text-4xl font-semibold leading-tight md:text-6xl">
+              <h1 className="mt-5 max-w-5xl text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">
                 {page.title}
               </h1>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
+              <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300 md:text-xl">
                 {page.intro}
               </p>
               <div className="mt-9 flex gap-4">
@@ -611,7 +587,6 @@ export default function BdrPage({ pageKey }) {
                 </Link>
               </div>
             </Reveal>
-            <Reveal delay={180}><ConsoleVisual pageKey={pageKey} /></Reveal>
           </div>
         </section>
         <section className="border-b border-white/10 px-5 py-10">

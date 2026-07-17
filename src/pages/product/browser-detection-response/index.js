@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Activity,
@@ -239,19 +238,6 @@ export default function BrowserDetectionResponse() {
                 </div>
               ))}
             </Stagger>
-          </div>
-        </section>
-
-        <section className="border-y border-white/10 bg-white/[0.025] px-5 py-24">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid items-end gap-8 lg:grid-cols-[1fr_.7fr]">
-              <div><p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Real product console</p><h2 className="mt-4 text-3xl font-semibold md:text-5xl">See browser risk, policy and extension health in one view</h2></div>
-              <p className="text-lg leading-8 text-slate-400">This demo tenant shows the actual BDR console used to review policy effectiveness, browser events, endpoint coverage and extension health.</p>
-            </div>
-            <Reveal className="bdr-console-frame mt-12 overflow-hidden rounded-2xl border border-cyan-400/20 bg-[#091321] shadow-2xl shadow-cyan-950/30">
-              <div className="flex items-center justify-between border-b border-white/10 px-5 py-4"><span className="flex items-center gap-2 text-sm font-semibold"><Monitor className="h-4 w-4 text-cyan-400" /> Security Overview</span><span className="text-xs text-slate-500">Demo tenant</span></div>
-              <div className="relative aspect-[16/9]"><Image src="/images/bdr-console-overview.jpg" alt="Prosfinity BDR security overview dashboard" fill sizes="100vw" className="object-cover object-top" /></div>
-            </Reveal>
           </div>
         </section>
 
