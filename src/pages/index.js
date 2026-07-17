@@ -3,6 +3,7 @@ import Head from "next/head";
 import Footer from "../main/home/footer";
 import Navbar from "../main/home/navbar";
 import ProductSplit from "../main/home/product-split";
+import HomeValue from "../main/home/home-value";
 
 const HomePage = () => {
   return (
@@ -49,6 +50,7 @@ const HomePage = () => {
         <Navbar />
       </header>
       <ProductSplit />
+      <HomeValue />
 
       <footer>
         <Footer />

@@ -1,124 +1,47 @@
-import { useInViewport } from "ahooks";
-import { useEffect, useRef, useState } from "react";
+import { ArrowRight, Check, Chrome, ShieldCheck } from "lucide-react";
 
-const Banner = () => {
-  const ref = useRef(null);
-
-  const [loaded, setLoaded] = useState(false);
-  const [inViewport] = useInViewport(ref);
-
-  useEffect(() => {
-    if (!loaded && inViewport) {
-      setLoaded(true);
-    }
-  }, [inViewport, loaded]);
-
-  return (
-    <div
-      ref={ref}
-      className="w-full flex flex-col xl:flex-row xl:w-container px-8 lg:px-20 xl:px-0 mx-auto text-white mt-16 xl:mt-16 pt-10 space-y-10 md:space-y-0"
-    >
-      <div className="w-full lg:w-4/6">
-        <p
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } text-3xl md:text-4xl font-semibold leading-normal md:leading-relaxed`}
-        >
-          Schedule a Consultation
-        </p>
-        <p
-          className={`${
-            loaded || inViewport
-              ? "animate__animated animate__slideInUp animate__fast"
-              : ""
-          } mt-3 text-base md:text-lg font-light`}
-        >
-          Talk to our cybersecurity experts and get a personalized assessment of
-          your organization’s needs. Fill out the form below to schedule a
-          consultation and learn how AIShieldNet can strengthen your defenses.
-        </p>
+const Banner = () => (
+  <main className="demo-page">
+    <section className="demo-intro">
+      <span className="demo-eyebrow">REQUEST A DEMO</span>
+      <h1>See security built around how your team actually works.</h1>
+      <p>
+        Tell us what you want to protect. We will tailor the conversation around
+        endpoint threats, browser risk, or both—without a generic sales deck.
+      </p>
+      <div className="demo-product-list">
+        <article><i><ShieldCheck size={20}/></i><div><strong>AIShieldNet</strong><span>AI-driven endpoint protection</span></div><Check size={17}/></article>
+        <article><i><Chrome size={20}/></i><div><strong>ViewGuard BDR</strong><span>Extension-powered browser control</span></div><Check size={17}/></article>
       </div>
-      <div className="w-full lg:w-4/6">
-        <form
-          action="https://formspree.io/f/mnnpnbrk"
-          method="POST"
-          className="max-w-sm mx-auto"
-        >
-          <div className="mb-5">
-            <label
-              htmlFor="name"
-              className="block mb-2 text-base font-medium text-white "
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5      "
-              required
-            />
-          </div>
-          <div className="mb-5">
-            <label
-              htmlFor="phone"
-              className="block mb-2 text-base font-medium text-white "
-            >
-              Phone Number/Whatsapp Number
-            </label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Enter your phone number"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5      "
-            />
-          </div>
-          <div className="mb-5">
-            <label
-              htmlFor="email"
-              className="block mb-2 text-base font-medium text-white "
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5      "
-              placeholder="Enter your email"
-              required
-            />
-          </div>
-          <div className="mb-5">
-            <label
-              htmlFor="message"
-              className="block mb-2 text-base font-medium text-white "
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500      "
-              placeholder="Write your message here..."
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="text-white bg-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center   "
-          >
-            Submit
-          </button>
-        </form>
+      <div className="demo-expect">
+        <small>WHAT TO EXPECT</small>
+        <div><b>01</b><span><strong>30-minute discovery</strong>Understand your environment and priorities.</span></div>
+        <div><b>02</b><span><strong>Focused product walkthrough</strong>See the workflows relevant to your team.</span></div>
+        <div><b>03</b><span><strong>Clear next steps</strong>Leave with a practical evaluation path.</span></div>
       </div>
-    </div>
-  );
-};
+    </section>
+
+    <section className="demo-form-card">
+      <div className="demo-form-heading"><span>LET&apos;S TALK</span><h2>Book your product demo</h2><p>Required fields are marked with an asterisk.</p></div>
+      <form action="https://formspree.io/f/mnnpnbrk" method="POST">
+        <div className="demo-form-grid">
+          <label><span>Full name *</span><input type="text" name="name" placeholder="Your name" autoComplete="name" required/></label>
+          <label><span>Work email *</span><input type="email" name="email" placeholder="name@company.com" autoComplete="email" required/></label>
+          <label><span>Company *</span><input type="text" name="company" placeholder="Company name" autoComplete="organization" required/></label>
+          <label><span>Phone</span><input type="tel" name="phone" placeholder="+852" autoComplete="tel"/></label>
+        </div>
+        <fieldset>
+          <legend>Which product are you interested in? *</legend>
+          <label className="demo-choice"><input type="radio" name="product" value="AIShieldNet" required/><span><ShieldCheck size={18}/><b>AIShieldNet</b><small>Endpoint protection</small></span></label>
+          <label className="demo-choice"><input type="radio" name="product" value="ViewGuard BDR"/><span><Chrome size={18}/><b>ViewGuard BDR</b><small>Browser security</small></span></label>
+          <label className="demo-choice"><input type="radio" name="product" value="Both products"/><span><i>+</i><b>Both products</b><small>Combined discussion</small></span></label>
+        </fieldset>
+        <label className="demo-message"><span>What would you like to solve?</span><textarea name="message" rows="4" placeholder="Tell us about your security priorities, environment, or preferred demo focus."/></label>
+        <button type="submit">Request my demo <ArrowRight size={18}/></button>
+        <p className="demo-privacy">By submitting, you agree that Prosfinity may contact you about this request.</p>
+      </form>
+    </section>
+  </main>
+);
 
 export default Banner;

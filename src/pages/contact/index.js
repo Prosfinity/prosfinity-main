@@ -10,8 +10,7 @@ const ContactPage = () => {
     <div className="font-Poppins bg-white">
       <Head>
         <title>
-          Contact | AIShieldNet &#8211; Your Trusted Cybersecurity Partner
-          &#8211; AI ShieldNet
+          Request a Demo | Prosfinity Cybersecurity
         </title>
         <link rel="icon" href="/favicon.ico" />
 
@@ -49,12 +48,10 @@ const ContactPage = () => {
         <meta name="twitter:site" content="@prosfinity" />
       </Head>
 
-      <header className="w-full h-[800px] md:h-[600px] bg-gradient">
+      <header>
         <Navbar />
-        <Banner />
       </header>
-
-      <article></article>
+      <Banner />
 
       <footer>
         <Footer />
