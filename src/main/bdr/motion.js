@@ -90,7 +90,25 @@ export function Reveal({ children, className = "", delay = 0, as: Tag = "div" })
 }
 
 export function Stagger({ children, className = "", as: Tag = "div" }) {
-  return <Tag className={`bdr-stagger ${className}`}>{children}</Tag>;
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          node.classList.add("bdr-stagger-visible");
+          observer.unobserve(node);
+        }
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -7%" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return <Tag ref={ref} className={`bdr-stagger ${className}`}>{children}</Tag>;
 }
 
 export function AmbientGlow() {

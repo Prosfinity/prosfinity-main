@@ -31,7 +31,9 @@ html {
   transition-delay: var(--bdr-delay, 0ms);
 }
 .bdr-reveal.bdr-reveal-visible { opacity: 1; transform: none; filter: none; }
-.bdr-stagger > * { transition: transform .45s cubic-bezier(.22,1,.36,1), border-color .45s ease, background-color .45s ease, box-shadow .45s ease; }
+.bdr-stagger > * { opacity:0; transform:translate3d(0,30px,0) scale(.985); filter:blur(5px); transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1), filter .75s ease, border-color .45s ease, background-color .45s ease, box-shadow .45s ease; }
+.bdr-stagger.bdr-stagger-visible > * { opacity:1; transform:none; filter:none; }
+.bdr-stagger.bdr-stagger-visible > *:nth-child(2){transition-delay:90ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(3){transition-delay:180ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(4){transition-delay:270ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(5){transition-delay:360ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(6){transition-delay:450ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(7){transition-delay:540ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(8){transition-delay:630ms}.bdr-stagger.bdr-stagger-visible > *:nth-child(n+9){transition-delay:700ms}
 .bdr-stagger > *:hover { transform: translateY(-7px); border-color: rgba(34,211,238,.35); box-shadow: 0 24px 70px rgba(8,145,178,.12); }
 .bdr-console-float { animation: bdr-console-float 7s ease-in-out infinite; transform-origin: center; }
 .bdr-console-frame { position: relative; isolation: isolate; }
@@ -110,7 +112,7 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .bdr-reveal { opacity:1; transform:none; filter:none; transition:none; }
   .bdr-console-float,.bdr-console-frame::after,.bdr-orb,.bdr-pulse::before,.bdr-visual-node,.bdr-visual-connector i,.bdr-visual-orbit,.bdr-visual-watermark i { animation:none; }
-  .bdr-stagger > * { transition:none; }
+  .bdr-stagger > * { opacity:1; transform:none; filter:none; transition:none; }
   .bdr-story-step { opacity:1; transform:none; }
   .bdr-story-image { filter:none; transition:none; }
 }

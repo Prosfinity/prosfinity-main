@@ -494,14 +494,14 @@ function PageSpecificContent({ pageKey, page }) {
     ];
     return (
       <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
-        <p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">Side-by-side coverage</p>
-        <h2 className="mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">The missing control point in a layered security stack</h2>
-        <div className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
+        <Reveal><p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">Side-by-side coverage</p>
+        <h2 className="mt-4 max-w-3xl text-3xl font-semibold md:text-5xl">The missing control point in a layered security stack</h2></Reveal>
+        <Stagger className="mt-12 overflow-x-auto rounded-2xl border border-white/10">
           <div className="min-w-[760px]">
             <div className="grid grid-cols-[1.5fr_repeat(3,1fr)] bg-white/[.06] p-5 text-sm font-semibold"><span>Capability</span><span className="text-cyan-300">Prosfinity BDR</span><span>Endpoint / EDR</span><span>SWG</span></div>
             {rows.map(row => <div key={row[0]} className="grid grid-cols-[1.5fr_repeat(3,1fr)] border-t border-white/10 p-5 text-sm text-slate-300">{row.map((cell, i) => <span key={cell} className={i === 1 ? "font-semibold text-cyan-300" : ""}>{cell}</span>)}</div>)}
           </div>
-        </div>
+        </Stagger>
       </div></section>
     );
   }
@@ -522,8 +522,8 @@ function PageSpecificContent({ pageKey, page }) {
   }[pageKey];
   return (
     <section className="px-5 py-24"><div className="mx-auto max-w-7xl">
-      <p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">{headings[0]}</p>
-      <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">{headings[1]}</h2>
+      <Reveal><p className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-400">{headings[0]}</p>
+      <h2 className="mt-4 max-w-4xl text-3xl font-semibold md:text-5xl">{headings[1]}</h2></Reveal>
       <Stagger className={`mt-14 grid gap-5 ${styles}`}>
         {page.cards.map(([Icon, title, text], i) => (
           <div key={title} className={`rounded-2xl border p-7 ${pageKey === "how-it-works" ? "border-cyan-400/25 bg-gradient-to-br from-cyan-400/[.08] to-transparent" : pageKey === "use-cases" ? "border-white/10 bg-white/[.035]" : "border-white/10 bg-[#091321]"}`}>
