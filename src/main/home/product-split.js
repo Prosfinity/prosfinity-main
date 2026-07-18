@@ -25,6 +25,8 @@ const ProductSplit = () => (
       </div>
       <div className="home-endpoint-visual" aria-hidden="true">
         <div className="home-endpoint-scan" />
+        <div className="home-endpoint-sweep" />
+        <div className="home-endpoint-particles"><i /><i /><i /><i /></div>
         <div className="home-endpoint-orbit orbit-one"><i /><i /><i /></div>
         <div className="home-endpoint-orbit orbit-two"><i /><i /></div>
         <div className="home-endpoint-core">
